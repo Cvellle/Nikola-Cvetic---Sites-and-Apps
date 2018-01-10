@@ -1,0 +1,251 @@
+	body {
+		background: rgb(252, 217, 64);
+	}
+
+	.personal {
+		position:absolute;
+		top:0%;
+		left:0%;
+		height:30%;
+		width:100%;
+		background: rgb(202, 122, 48);
+		text-shadow: 0px 1px 0px rgba(255,255,255,.5);
+		font-family: "Century Gothic", "Helvetica", sans-serif;
+		font-weight: bold;
+	}
+
+	h1 {
+		position:absolute;
+		top:0%;
+		left:50%;
+		font-size: 4rem;
+	}
+
+	.personal>p:nth-child(2) {
+		position:absolute;
+		top:0%;
+		left:5%;
+		font-size: 3rem;
+		font-family: Snell Roundhand, cursive;
+		font-family: Brush Script MT,cursive; 
+	}
+
+	.personal>p:nth-child(3) {
+		position:absolute;
+		top:40%;
+		left:10%;
+		font-size: 1rem;
+		font-family: Snell Roundhand, cursive;
+		font-family: Brush Script MT,cursive; 
+	}
+
+	.personal>p:nth-child(4) {
+		position:absolute;
+		top:48%;
+		left:10%;
+		font-size: 1rem;
+		font-family: Snell Roundhand, cursive;
+		font-family: Brush Script MT,cursive; 
+	}
+
+	.personal>p:nth-child(5) {
+		position:absolute;
+		top:58%;
+		left:10%;
+		font-size: 1rem;
+		font-family: Snell Roundhand, cursive;
+		font-family: Brush Script MT,cursive; 
+	}
+
+	.personal>p:nth-child(6) {
+		position:absolute;
+		top:68%;
+		left:10%;
+		font-size: 1rem;
+		font-family: Snell Roundhand, cursive;
+		font-family: Brush Script MT,cursive; 
+	}
+
+
+	.frame {
+		position:absolute;
+		top:30%;
+		left:0%;
+		width:20.1%;
+		z-index:-1;
+	}
+
+	.me {
+		position:absolute;
+		top:40.35%;
+		left:4.7%;
+		width:10.6%;
+		z-index:-2;
+	}
+
+	.works {
+		position:absolute;
+		top:30%;
+		left:20%;
+		height:42.7%;
+		width:80%;
+		background: rgb(247, 183, 21);
+	}
+
+	.works>p:nth-child(2) {
+		position:absolute;
+		top:2rem;
+		left:20%;
+		font-size: 18px;
+		font-family: Snell Roundhand, cursive;
+	}
+
+	.img1 {
+		position:absolute;
+		top:2rem;
+		left:30%;
+		width:4rem;
+		border-radius: 50%;
+	}
+
+	.img2 {
+		position:absolute;
+		top:30%;
+		left:30%;
+		width:4rem;
+		border-radius: 50%;
+	}
+
+	.img3 {
+		position:absolute;
+		top:50%;
+		left:30%;
+		width:4rem;
+		border-radius: 50%;
+	}
+
+	.img4 {
+		position:absolute;
+		top:70%;
+		left:30%;
+		width:4rem;
+		border-radius: 50%;
+	}
+
+	.img5 {
+		position:absolute;
+		top:10%;
+		left:60%;
+		width:4rem;
+		border-radius: 50%;
+	}
+
+	.img6 {
+		position:absolute;
+		top:10%;
+		left:50%;
+		width:4rem;
+		border-radius: 50%;
+		z-index: 2;
+	}
+
+	.img7 {
+		position:absolute;
+		top:10%;
+		left:50%;
+		width:4rem;
+		border-radius: 50%;
+		z-index: 2;
+	}
+
+	.wheel {
+		position:absolute;
+		top:170%;
+		left:35%;
+		width: 15%;
+		border-radius: 50%;
+	}
+
+	.guit {
+		position:absolute;
+		top:0%;
+		right:-2%;
+		height:100%;
+	}
+
+	.skills {
+		position:absolute;
+		top:75%;
+		left:50%;
+		width:50%;
+	}
+
+	/*
+	.img {
+	    position:absolute;
+		top:50%;
+		transform:translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		-moz-transform:	translateY(-50%);
+		 -ms-transform:	translateY(-50%);
+		right:7%;
+		height:75%;
+		width:10.5%;
+		z-index:15;
+		border-radius:45px;
+		border:50px solid balck;
+		transition:0.5s;
+		-webkit-transition:0.5s;
+
+		position:relative;
+	    font-size:134%;
+		margin-left:2%;
+		font-family: Didot, sans-serif/*Arial Black, "Helvetica Neue", Helvetica, sans-serif;
+		font-weight:900;
+		top:0%;
+		color: black/*#ffbb33*/ /*#ffcc66/* /*#ffdb4d;
+
+		position:absolute;
+		border-radius:0px 50px 50px 0px;
+		transition:0.7s all;
+		-webkit-transition:all 0.7, border 0.01s;
+		/*border:10px solid black;
+		filter: blur(0px);
+
+		transform:translateX(-48.8%) translateY(0.5%) scale(1.01,1.01);
+		-ms-transform:translateX(-50%) translateY(0.2%);
+		-webkit-transform:translateX(-49.8%) translateY(0.2%) scale(1.01,1.01);
+		transition:0.3s;
+		-webkit-transition: 0.3s;
+		/*border:5px solid black;
+		border:0px solid black\9;
+		z-index:2;
+
+		position:absolute;
+		width:90%;
+		top:10%;
+		left:50%;
+		transform:translateX(-50%);
+		-webkit-transform: translateX(-50%);
+		-moz-transform:	translateX(-50%);
+		 -ms-transform:	translateX(-50%);
+		height:30%;
+		background:#0066E0;
+		background:/*#0066E0;-webkit-linear-gradient(black, blue);
+		background:/*#0066E0;-ms-linear-gradient(aqua, blue);
+		color:white;
+		border-radius:20px 50px 50px 0px;
+
+		position:absolute;
+		top:40%;
+		left:50%;
+		width:90%;
+		height:60%;
+		transform:translateX(-50%);
+		-webkit-transform: translateX(-50%);
+		-moz-transform:	translateX(-50%);
+		 -ms-transform:	translateX(-50%);
+				background:#0073E3;
+		background:/*#0066E0;linear-gradient(blue, aqua);
+		color:white;
+	*/
