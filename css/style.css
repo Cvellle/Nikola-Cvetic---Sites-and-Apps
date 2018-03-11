@@ -38,7 +38,7 @@ h1 {
 	font-size: 4rem;
 	z-index:2;
 	color:white;
-	opacity: 0.4;
+	opacity: 0.9;
 }
 
 .personal>p:nth-child(2) {
@@ -127,7 +127,7 @@ h1 {
 	position:absolute;
 	font-size: 1.1rem;
 	color:white;
-	opacity: 0.3;
+	opacity: 0.4;
 }
 
 .works>p:nth-child(1) {
