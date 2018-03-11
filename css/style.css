@@ -17,6 +17,8 @@
 	/* text-shadow: 0px 1px 0px rgba(255,255,255,.5); */
 	font-family: "Century Gothic", "Helvetica", sans-serif;
 	font-weight: 500;
+	color:white;
+	opacity: 0.2;
 }
 
 .paddition {
@@ -35,6 +37,8 @@ h1 {
 	right:10%;
 	font-size: 4rem;
 	z-index:2;
+	color:white;
+	opacity: 0.4;
 }
 
 .personal>p:nth-child(2) {
@@ -111,7 +115,7 @@ h1 {
 
 .works {
 	position:absolute;
-	top:30%;
+	top:35%;
 	left:0%;
 	height:45.7%;
 	width:100%;
@@ -122,7 +126,15 @@ h1 {
 .works>p {
 	position:absolute;
 	font-size: 1.1rem;
-	/* font-family: Snell Roundhand, cursive; */
+	color:white;
+	opacity: 0.3;
+}
+
+.works>p:nth-child(1) {
+	position:absolute;
+	/* top:2rem; 6...*/
+	top:-15%;
+	left:27%;
 }
 
 .works>p:nth-child(2) {
@@ -159,7 +171,7 @@ h1 {
 .works>p:nth-child(7) {
 	position:absolute;
 	top:5%;
-	left:47%;
+	left:60%;
 }
 
 .works>p:nth-child(8) {
