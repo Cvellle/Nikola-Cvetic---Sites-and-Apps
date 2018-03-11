@@ -244,7 +244,7 @@ h1 {
 	position:absolute;
 	top:5%;
 	left:0%;
-	width:5.5rem;
+	width:100%;
 	border-radius: 50%;
 	filter:brightness(90%);
 }
@@ -318,16 +318,15 @@ h1 {
 .move {
 	position: absolute;
 	left:60%;
-	width:100px;
-	height:100px;
+	width:6rem;
+	height:6rem;
 	margin: 20px auto 0;
-	color:orange;
 	font-size:100px;
-	line-height:15;
+	line-height:5rem;
 	animation: circle 30s linear infinite;
 	transform-origin:50% 200px;
 }
 
 div > div {
-	animation: inner-circle 0s linear infinite;
+	animation: inner-circle 20s linear infinite;
 }
