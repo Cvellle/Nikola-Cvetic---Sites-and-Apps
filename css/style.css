@@ -28,7 +28,7 @@
 	height:35.5%;
 	width:40%;
 	background: rgb(202, 122, 48);
-	z-index: 1;
+	z-index: 0.5s;
 }
 
 h1 {
@@ -198,6 +198,17 @@ h1 {
 	left:47%;
 }
 
+img:hover {
+	-webkit-transform: scale(1.1);
+	-webkit-transition: 0.5s;
+	-moz-transform: scale(1.1);
+	-moz-transition: 0.5s;
+}
+
+img {
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+}
 
 .img1 {
 	position:absolute;
