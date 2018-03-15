@@ -341,3 +341,154 @@ img {
 div > div {
 	animation: inner-circle 20s linear infinite;
 }
+
+
+
+
+
+@media only screen and (max-width: 414px) {
+
+	.space {
+		position:absolute;
+		top:0%;
+		left:0%;
+		height:105%;
+		width:105%;
+	}
+
+	.works>p {
+		position:absolute;
+		font-size: 2rem;
+	}
+
+	.img1 {
+		position:absolute;
+		top:5%;
+		left:42%;
+		width:3.5rem;
+		border-radius: 50%;
+	}
+	
+	.img2 {
+		position:absolute;
+		top:25%;
+		left:43%;
+		width:3.5rem;
+		border-radius: 50%;
+	}
+	
+	.img3 {
+		position:absolute;
+		top:45%;
+		left:44.5%;
+		width:3.5rem;
+		border-radius: 50%;
+	}
+	
+	.img4 {
+		position:absolute;
+		top:65%;
+		left:46.5%;
+		width:3.5rem;
+		border-radius: 50%;
+	}
+	
+	.img5 {
+		position:absolute;
+		top:85%;
+		left:49%;
+		width:3.5rem;
+		border-radius:50%;
+		z-index: 2;
+	}
+	
+	.img6 {
+		position:absolute;
+		top:5%;
+		left:0%;
+		width:100%;
+		border-radius: 50%;
+		filter:brightness(90%);
+	}
+
+}
+	
+@media only screen and (min-width: 415px) and (max-width: 1024px) {
+
+	.space {
+		position:absolute;
+		top:0%;
+		left:0%;
+		height:105%;
+		width:105%;
+	}
+
+	.works>p {
+		position:absolute;
+		font-size: 1.5rem;
+	}
+
+	.personal>p {
+		position:absolute;
+		font-size: 22rem;
+	}
+	
+	.personal>p:nth-child(3), .personal>p:nth-child(4), .personal>p:nth-child(5), .personal>p:nth-child(6) {
+		font-size: 1.6rem;
+	}
+
+	.personal>h1:nth-child(1) {
+		font-size: 3rem;
+	}
+
+	.img1 {
+		position:absolute;
+		top:5%;
+		left:45%;
+		width:3.5rem;
+		border-radius: 50%;
+	}
+	
+	.img2 {
+		position:absolute;
+		top:25%;
+		left:46%;
+		width:3.5rem;
+		border-radius: 50%;
+	}
+	
+	.img3 {
+		position:absolute;
+		top:45%;
+		left:49.5%;
+		width:3.5rem;
+		border-radius: 50%;
+	}
+	
+	.img4 {
+		position:absolute;
+		top:65%;
+		left:52.5%;
+		width:3.5rem;
+		border-radius: 50%;
+	}
+	
+	.img5 {
+		position:absolute;
+		top:85%;
+		left:58%;
+		width:3.5rem;
+		border-radius:50%;
+		z-index: 2;
+	}
+	
+	.img6 {
+		position:absolute;
+		top:5%;
+		left:0%;
+		width:100%;
+		border-radius: 50%;
+		filter:brightness(90%);
+	}
+
+}
