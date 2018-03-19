@@ -43,7 +43,8 @@ window.onload = function(){
 		}
 		else
 		{
-			this.location = {x: W/2, y: H/2};
+            this.location = {x: W+200, y: H+200};
+            this.globalAlpha=0;
 		}
 		//radius range = 10-30
 		this.radius = 10+Math.random()*10;
