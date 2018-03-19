@@ -4,7 +4,7 @@ body {
 	height:100%;
 	width:100%;
 	overflow:hidden;
-	cursor: url(../images/ship.png);	
+	cursor: url('../images/ship.png');	
 }
 
 #canvas {
@@ -361,7 +361,7 @@ img {
 
 .move {
 	position: absolute;
-	top:1rem;
+	top:6rem;
 	left:60%;
 	width:6rem;
 	height:6rem;
