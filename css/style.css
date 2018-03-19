@@ -203,6 +203,7 @@ img:hover {
 	-webkit-transition: 0.5s;
 	-moz-transform: scale(1.1);
 	-moz-transition: 0.5s;
+	filter:brightness(110%);
 }
 
 img {
@@ -222,7 +223,7 @@ img {
 .img2 {
 	position:absolute;
 	top:25%;
-	left:42.7%;
+	left:42.5%;
 	width:3.9rem;
 	border-radius: 50%;
 }
