@@ -15,7 +15,7 @@ body {
 	width: 100%;
 	opacity:0.5;
 	z-index: 10;
-	transform: translateX(-0.55%) translateY(5%);
+	transform: translateX(-0.55%) translateY(-0.9%);
 	cursor: url('../images/ship.png');	
 }
 
@@ -30,6 +30,8 @@ body {
 	background-image:url("../images/sp.jpg");
 }
 
+$randomNumber: random(10);
+
 @keyframes flicker {
   0% {
     opacity: 0;
@@ -41,18 +43,14 @@ body {
 }
 
 #red {
-  animation: flicker 100ms ease alternate infinite;
-}
-
-.svg1 {
-	
+  animation: flicker $randomNumber + ms ease alternate infinite;
 }
 
 .star1 {
 	position:absolute;
 	top:40%;
 	left:20%;
-	height:5%;
+	height:50%;
 }
 
 .star2 {
