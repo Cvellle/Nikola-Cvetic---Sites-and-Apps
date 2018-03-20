@@ -4,7 +4,7 @@ body {
 	height:100%;
 	width:100%;
 	overflow:hidden;
-	cursor: url('../images/ship.png');	
+	cursor: none;	
 }
 
 #canvas {
@@ -15,7 +15,7 @@ body {
 	width: 100%;
 	opacity:0.5;
 	z-index: 10;
-	transform: translateX(-0.55%) translateY(5%);
+	transform: translateX(-0.55%) translateY(0%);
 	cursor: url('../images/ship.png');	
 }
 
