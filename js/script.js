@@ -59,11 +59,10 @@ window.onload = function(){
 	
 	function draw()
 	{
-		//Painting the canvas black
+
 		//Time for lighting magic
 		//particles are painted with "lighter"
-		//In the next frame the background is painted normally without blending to the 
-		//previous frame
+		//In the next frame the background is painted normally without blending to the previous frame
 		ctx.globalCompositeOperation = "source-over";
 		ctx.fillStyle = "black";
 		ctx.fillRect(0, 0, W, H);
