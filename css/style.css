@@ -15,7 +15,7 @@ body {
 	width: 100%;
 	opacity:0.5;
 	z-index: 10;
-	transform: translateX(-0.55%) translateY(0%);
+	transform: translateX(-0.55%) translateY(-1%);
 	cursor: url('../images/ship.png');	
 }
 
@@ -60,6 +60,7 @@ body {
 	top:15%;
 	left:40%;
 	height:5%;
+	animation: flicker 5ms ease alternate infinite;
 }
 
 .star3 {
@@ -67,6 +68,7 @@ body {
 	top:75%;
 	left:60%;
 	height:5%;
+	animation: flicker 15ms ease alternate infinite;
 }
 
 .personal {
