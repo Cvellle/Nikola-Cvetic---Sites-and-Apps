@@ -41,7 +41,7 @@ body {
 }
 
 #red {
-  animation: flicker 100ms ease alternate infinite;
+  animation: flicker 10ms ease alternate infinite;
 }
 
 .svg1 {
@@ -57,18 +57,16 @@ body {
 
 .star2 {
 	position:absolute;
-	top:0%;
-	left:0%;
-	height:30%;
-	width:100%;
+	top:15%;
+	left:40%;
+	height:5%;
 }
 
 .star3 {
 	position:absolute;
-	top:0%;
-	left:0%;
-	height:30%;
-	width:100%;
+	top:75%;
+	left:60%;
+	height:5%;
 }
 
 .personal {
