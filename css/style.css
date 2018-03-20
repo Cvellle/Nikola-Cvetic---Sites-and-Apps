@@ -60,10 +60,15 @@ h1 {
 	font-size: 4rem;
 	z-index:2;
 	color:white;
-	opacity: 0.9;
+	opacity: 0.2;
+	font-family: "Century Gothic", "Helvetica", sans-serif;
 }
 
-.personal>p:nth-child(2) {
+.p2,.p3,.p4,.p5 {
+	opacity: 0.2;
+}
+
+.p1 {
 	position:absolute;
 	top:0%;
 	left:5%;
@@ -71,34 +76,35 @@ h1 {
 	font-weight: bold;
 	/* font-family: Snell Roundhand, cursive; */
 	/* font-family: Brush Script MT,cursive;  */
+	opacity: 0.2;
 }
 
-.personal>p:nth-child(3) {
+.p2 {
 	position:absolute;
-	top:40%;
+	top:12%;
 	left:5%;
-	font-size: 1rem;
+	font-size: 0.8rem;
 }
 
-.personal>p:nth-child(4) {
+.p3 {
 	position:absolute;
-	top:49%;
+	top:15%;
 	left:5%;
-	font-size: 1rem;
+	font-size: 0.8rem;
 }
 
-.personal>p:nth-child(5) {
+.p4 {
 	position:absolute;
-	top:58%;
+	top:18%;
 	left:5%;
-	font-size: 1rem;
+	font-size: 0.8rem;
 }
 
-.personal>p:nth-child(6) {
+.p5 {
 	position:absolute;
-	top:68%;
+	top:21%;
 	left:5%;
-	font-size: 1rem;
+	font-size: 0.8rem;
 }
 
 .play {
@@ -139,10 +145,7 @@ p {
 
 	top:35%;
 	left:0%;
-	
-	
-	font-family: "Century Gothic", "Helvetica", sans-serif;
-
+	font-family: "Century Gothic", "Helvetica", sans-serif
 }
 
 p {
@@ -159,7 +162,7 @@ p {
 	left:27%;
 }
 
-.p1 {
+.w1 {
 	position:absolute;
 	/* top:2rem; 6...*/
 	top:40%;
@@ -167,31 +170,31 @@ p {
 	z-index: 2;
 }
 
-.p2 {
+.w2 {
 	position:absolute;
 	top:50%;
 	left:27%;
 }
 
-.p3 {
+.w3 {
 	position:absolute;
 	top:60%;
 	left:27%;
 }
 
-.p4 {
+.w4 {
 	position:absolute;
 	top:70%;
 	left:27%;
 }
 
-.p5 {
+.w5 {
 	position:absolute;
 	top:80%;
 	left:27%;
 }
 
-.p6 {
+.w6 {
 	position:absolute;
 	top:40%;
 	left:60%;
