@@ -75,7 +75,7 @@ window.onload = function(){
 			ctx.beginPath();
 			//changing opacity according to the life.
 			//opacity goes to 0 at the end of life of a particle
-			p.opacity = Math.round(p.remaining_life/p.life*100)/100
+			p.opacity = Math.round(p.remaining_life/p.life*100)/100;
 			//a gradient instead of white fill
 			var gradient = ctx.createRadialGradient(p.location.x, p.location.y, 0, p.location.x, p.location.y, p.radius);
 			gradient.addColorStop(0, "rgba("+p.r+", "+p.g+", "+p.b+", "+p.opacity+")");
