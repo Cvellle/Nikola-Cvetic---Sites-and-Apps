@@ -54,6 +54,7 @@ body {
 	top:40%;
 	left:20%;
 	height:5%;
+	border-radius: 50%;
 }
 
 .star2 {
@@ -62,6 +63,7 @@ body {
 	left:40%;
 	height:3%;
 	animation: flicker 5ms ease alternate infinite;
+	border-radius: 50%;
 }
 
 .star3 {
@@ -70,6 +72,7 @@ body {
 	left:60%;
 	height:5%;
 	animation: flicker 15ms ease alternate infinite;
+	border-radius: 50%;
 }
 
 .personal {
