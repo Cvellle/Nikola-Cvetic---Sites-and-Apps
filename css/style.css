@@ -33,8 +33,10 @@ body {
 
 @keyframes flicker {
   0% {
-    opacity: 0;
-  } 50% {
+    opacity: 0.2;
+  } 30% {
+    opacity: 0.8;
+  } 70% {
     opacity: 1;
   } 100% {
     opacity: 0.7;
@@ -42,7 +44,7 @@ body {
 }
 
 #red {
-  animation: flicker 10ms ease alternate infinite;
+  /* animation: flicker 10ms ease alternate infinite; */
 }
 
 .svg1 {
@@ -54,6 +56,7 @@ body {
 	top:40%;
 	left:20%;
 	height:5%;
+	animation: flicker 6ms ease alternate infinite;
 	border-radius: 50%;
 }
 
@@ -62,16 +65,74 @@ body {
 	top:15%;
 	left:40%;
 	height:3%;
-	animation: flicker 5ms ease alternate infinite;
+	animation: flicker 4ms ease alternate infinite;
 	border-radius: 50%;
+	filter:hue-rotate(90deg);
 }
 
 .star3 {
 	position:absolute;
 	top:75%;
 	left:60%;
+	height:4%;
+	animation: flicker 7ms ease alternate infinite;
+	border-radius: 50%;
+	filter:hue-rotate(45deg);
+}
+
+.star4 {
+	position:absolute;
+	top:78%;
+	left:19%;
+	height:3%;
+	animation: flicker 9ms ease alternate infinite;
+	border-radius: 50%;
+}
+
+.star5 {
+	position:absolute;
+	top:28%;
+	left:3%;
+	height:3%;
+	animation: flicker 10ms ease alternate infinite;
+	border-radius: 50%;
+	filter:hue-rotate(120deg);
+}
+
+.star6 {
+	position:absolute;
+	top:10%;
+	left:60%;
 	height:5%;
-	animation: flicker 15ms ease alternate infinite;
+	animation: flicker 9ms ease alternate infinite;
+	border-radius: 50%;
+}
+
+.star7 {
+	position:absolute;
+	top:40%;
+	left:95%;
+	height:5%;
+	animation: flicker 6ms ease alternate infinite;
+	border-radius: 50%;
+	filter:hue-rotate(60deg);
+}
+
+.star8 {
+	position:absolute;
+	top:90%;
+	left:86%;
+	height:3%;
+	animation: flicker 4ms ease alternate infinite;
+	border-radius: 50%;
+}
+
+.star9 {
+	position:absolute;
+	top:65%;
+	left:75%;
+	height:4%;
+	animation: flicker 7ms ease alternate infinite;
 	border-radius: 50%;
 }
 
