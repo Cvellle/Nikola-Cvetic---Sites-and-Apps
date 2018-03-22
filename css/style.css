@@ -51,13 +51,25 @@ body {
 	
 }
 
+
 .star1 {
 	position:absolute;
 	top:40%;
 	left:20%;
 	height:5%;
-	animation: flicker 6ms ease alternate infinite;
+	-webkit-animation: flicker 6ms ease alternate infinite, starrot1 20s infinite linear;
+	-moz-animation: flicker 6ms ease alternate infinite, starrot1 20s infinite linear;
 	border-radius: 50%;
+	filter: opacity(85%);
+}
+
+@-webkit-keyframes starrot1 {
+	from {
+			-webkit-transform: rotate(0deg);
+	}
+	to {
+			-webkit-transform: rotate(359deg);
+	}
 }
 
 .star2 {
@@ -65,7 +77,8 @@ body {
 	top:15%;
 	left:40%;
 	height:3%;
-	animation: flicker 4ms ease alternate infinite;
+	-webkit-animation: flicker 4ms ease alternate infinite;
+	-moz-animation: flicker 4ms ease alternate infinite;
 	border-radius: 50%;
 	filter:hue-rotate(90deg);
 }
@@ -75,7 +88,8 @@ body {
 	top:75%;
 	left:60%;
 	height:4%;
-	animation: flicker 7ms ease alternate infinite;
+	-webkit-animation: flicker 7ms ease alternate infinite;
+	-moz-animation: flicker 7ms ease alternate infinite;
 	border-radius: 50%;
 	filter:hue-rotate(45deg);
 }
@@ -85,8 +99,10 @@ body {
 	top:78%;
 	left:19%;
 	height:3%;
-	animation: flicker 9ms ease alternate infinite;
+	-webkit-animation: flicker 9ms ease alternate infinite;
+	-moz-animation: flicker 9ms ease alternate infinite;
 	border-radius: 50%;
+	filter: opacity(80%);
 }
 
 .star5 {
@@ -94,7 +110,8 @@ body {
 	top:28%;
 	left:3%;
 	height:3%;
-	animation: flicker 10ms ease alternate infinite;
+	-webkit-animation: flicker 10ms ease alternate infinite;
+	-moz-animation: flicker 10ms ease alternate infinite;
 	border-radius: 50%;
 	filter:hue-rotate(120deg);
 }
@@ -104,8 +121,10 @@ body {
 	top:10%;
 	left:60%;
 	height:5%;
-	animation: flicker 9ms ease alternate infinite;
+	-webkit-animation: flicker 9ms ease alternate infinite;
+	-moz-animation: flicker 9ms ease alternate infinite;
 	border-radius: 50%;
+	filter: opacity(95%);
 }
 
 .star7 {
@@ -113,7 +132,8 @@ body {
 	top:40%;
 	left:95%;
 	height:5%;
-	animation: flicker 6ms ease alternate infinite;
+	-webkit-animation: flicker 6ms ease alternate infinite;
+	-moz-animation: flicker 6ms ease alternate infinite;
 	border-radius: 50%;
 	filter:hue-rotate(60deg);
 }
@@ -123,7 +143,8 @@ body {
 	top:90%;
 	left:86%;
 	height:3%;
-	animation: flicker 4ms ease alternate infinite;
+	-webkit-animation: flicker 4ms ease alternate infinite;
+	-moz-animation: flicker 4ms ease alternate infinite;
 	border-radius: 50%;
 }
 
@@ -132,7 +153,8 @@ body {
 	top:65%;
 	left:75%;
 	height:4%;
-	animation: flicker 7ms ease alternate infinite;
+	-webkit-animation: flicker 7ms ease alternate infinite;
+	-moz-animation: flicker 7ms ease alternate infinite;
 	border-radius: 50%;
 }
 
@@ -484,7 +506,6 @@ img {
 div > div {
 	animation: inner-circle 20s linear infinite;
 }
-
 
 
 
