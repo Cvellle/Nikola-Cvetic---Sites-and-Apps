@@ -86,7 +86,8 @@ body {
 	-webkit-animation: flicker 7ms ease alternate infinite;
 	-moz-animation: flicker 7ms ease alternate infinite;
 	border-radius: 50%;
-	filter:hue-rotate(45deg);
+	filter:hue-rotate(45deg) opacity(75%);;
+
 }
 
 .star4 {
