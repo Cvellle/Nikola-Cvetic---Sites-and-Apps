@@ -5,6 +5,9 @@ body {
 	width:100%;
 	overflow:hidden;
 	cursor: none;	
+	background-image:url("../images/sp.jpg");
+	background-size: cover;
+	/* filter:brightness(120%); */
 }
 
 #canvas {
@@ -15,9 +18,10 @@ body {
 	width: 100%;
 	opacity:0.5;
 	z-index: 10;
-	transform: translateX(-0.55%) translateY(-1%);
+	transform: translateX(-0.55%) translateY(0%);
 	cursor: url('../images/ship.png');	
 	filter:brightness(100%);
+	
 }
 
 .space {
@@ -42,15 +46,6 @@ body {
     opacity: 0.7;
   }
 }
-
-#red {
-  /* animation: flicker 10ms ease alternate infinite; */
-}
-
-.svg1 {
-	
-}
-
 
 .star1 {
 	position:absolute;
@@ -86,7 +81,7 @@ body {
 .star3 {
 	position:absolute;
 	top:75%;
-	left:60%;
+	left:65%;
 	height:4%;
 	-webkit-animation: flicker 7ms ease alternate infinite;
 	-moz-animation: flicker 7ms ease alternate infinite;
@@ -96,13 +91,13 @@ body {
 
 .star4 {
 	position:absolute;
-	top:78%;
-	left:19%;
+	top:79%;
+	left:13%;
 	height:3%;
 	-webkit-animation: flicker 9ms ease alternate infinite;
 	-moz-animation: flicker 9ms ease alternate infinite;
 	border-radius: 50%;
-	filter: opacity(80%);
+	filter: opacity(70%);
 }
 
 .star5 {
@@ -131,7 +126,7 @@ body {
 	position:absolute;
 	top:40%;
 	left:95%;
-	height:5%;
+	height:4%;
 	-webkit-animation: flicker 6ms ease alternate infinite;
 	-moz-animation: flicker 6ms ease alternate infinite;
 	border-radius: 50%;
@@ -516,9 +511,17 @@ div > div {
 		position:absolute;
 		top:0%;
 		left:0%;
-		height:105%;
-		width:105%;
+		height:100%;
+		width:100%;
 	}
+
+	/* #canvas {
+		position:absolute;
+		top:0%;
+		left:0%;
+		height:100%;
+		width:100%;
+	} */
 
 	.works>p {
 		position:absolute;
@@ -527,7 +530,7 @@ div > div {
 
 	.img1 {
 		position:absolute;
-		top:5%;
+		top:40%;
 		left:42%;
 		width:3.5rem;
 		border-radius: 50%;
@@ -575,21 +578,33 @@ div > div {
 		filter:brightness(90%);
 	}
 
+	.star7 {
+		position:absolute;
+		left:50%;
+	}
+
 }
 	
 @media only screen and (min-width: 415px) and (max-width: 1024px) {
 
-	.space {
+	.body {
 		position:absolute;
 		top:0%;
 		left:0%;
-		height:105%;
-		width:105%;
+		height:100%;
+		width:100%;
 	}
 
-	.works>p {
+	.w1,.w2,.w3,.w4,.w5,.w6 {
 		position:absolute;
-		font-size: 1.5rem;
+		font-size: 2rem;
+		
+	}
+
+	.w1,.w2,.w3,.w4,.w5 {
+		position:absolute;
+		font-size: 2rem;
+		left:5%;
 	}
 
 	.personal>p {
@@ -597,8 +612,17 @@ div > div {
 		font-size: 22rem;
 	}
 	
-	.personal>p:nth-child(3), .personal>p:nth-child(4), .personal>p:nth-child(5), .personal>p:nth-child(6) {
-		font-size: 1.6rem;
+	h1 {
+		top:0%;
+	}
+
+	.p1 {
+		font-size: 4rem;
+		top:-1.5%;
+	}
+
+	.p2,.p3,.p4,.p5,.p6 {
+		font-size: 2rem;
 	}
 
 	.personal>h1:nth-child(1) {
@@ -607,41 +631,41 @@ div > div {
 
 	.img1 {
 		position:absolute;
-		top:5%;
+		top:40%;
 		left:45%;
-		width:3.5rem;
+		width:5.5rem;
 		border-radius: 50%;
 	}
 	
 	.img2 {
 		position:absolute;
-		top:25%;
+		top:50%;
 		left:46%;
-		width:3.5rem;
+		width:5.5rem;
 		border-radius: 50%;
 	}
 	
 	.img3 {
 		position:absolute;
-		top:45%;
+		top:60%;
 		left:49.5%;
-		width:3.5rem;
+		width:5.5rem;
 		border-radius: 50%;
 	}
 	
 	.img4 {
 		position:absolute;
-		top:65%;
+		top:70%;
 		left:52.5%;
-		width:3.5rem;
+		width:5.5rem;
 		border-radius: 50%;
 	}
 	
 	.img5 {
 		position:absolute;
-		top:85%;
+		top:80%;
 		left:58%;
-		width:3.5rem;
+		width:5.5rem;
 		border-radius:50%;
 		z-index: 2;
 	}
@@ -650,9 +674,19 @@ div > div {
 		position:absolute;
 		top:5%;
 		left:0%;
-		width:100%;
+		width:120%;
 		border-radius: 50%;
 		filter:brightness(90%);
 	}
 
+
+	.star7 {
+		position:absolute;
+		left:85%;
+	}
+
 }
+
+/* .star1,.star2,.star3,.star4,.star5,.star6   {
+	filter:brightness(80%);
+} */

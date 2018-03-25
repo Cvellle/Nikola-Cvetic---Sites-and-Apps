@@ -1,7 +1,9 @@
 window.onload = function(){
 	var canvas = document.getElementById("canvas");
 	var ctx = canvas.getContext("2d");
-	
+
+	// var img = document.getElementById("space");
+    // ctx.drawImage(img, 10, 10);
 	//Make the canvas occupy the full page
 	var W = window.innerWidth, H = window.innerHeight;
 	canvas.width = W;
