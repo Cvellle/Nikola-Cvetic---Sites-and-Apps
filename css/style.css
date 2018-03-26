@@ -600,10 +600,10 @@ div > div {
 		top:0%;
 		left:0%;
 		height:105%;
-		width: 100%;
+		width: 105%;
 		opacity:0.5;
 		z-index: 10;
-		transform: translateX(-0.55%) translateY(-1%);
+		transform: translateX(-1%) translateY(-1%);
 		cursor: url('../images/ship.png');	
 	}
 
