@@ -516,11 +516,15 @@ div > div {
 	}
 
 	/* #canvas {
-		position:absolute;
+		display: absolute;
 		top:0%;
 		left:0%;
-		height:100%;
-		width:100%;
+		height:110%;
+		width: 105%;
+		opacity:0.5;
+		z-index: 10;
+		transform: translateX(-1%) translateY(10%);
+		cursor: url('../images/ship.png');	
 	} */
 
 	.works>p {
@@ -587,23 +591,34 @@ div > div {
 	
 @media only screen and (min-width: 415px) and (max-width: 1024px) {
 
+	
+	html {
+		position:absolute;
+		top:0%;
+		left:0%;
+		height:115%;
+		width:105%;
+		background-repeat: unset;
+	}
+
 	.body {
 		position:absolute;
 		top:0%;
 		left:0%;
 		height:100%;
 		width:100%;
+		background-repeat: unset;
 	}
 
 	#canvas {
 		display: absolute;
 		top:0%;
 		left:0%;
-		height:105%;
+		height:100%;
 		width: 105%;
 		opacity:0.5;
 		z-index: 10;
-		transform: translateX(-1%) translateY(-1%);
+		transform: translateX(-1%) translateY(-0.5%);
 		cursor: url('../images/ship.png');	
 	}
 
