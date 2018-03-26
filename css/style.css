@@ -704,10 +704,16 @@ div > div {
 		filter:brightness(90%);
 	}
 
+	/* .star8 {
+		position:absolute;
+		left:85%;
+		top:55%;
+	} */
 
 	.star7 {
 		position:absolute;
 		left:85%;
+		top:55%;
 	}
 
 }
