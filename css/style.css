@@ -14,7 +14,7 @@ body {
 	display: absolute;
 	top:0%;
 	left:0%;
-	height:105%;
+	height:100%;
 	width: 100%;
 	opacity:0.5;
 	z-index: 10;
@@ -593,6 +593,18 @@ div > div {
 		left:0%;
 		height:100%;
 		width:100%;
+	}
+
+	#canvas {
+		display: absolute;
+		top:0%;
+		left:0%;
+		height:105%;
+		width: 100%;
+		opacity:0.5;
+		z-index: 10;
+		transform: translateX(-0.55%) translateY(-1%);
+		cursor: url('../images/ship.png');	
 	}
 
 	.w1,.w2,.w3,.w4,.w5,.w6 {
