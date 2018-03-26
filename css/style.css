@@ -27,8 +27,8 @@ body {
 	position:absolute;
 	top:0%;
 	left:0%;
-	height:105%;
-	width:105%;
+	height:100%;
+	width:100%;
 	z-index: -12;
 	filter:brightness(120%);
 	background-image:url("../images/sp.jpg");
@@ -491,7 +491,7 @@ img {
 	left:60%;
 	width:6rem;
 	height:6rem;
-	margin: 20px auto 0;
+	/* margin: 20px auto 0; */
 	font-size:100px;
 	line-height:5rem;
 	animation: circle 30s linear infinite;
@@ -597,7 +597,7 @@ div > div {
 		top:0%;
 		left:0%;
 		height:115%;
-		width:100%;
+		width:107%;
 		background-repeat: unset;
 	}
 
@@ -605,9 +605,7 @@ div > div {
 		position:absolute;
 		top:0%;
 		left:0%;
-		height:100%;
-		width:100%;
-		background-repeat: unset;
+		height:115%;
 	}
 
 	#canvas {
@@ -615,10 +613,10 @@ div > div {
 		top:0%;
 		left:0%;
 		height:100%;
-		width: 105%;
+		width: inherit;
 		opacity:0.5;
 		z-index: 10;
-		transform: translateX(-0.75%) translateY(-0.5%);
+		transform: translateX(-0.65%) translateY(-0.5%);
 		cursor: url('../images/ship.png');	
 	}
 
@@ -640,12 +638,12 @@ div > div {
 	}
 	
 	h1 {
-		top:0%;
+		top:5%;
 	}
 
 	.p1 {
 		font-size: 4rem;
-		top:-1.5%;
+		top:4%;
 	}
 
 	.p2,.p3,.p4,.p5,.p6 {
