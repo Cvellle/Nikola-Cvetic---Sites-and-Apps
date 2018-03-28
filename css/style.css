@@ -559,6 +559,36 @@ div > div {
 		font-size: 2rem;
 	}
 
+.p2 {
+	position:absolute;
+	top:14%;
+	left:5%;
+}
+
+.p3 {
+	position:absolute;
+	top:17%;
+	left:5%;
+}
+
+.p4 {
+	position:absolute;
+	top:20%;
+	left:5%;
+}
+
+.p5 {
+	position:absolute;
+	top:23%;
+	left:5%;
+}
+
+.p2,.p3,.p4,.p5 {
+	opacity: 0.5;
+	font-size: 1.07rem;
+}
+
+
 	.img1 {
 		position:absolute;
 		top:40%;
@@ -652,6 +682,36 @@ div > div {
 		cursor: url('../images/ship.png');	
 	} */
 
+	.p2 {
+		position:absolute;
+		top:14%;
+		left:5%;
+	}
+	
+	.p3 {
+		position:absolute;
+		top:17%;
+		left:5%;
+	}
+	
+	.p4 {
+		position:absolute;
+		top:20%;
+		left:5%;
+	}
+	
+	.p5 {
+		position:absolute;
+		top:23%;
+		left:5%;
+	}
+	
+	.p2,.p3,.p4,.p5 {
+		opacity: 0.5;
+		font-size: 1.07rem;
+	}
+	
+
 	.w1,.w2,.w3,.w4,.w5,.w6 {
 		position:absolute;
 		font-size: 2.2rem;
@@ -677,15 +737,18 @@ div > div {
 
 	h1 {
 		top:5%;
+		opacity:0.7;
 	}
 
 	.p1 {
 		font-size: 4rem;
 		top:4%;
+		opacity:0.7;
 	}
 
 	.p2,.p3,.p4,.p5,.p6 {
 		font-size: 2rem;
+		opacity:0.7;
 	}
 
 	.personal>h1:nth-child(1) {
