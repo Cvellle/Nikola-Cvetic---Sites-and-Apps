@@ -35,6 +35,10 @@ body {
 	cursor:none;
 }
 
+/* .space2 {
+display:none;
+} */
+
 @keyframes flicker {
   0% {
     opacity: 0.2;
@@ -220,25 +224,25 @@ h1 {
 
 .p2 {
 	position:absolute;
-	top:12%;
+	top:5.7rem;
 	left:5%;
 }
 
 .p3 {
 	position:absolute;
-	top:15%;
+	top:7rem;
 	left:5%;
 }
 
 .p4 {
 	position:absolute;
-	top:18%;
+	top:8.3rem;
 	left:5%;
 }
 
 .p5 {
 	position:absolute;
-	top:21%;
+	top:9.6rem;
 	left:5%;
 }
 
@@ -666,15 +670,20 @@ div > div {
 		height:100%; */
 	}
 
+	.space {
+		display:block;
+		height:110%;
+		width:101%;
+		}
+
 	#canvas {
 		visibility: hidden;
 
 	}
 
-	.space {
-		height:110%;
-		width:101%;
-	}
+	/* .space {
+		display:none;
+	} */
 
 	/* #canvas {
 		display: absolute;
