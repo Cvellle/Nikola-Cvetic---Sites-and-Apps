@@ -6,7 +6,7 @@ body {
 	overflow:hidden;
 	cursor: none;	
 	background-image:url("../images/sp.jpg");
-	background-size: cover;
+	background-size: 100% 100%;
 	/* filter:brightness(120%); */
 }
 
@@ -163,7 +163,7 @@ body {
 	font-family: "Century Gothic", "Helvetica", sans-serif;
 	font-weight: 500;
 	color:white;
-	opacity: 0.2;
+	opacity: 0.8;
 }
 
 .paddition {
@@ -183,12 +183,13 @@ h1 {
 	font-size: 4rem;
 	z-index:2;
 	color:white;
-	opacity: 0.2;
+	opacity: 0.35;
 	font-family: "Century Gothic", "Helvetica", sans-serif;
 }
 
 .p2,.p3,.p4,.p5 {
-	opacity: 0.2;
+	opacity: 0.35;
+	font-size: 1.05rem;
 }
 
 .p1 {
@@ -199,35 +200,31 @@ h1 {
 	font-weight: bold;
 	/* font-family: Snell Roundhand, cursive; */
 	/* font-family: Brush Script MT,cursive;  */
-	opacity: 0.2;
+	opacity: 0.30;
 }
 
 .p2 {
 	position:absolute;
 	top:12%;
 	left:5%;
-	font-size: 0.8rem;
 }
 
 .p3 {
 	position:absolute;
 	top:15%;
 	left:5%;
-	font-size: 0.8rem;
 }
 
 .p4 {
 	position:absolute;
 	top:18%;
 	left:5%;
-	font-size: 0.8rem;
 }
 
 .p5 {
 	position:absolute;
 	top:21%;
 	left:5%;
-	font-size: 0.8rem;
 }
 
 .play {
@@ -597,7 +594,7 @@ div > div {
 		top:0%;
 		left:0%;
 		height:115%;
-		width:107%;
+		width:110%;
 		background-repeat: unset;
 	}
 
@@ -613,7 +610,7 @@ div > div {
 		top:0%;
 		left:0%;
 		height:100%;
-		width: inherit;
+		width: 100%;
 		opacity:0.5;
 		z-index: 10;
 		transform: translateX(-0.65%) translateY(-0.5%);
