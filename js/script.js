@@ -1,3 +1,18 @@
+// Ellipse way - planets
+
+// window.requestAnimationFrame(anim1);
+
+// var a1 = document.getElementById('a1');
+
+// function anim1(t1) {
+
+//     a1.style.left = (50 + Math.cos(t1 / 11150) * 560) + 'px';
+//     a1.style.top = (50 + Math.sin(t1 /11150) * 40) + 'px';
+//     window.requestAnimationFrame(anim1);
+// }
+
+
+
 window.onload = function(){
 	var canvas = document.getElementById("canvas");
 	var ctx = canvas.getContext("2d");
@@ -103,3 +118,13 @@ window.onload = function(){
 	
 	setInterval(draw, 33);
 }
+
+
+window.setInterval(anim2, 5);
+var t2 = 0.075;
+function anim2() {
+    a2.style.left = ((50 + Math.cos(t2 / 100) * 440)) + 'px';
+    a2.style.top = (50 + Math.sin(t2 / 100) * 30) + 'px';
+    t2 += 0.11;
+}
+

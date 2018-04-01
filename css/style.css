@@ -503,15 +503,15 @@ img {
 	font-family: "Century Gothic", "Helvetica", sans-serif;
 }
 
-@keyframes circle {
-	from { transform:rotate(0deg); }
-	to { transform:rotate(360deg); }
+/* @keyframes circle {
+	0% { transform:rotate(0deg); }
+	100% { transform:rotate(360deg); }
 }
 
 @keyframes inner-circle {
 	from { transform:rotate(0deg); }
 	to { transform:rotate(-360deg); }
-}
+} */
 
 .move {
 	position: absolute;
@@ -672,7 +672,7 @@ div > div {
 
 	.space {
 		display:block;
-		height:110%;
+		height:115%;
 		width:101%;
 		}
 
