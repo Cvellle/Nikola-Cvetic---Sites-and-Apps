@@ -184,8 +184,9 @@ h1 {
 	font-size: 4.3rem;
 	z-index:2;
 	color:white;
-	opacity: 0.25;
+	opacity: 0.45;
 	font-family: "Century Gothic", "Helvetica", sans-serif;
+	color:purple;
 }
 
 .p1 {
@@ -197,9 +198,15 @@ h1 {
 	/* font-family: Snell Roundhand, cursive; */
 	/* font-family: Brush Script MT,cursive;  */
 	opacity: 0.5;
-	border-bottom: 0.6rem solid purple;
+	color:purple;
+	border-bottom: 0.55rem solid rgba(68, 0, 194, 0.4);
 }
-
+/* .p1:nth-letter(2n) {
+	position:absolute;
+	top:9.6rem;
+	left:5%;
+	color:rgba(42, 8, 105, 0.3);
+} */
 /* .line {
 	position:absolute;
 	top:19.5%;
@@ -217,6 +224,14 @@ h1 {
 	top:-15%;
 	left:100%;
 } */
+
+.p2,.p3,.p4,.p5 {
+	opacity: 0.7;
+	font-size: 1.07rem;
+	/* background:rgba(173, 11, 173, 0.3); */
+	background:rgba(68, 0, 194, 0.2);
+	color:white;	
+}
 
 .p2 {
 	position:absolute;
@@ -240,15 +255,9 @@ h1 {
 	position:absolute;
 	top:9.6rem;
 	left:5%;
+	/* background:rgba(42, 8, 105, 0.3); */
 }
 
-.p2,.p3,.p4,.p5 {
-	opacity: 0.7;
-	font-size: 1.07rem;
-	background:rgba(173, 11, 173, 0.3);
-	color:white;
-	
-}
 
 
 .play {
@@ -603,7 +612,7 @@ img {
 	0% { left:71%;
 		 z-index: 0;}
 	25% { z-index: 2; } 
-	50% { left:61%;
+	50% { left:62%;
 		 z-index: 0;}
 	75% {z-index: 0;} 
 	100% { left:71%;
@@ -837,7 +846,7 @@ img {
 
 	h1 {
 		top:5%;
-		opacity:0.25;
+		opacity: 0.45;
 	}
 
 	.p1 {
