@@ -16,6 +16,7 @@
 window.onload = function(){
 	var canvas = document.getElementById("canvas");
 	var ctx = canvas.getContext("2d");
+	
 
 	// var img = document.getElementById("space");
     // ctx.drawImage(img, 10, 10);
@@ -120,11 +121,8 @@ window.onload = function(){
 }
 
 
-window.setInterval(anim2, 5);
-var t2 = 0.075;
-function anim2() {
-    a2.style.left = ((50 + Math.cos(t2 / 100) * 440)) + 'px';
-    a2.style.top = (50 + Math.sin(t2 / 100) * 30) + 'px';
-    t2 += 0.11;
-}
+// 
+
+//sun
+
 
