@@ -570,27 +570,27 @@ img {
 	position:absolute;
 	top:45%;
 	left:67.5%;
-	  width: 1px;
-	  height: 1px;
-	  background:transparent;
+	  /* width: 1px;
+	  height: 1px; */
+	background:transparent;
 	  /* webkit-animation: rotate 30s cubic-bezier(0.42, 0, 0.58, 1) infinite; */
 	transform: rotateX(75deg);
-	background:red;
-	-webkit-animation: zindex 30s linear infinite;
+	background:transparent;
+	/* -webkit-animation: zindex 30s linear infinite; */
   }
 
   #b {
 		-webkit-animation: circle 5s infinite linear;
 		position: absolute;
-		  top:0rem;
-		  left:0%;
-		  width:100%;
-		  height:100%;
+		
+		  /* top:0rem;
+		  left:0%; */
 		  background:black;
-		  margin: 20px auto 0;	
+		  /* margin: 20px auto 0;	 */
 		  animation: circle 15s linear infinite;
 		  transform-origin:50% 150px;	
-	 	 -webkit-animation: rotate 30s linear infinite, zindex 30s linear infinite;  
+		  -webkit-animation: rotate 30s linear infinite;
+		  /* zindex 30s linear infinite;   */
   }
 
 
@@ -622,11 +622,11 @@ img {
 }
 
   @-webkit-keyframes rotate {
-		0% { transform:rotatez(90deg);}
-		25% {transform:rotatez(180deg);} 
-		50% {transform:rotatez(270deg);}
-		75% {transform:rotatez(360deg);} 
-	  	100% { transform:rotatez(450deg); }
+		0% { transform:rotate(90deg);}
+		25% {transform:rotate(180deg);} 
+		50% {transform:rotate(270deg);}
+		75% {transform:rotate(360deg);} 
+	  	100% { transform:rotate(450deg); }
   }
 
    @-webkit-keyframes scale {
@@ -637,7 +637,15 @@ img {
 	  100% { transform:scale(1);  }
 } 
 
-  @-webkit-keyframes ellipse {
+  @-webkit-keyframes zindex {
+	0% {  z-index: 2;}
+	25% { z-index: 2; } 
+	50% { z-index: 0;}
+	95% { z-index: 0;} 
+	100% { z-index: 0;}
+  }
+
+  /* @-webkit-keyframes ellipse {
 	0% { left:71%;
 		 z-index: 0;}
 	25% { z-index: 2; } 
@@ -646,15 +654,8 @@ img {
 	75% {z-index: 0;} 
 	100% { left:71%;
 		 z-index: 0;}
-  }
+  } */
   
-  @-webkit-keyframes zindex {
-	0% {  z-index: 2;}
-	25% { z-index: 2; } 
-	50% { z-index: 0;}
-	95% { z-index: 0;} 
-	100% { z-index: 0;}
-  }
 
 
 
@@ -827,82 +828,71 @@ img {
 		cursor: url('../images/ship.png');	
 	} */
 
+	.h1 {
+		top:1%;
+		right:5%;
+}
+
 	.p1 {
 		font-size: 4rem;
-		top:4%;
+		top:0%;
 		opacity:0.9;
 	}
 
 	.p2 {
 		position:absolute;
-		top:14%;
+		top:10%;
 		left:5%;
 	}
 	
 	.p3 {
 		position:absolute;
-		top:17%;
+		top:13%;
 		left:5%;
 	}
 	
 	.p4 {
 		position:absolute;
-		top:20%;
+		top:16%;
 		left:5%;
 	}
 	
 	.p5 {
 		position:absolute;
-		top:23%;
+		top:19%;
 		left:5%;
 	}
-	
 
-	.p2,.p3,.p4,.p5 {
-		opacity: 0.5;
-		font-size: 1.07rem;
-
+	.p2,.p3,.p4,.p5,.p6 {
+		font-size: 2.5rem;
+		opacity:0.8;
 	}
-	
+
 	.w6 {
 		position:absolute;
 		top:40%;
 		left:57%;
 	}
 
-	.w1,.w2,.w3,.w4,.w5,.w6 {
+	.w2,.w3,.w4,.w5 {
 		position:absolute;
-		font-size: 2.2rem;
-		opacity: 0.6;
+		left:5%;
+		font-size: 2.5rem;
+		opacity: 0.8;
 		
 	}
 
-	.w1,.w2,.w3,.w4,.w5 {
+	.w1 {
 		position:absolute;
-		font-size: 2.2rem;
 		left:5%;
-		opacity: 0.6;
+		font-size: 2.5rem;
+		opacity:0.9;
 	}
 
-	.w1, {
+
+	.w6 {
+		font-size: 2.5rem;
 		opacity: 0.8;
-	}
-
-
-	.w1,.w6 {
-		opacity: 0.7;
-	}
-
-	h1 {
-		top:5%;
-		opacity: 0.9;
-	}
-
-
-
-	.p2,.p3,.p4,.p5,.p6 {
-		font-size: 2rem;
-		opacity:0.7;
 	}
 
 	.personal>h1:nth-child(1) {
@@ -1022,9 +1012,9 @@ img {
 	.sun {
 		display: block;
 		position:absolute;
-		top:28%;
-		left:64%;
-		height:12rem;
+		top:29%;
+		left:68%;
+		height:10rem;
 		border-radius:50%;
 		-webkit-filter: blur(2px) brightness(0.6);
 		  -moz-filter: blur(0px) ;
@@ -1048,8 +1038,8 @@ img {
 	
 	#a {
 		position:absolute;
-		top:20%;
-		left:63%;
+		top:25%;
+		left:64%;
 		  width: 200px;
 		  height: 200px;
 		  background:transparent;
@@ -1058,17 +1048,27 @@ img {
 	  }
 	
 	  #b {
-		  position:absolute;
-		  width: 7rem;
-		  height: 7rem;
-		  background: transparent;
-		  -webkit-animation: rotate 40s linear infinite;  
-		  left:20%;
-		  /* height:6rem; */
-		  font-size:50rem;
-		  line-height:250%;
-		  transform-origin:50% 200px;
+		background:transparent;
 	  }
+
+	  .highlight {
+		transition: all 0.2s;
+		position: absolute;
+		top:0%;
+		left:7%;
+		z-index:14;
+		border-radius:50%;
+		/* box-shadow: 0 0 10px rgba(0,0,0,0.2); */
+		position: absolute;
+		height:6rem;
+		width:6rem;
+		background: url("../images/cv.jpg");
+		background-size: cover;
+		-webkit-animation: zindex 30s linear infinite;
+		/* -webkit-animation: rotate 30s linear infinite, scale 30s linear infinite; */
+	  }
+	
+
 	  @-webkit-keyframes ellipsemob {
 		0% { left:69%;
 			 z-index: 2;}
