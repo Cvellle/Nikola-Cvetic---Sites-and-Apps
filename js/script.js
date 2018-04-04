@@ -121,8 +121,47 @@ window.onload = function(){
 }
 
 
-// 
+// ELLIPSE
 
-//sun
+// const highlight = document.getElementById(acv);
+//   highlight.setAttribute('class', 'cv');
+//   highlight.classList.add('highlight');
+//   highlight.setAttribute('href',"https://cvellle.github.io/Nikola-Cvetic-CV/");
+//   highlight.setAttribute('target',"#")
+//   document.body.appendChild(highlight);
+
+ 
+
+  function highlightLink() {
+    const linkCoords = b.getBoundingClientRect();
+    console.log(linkCoords);
+    const coords = {
+      width: linkCoords.width,
+      height: linkCoords.height,
+      top: linkCoords.top + window.scrollY,
+	  left: linkCoords.left + window.scrollX
+	//   z-index: linkCoords.zindex;
+	};
+	
+	const linkCoords2 = scale.getBoundingClientRect();
+	const coords2 = {
+		width: linkCoords2.width,
+		height: linkCoords2.height,
+	};
 
 
+    // highlight.style.width = `3rem`;
+    // highlight.style.height = `3rem`;
+	highlight.style.transform = `translate(${coords.left}px, ${coords.top}px) scale(${coords2.width/20}`; //scale(${coords2.width/100}
+	// highlight.style.width = `${coords.left}%`};
+	// highlight.style.zindex = `${coords.zindex}`;
+  }
+  
+  setInterval(function() { highlightLink(); }, 1);
+
+
+
+//   const cvlink = document.createElement('a');
+//   //   highlight.setAttribute('ahref', 'cv');
+  
+//   highlight.appendChild(cvlink);
