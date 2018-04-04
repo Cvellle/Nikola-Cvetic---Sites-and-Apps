@@ -593,8 +593,8 @@ img {
 		  animation: circle 15s linear infinite;
 		  transform-origin:50% 150px;	
 	 	 -webkit-animation: rotate 30s linear infinite;  
-
   }
+
 
 .highlight {
 	transition: all 0.2s;
@@ -654,8 +654,8 @@ img {
 	0% {  z-index: 0;}
 	25% { z-index: 0; } 
 	50% { z-index: 0;}
-	75% { z-index: 2;} 
-	100% { z-index: 0;}
+	95% { z-index: 2;} 
+	100% { z-index: 2;}
   }
 
 
