@@ -521,7 +521,7 @@ img {
 	to { transform:rotate(-360deg); }
 }   */
 
-/* 
+
 .move {
 	position: absolute;
 	top:6rem;
@@ -533,7 +533,8 @@ img {
 	line-height:5rem;
 	animation: circle 30s linear infinite;
 	transform-origin:50% 200px;
-} */
+	display:none;
+} 
 
 /* div > div {
 	animation: inner-circle 20s linear infinite;
@@ -663,6 +664,12 @@ img {
 
 
 
+
+
+
+
+
+
 @media only screen and (max-width: 414px) {
 
 	.space {
@@ -781,6 +788,19 @@ img {
 
 }
 	
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (min-width: 415px) and (max-width: 1024px) {
 
 	
@@ -1009,10 +1029,24 @@ img {
 		filter: brightness(1.1) opacity(0.7);
 	}
 
+	/* .move {
+		position: absolute;
+		top:2rem;
+		left:60%;
+		width:6rem;
+		height:6rem;
+		margin: 20px auto 0; 
+		font-size:100px;
+		line-height:5rem;
+		transform-origin:50% 200px;
+		z-index: 2;
+		background: red;
+	}  */
+
 	.sun {
 		display: block;
 		position:absolute;
-		top:29%;
+		top:30%;
 		left:68%;
 		height:10rem;
 		border-radius:50%;
@@ -1034,39 +1068,55 @@ img {
 			transform:translatey(-50%) translatex(-50%);
 		-webkit-animation: circle 120s infinite linear;
 		  z-index: 1;
+		  /* display:none; */
 		}
 	
-	#a {
-		position:absolute;
-		top:25%;
-		left:64%;
-		  width: 200px;
-		  height: 200px;
-		  background:transparent;
-		  -webkit-animation: ellipsemob 40s ease-in-out infinite;
-		z-index: 0;
-	  }
-	
-	  #b {
-		background:transparent;
-	  }
-
-	  .highlight {
-		transition: all 0.2s;
-		position: absolute;
-		top:0%;
-		left:7%;
-		z-index:14;
-		border-radius:50%;
-		/* box-shadow: 0 0 10px rgba(0,0,0,0.2); */
-		position: absolute;
-		height:6rem;
-		width:6rem;
-		background: url("../images/cv.jpg");
-		background-size: cover;
-		-webkit-animation: zindex 30s linear infinite;
-		/* -webkit-animation: rotate 30s linear infinite, scale 30s linear infinite; */
-	  }
+		#a {
+			position:absolute;
+			top:21%;
+			67.5%;
+			  /* width: 4rem;
+			  height: 1px; */
+			background:transparent;
+			  /* webkit-animation: rotate 30s cubic-bezier(0.42, 0, 0.58, 1) infinite; */
+			transform: rotateX(0deg);
+			background:transparent;
+			/* -webkit-animation: zindex 30s linear infinite; */
+		  }
+		
+		  #b {
+				-webkit-animation: circle 5s infinite linear;
+				position: absolute;
+				width: 6rem;
+				left:67.5%;
+				  /* top:0rem;
+				  left:0%; */
+				  background:black;
+				  /* margin: 20px auto 0;	 */
+				  animation: circle 15s linear infinite;
+				  transform-origin:80% 250px;	
+				  -webkit-animation: rotate 30s linear infinite;
+				  /* zindex 30s linear infinite;   */
+		  }
+		
+		
+		.highlight {
+			transition: all 0.2s;
+			position: absolute;
+			top:0%;
+			left:0%;
+			z-index:14;
+			border-radius:50%;
+			/* box-shadow: 0 0 10px rgba(0,0,0,0.2); */
+			position: absolute;
+			height:3rem;
+			width:3rem;
+			background: url("../images/cv.jpg");
+			background-size: cover;
+			-webkit-animation: zindex 30s linear infinite;
+			display:none;
+			/* -webkit-animation: rotate 30s linear infinite, scale 30s linear infinite; */
+		  }
 	
 
 	  @-webkit-keyframes ellipsemob {
