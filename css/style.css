@@ -932,12 +932,15 @@ img {
 	.h1 {
 		top:1%;
 		right:5%;
+		opacity:1;
+		font-weight: 600;
 }
 
 	.p1 {
 		font-size: 4rem;
 		top:0%;
-		opacity:0.9;
+		opacity:1;
+		font-weight: 600;
 	}
 
 	.p2 {
