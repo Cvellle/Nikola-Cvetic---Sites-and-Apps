@@ -266,6 +266,7 @@ h1 {
 	opacity: 0.9;
 	font-family: "Century Gothic", "Helvetica", sans-serif;
 	color:purple;
+	font-weight: 500;
 }
 
 .p1 {
@@ -278,7 +279,8 @@ h1 {
 	/* font-family: Brush Script MT,cursive;  */
 	opacity: 0.9;
 	color:purple;
-	border-bottom: 0.55rem solid rgba(68, 0, 194, 0.4);
+	border-bottom: 0.20rem solid rgba(68, 0, 194, 0.4);
+	font-weight: 500;
 }
 /* .p1:nth-letter(2n) {
 	position:absolute;
