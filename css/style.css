@@ -51,7 +51,7 @@ body {
 	position:absolute;
 	top:40%;
 	left:20%;
-	height:5%;
+	height:4%;
 	-webkit-animation: flicker 6ms ease alternate infinite, starrot1 20s infinite linear;
 	-moz-animation: flicker 6ms ease alternate infinite, starrot1 20s infinite linear;
 	border-radius: 50%;
@@ -80,9 +80,9 @@ body {
 
 .star3 {
 	position:absolute;
-	top:75%;
-	left:65%;
-	height:4%;
+	top:70%;
+	left:60%;
+	height:3%;
 	-webkit-animation: flicker 7ms ease alternate infinite;
 	-moz-animation: flicker 7ms ease alternate infinite;
 	border-radius: 50%;
@@ -116,20 +116,20 @@ body {
 	position:absolute;
 	top:10%;
 	left:60%;
-	height:6%;
-	-webkit-animation: flicker 9ms ease alternate infinite;
-	-moz-animation: flicker 9ms ease alternate infinite;
+	height:3.5%;
+	-webkit-animation: flicker 1ms ease alternate infinite, starrot1 20s infinite linear;
+	-moz-animation: flicker 1ms ease alternate infinite, starrot1 20s infinite linear;
 	border-radius: 50%;
-	filter: opacity(95%);
+	filter: opacity(85%);
 }
 
 .star7 {
 	position:absolute;
 	top:40%;
 	left:95%;
-	height:4%;
-	-webkit-animation: flicker 6ms ease alternate infinite;
-	-moz-animation: flicker 6ms ease alternate infinite;
+	height:3%;
+	-webkit-animation: flicker 4ms ease alternate infinite;
+	-moz-animation: flicker 3ms ease alternate infinite;
 	border-radius: 50%;
 	filter:hue-rotate(60deg);
 }
@@ -148,10 +148,89 @@ body {
 	position:absolute;
 	top:65%;
 	left:75%;
-	height:4%;
+	height:3%;
 	-webkit-animation: flicker 7ms ease alternate infinite;
 	-moz-animation: flicker 7ms ease alternate infinite;
 	border-radius: 50%;
+	filter: opacity(75%);
+}
+
+.star10 {
+	position:absolute;
+	top:64%;
+	left:11%;
+	height:3%;
+	-webkit-animation: flicker 10ms ease alternate infinite;
+	-moz-animation: flicker 10ms ease alternate infinite;
+	border-radius: 50%;
+	filter:hue-rotate(120deg);
+}
+
+.star11 {
+	position:absolute;
+	top:30%;
+	left:13%;
+	height:3%;
+	-webkit-animation: flicker 3ms ease alternate infinite;
+	-moz-animation: flicker 3ms ease alternate infinite;
+	border-radius: 50%;
+	filter: opacity(75%);
+}
+
+.star12 {
+	position:absolute;
+	top:58%;
+	left:89%;
+	height:4%;
+	-webkit-animation: flicker 6ms ease alternate infinite, starrot1 20s infinite linear;
+	-moz-animation: flicker 6ms ease alternate infinite, starrot1 20s infinite linear;
+	border-radius: 50%;
+	filter:hue-rotate(60deg);
+}
+
+.star13 {
+	position:absolute;
+	top:33%;
+	left:65%;
+	height:2.5%;
+	-webkit-animation: flicker 4ms ease alternate infinite;
+	-moz-animation: flicker 4ms ease alternate infinite;
+	border-radius: 50%;
+	filter:hue-rotate(60deg) opacity(70%);
+}
+
+.star14 {
+	position:absolute;
+	top:93%;
+	left:35%;
+	height:3%;
+	-webkit-animation: flicker 7ms ease alternate infinite;
+	-moz-animation: flicker 7ms ease alternate infinite;
+	border-radius: 50%;
+	filter:hue-rotate(60deg) opacity(70%);
+}
+
+.star15 {
+	position:absolute;
+	top:40%;
+	left:53%;
+	height:3%;
+	-webkit-animation: flicker 7ms ease alternate infinite;
+	-moz-animation: flicker 7ms ease alternate infinite;
+	border-radius: 50%;
+	filter:opacity(70%);
+}
+
+
+.star16 {
+	position:absolute;
+	top:25%;
+	left:80%;
+	height:3%;
+	-webkit-animation: flicker 7ms ease alternate infinite;
+	-moz-animation: flicker 7ms ease alternate infinite;
+	border-radius: 50%;
+	filter:opacity(100%);
 }
 
 .personal {
