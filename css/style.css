@@ -835,6 +835,7 @@ a {
 	-moz-animation: flicker 6ms ease alternate infinite, starrot1 20s infinite linear;
 	border-radius: 50%;
 	filter:hue-rotate(60deg);
+	z-index: -2;
 }
 
 .star13 {
