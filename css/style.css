@@ -45,7 +45,7 @@ h1 {
 
 .p1 {
 	position:absolute;
-	top:0%;
+	top:-3%;
 	left:5%;
 	font-size: 2.65rem;
 	font-weight: bold;
@@ -65,7 +65,7 @@ h1 {
 
 .p2,.p3,.p4,.p5 {
 	opacity: 0.9;
-	font-size: 1.2rem;
+	font-size: 100%;
 	/* background:rgba(68, 0, 194, 0.15); */
 	color:black;
 	margin-left:0.1em;
@@ -73,25 +73,25 @@ h1 {
 
 .p2 {
 	position:absolute;
-	top:5.7rem;
+	top:0%;
 	left:5%;
 }
 
 .p3 {
 	position:absolute;
-	top:7rem;
+	top:20%;
 	left:5%;
 }
 
 .p4 {
 	position:absolute;
-	top:8.3rem;
+	top:40%;
 	left:5%;
 }
 
 .p5 {
 	position:absolute;
-	top:9.6rem;
+	top:60%;
 	left:5%;
 	/* background:rgba(42, 8, 105, 0.3); */
 }
@@ -111,21 +111,27 @@ h1 {
 .intr1 {
 	position:absolute;
 	top:0%;
+	font-size: 1rem;
+	
 }
 
 .intr2 {
 		position:absolute;
 		top:20%;
+	font-size: 1rem;
+		
 }
 
 .intr3 {
 		position:absolute;
 		top:40%;
+	font-size: 1rem;		
 }
-.intr4 {
-	
+.intr4 {	
 	position:absolute;
 	top:60%;
+	font-size: 1rem;
+	
 }
 
 .form1 {
@@ -157,8 +163,9 @@ h1 {
 
 #lock {
 	color:black;
-	left:10%;
+	left:5%;
 	opacity:1;
+	text-align: center;
 }
 
 .works{
@@ -1311,25 +1318,25 @@ img:hover {
 
 .p2 {
 	position:absolute;
-	top:14%;
+	top:0%;
 	left:5%;
 }
 
 .p3 {
 	position:absolute;
-	top:17%;
+	top:20%;
 	left:5%;
 }
 
 .p4 {
 	position:absolute;
-	top:20%;
+	top:40%;
 	left:5%;
 }
 
 .p5 {
 	position:absolute;
-	top:23%;
+	top:60%;
 	left:5%;
 }
 
@@ -1509,25 +1516,25 @@ img:hover {
 
 	.p2 {
 		position:absolute;
-		top:10%;
+		top:0%;
 		left:5%;
 	}
 	
 	.p3 {
 		position:absolute;
-		top:13%;
+		top:20%;
 		left:5%;
 	}
 	
 	.p4 {
 		position:absolute;
-		top:16%;
+		top:40%;
 		left:5%;
 	}
 	
 	.p5 {
 		position:absolute;
-		top:19%;
+		top:60%;
 		left:5%;
 	}
 
