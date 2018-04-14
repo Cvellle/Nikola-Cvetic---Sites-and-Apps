@@ -161,16 +161,60 @@ h1 {
 	opacity:1;
 }
 
-.works {
+.works{
+	position:absolute;
+	top:55%;
+	left:12%;
+	height:30%;
+	width:5%;
+	background:rgb(11, 2, 15);;
+	opacity:0;
+	z-index: 20;
+}
+
+/* .works>div{
+	position:absolute;
+	top:75%;
+	left:10%;
+	height:10%;
+	width:6%;
+	background:rgb(11, 2, 15);;
+	opacity:1;
+	z-index: 20;
+}
+
+.works>a {
 	position:absolute;
 	top:55%;
 	left:10%;
-	height:20%;
+	height:10%;
 	width:6%;
 	background:rgb(11, 2, 15);;
-	opacity:0;
-	/* display:none; */
+	opacity:1;
+	z-index: 20;
 }
+
+.works>div:hover{
+	position:absolute;
+	top:75%;
+	left:10%;
+	height:10%;
+	width:6%;
+	background:rgb(11, 2, 15);;
+	opacity:1;
+	z-index: 20;
+}
+
+.works>a:hover {
+	position:absolute;
+	top:55%;
+	left:10%;
+	height:10%;
+	width:6%;
+	background:rgb(11, 2, 15);;
+	opacity:1;
+	z-index: 20;
+} */
 
 .works:hover {
 	top:0%;
