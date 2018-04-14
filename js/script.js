@@ -3,18 +3,18 @@
 function alphanumeric(inputtxt)
 { 
 var letters = /^[0-9]+$/;
-if(inputtxt.value.match(letters))
-{
+	if(inputtxt.value.match(letters))
+	{
 //alert('Your registration number have accepted : you can try another');
-document.form1.text1.focus();
+form1.text1.focus();
 submit.disabled=false;
-return true;
+	return true;
 }
-else
-{
+	else
+	{
 //alert('Please input alphanumeric characters only');
 return false;
-}
+	}
 }
 
 

@@ -170,6 +170,7 @@ h1 {
 	background:rgb(11, 2, 15);;
 	opacity:0;
 	z-index: 20;
+	display:none;
 }
 
 /* .works>div{
