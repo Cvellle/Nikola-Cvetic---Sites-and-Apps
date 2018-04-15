@@ -22,10 +22,11 @@ return false;
 //SUBMIT
 
 
-function subm() {
+function subm(e) {
 
 	works.style.display="block";
 	ifr.style.display="block";
+	worksdiv.style.backgroud="red";
 	// lock.innerHTML = "Paragraph changed!";
 	// var screen = Object.assign([`${val}`,2], localStorage);
 	// document.write(screen[0]);
