@@ -163,7 +163,7 @@ h1 {
 
 #lock {
 	color:black;
-	left:5%;
+	left:3%;
 	opacity:1;
 	text-align: center;
 }
@@ -724,6 +724,7 @@ a {
 	-moz-animation: flicker 4ms ease alternate infinite;
 	border-radius: 50%;
 	filter:hue-rotate(90deg);
+	z-index: -1;
 }
 
 .star3 {
@@ -834,6 +835,7 @@ a {
 	-moz-animation: flicker 6ms ease alternate infinite, starrot1 20s infinite linear;
 	border-radius: 50%;
 	filter:hue-rotate(60deg);
+	z-index: -2;
 }
 
 .star13 {
@@ -1516,25 +1518,25 @@ img:hover {
 
 	.p2 {
 		position:absolute;
-		top:0%;
+		top:-5%;
 		left:5%;
 	}
 	
 	.p3 {
 		position:absolute;
-		top:20%;
+		top:15%;
 		left:5%;
 	}
 	
 	.p4 {
 		position:absolute;
-		top:40%;
+		top:35%;
 		left:5%;
 	}
 	
 	.p5 {
 		position:absolute;
-		top:60%;
+		top:55%;
 		left:5%;
 	}
 
@@ -1714,7 +1716,7 @@ img:hover {
 		display: block;
 		position:absolute;
 		top:30%;
-		left:68%;
+		left:67.5%;
 		height:10rem;
 		border-radius:50%;
 		-webkit-filter: blur(2px) brightness(0.6);
