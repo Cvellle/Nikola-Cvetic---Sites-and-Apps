@@ -154,11 +154,13 @@ h1 {
 	left:10%;
 	height:30%;
 	width:35%;
-	background:rgb(151, 126, 161);
+	background:rgb(85, 82, 87);
 	text-align:center;
 	justify:center;
 	align-items: center;
 	display:flex;
+	border:none;
+	outline:none;
 }
 
 #lock {

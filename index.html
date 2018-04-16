@@ -61,7 +61,10 @@
 	  <form name="form1" class="form1" action="#">
 		<ul>
 			<li>&nbsp;</li>
-			<li><input type='text' id ="get" name='text1' onkeydown="alphanumeric(document.form1.text1)"/> <input type="button" id ="submit" name="submit" value="Submit" onclick="subm();" disabled/></li>
+			<li>
+				<input inputmode="numeric" type='password' id ="get" name='text1' onkeydown="enablebutton(document.form1.get)"/>
+				<input type="button" id ="submit" value="Submit" disabled/>
+			</li>
 			<li>Submit min 2 numbers to unlock the projects</li>
 			<li>&nbsp;</li>
 			<li>&nbsp;</li>
@@ -70,10 +73,10 @@
 	  </form>
 	  
 
-	  <div id="worksdiv" class="worksdiv">
-		    <p id="lock"> Unlock with Submit and hover here to overview my works</p>
+	  <button id="worksdiv" class="worksdiv" disabled>
+		    <p id="lock"> Unlock Projects with Submit</p>
 			<div class="hide1"></div>	
-	  </div>
+	  </button>
 
 	<div id="works" class="works">
 
@@ -184,13 +187,13 @@
 		<div class="skills">
 
 		</div> 
-<!-- 
+
 		<a href="https://cvellle.github.io/Kulturforum/" target="_blank"><img class="img1" src="images/p1.gif"/></a>
 		<a href="https://cvellle.github.io/Drag/" target="_blank"><img class="img2" src="images/p2.png"/></a>
 		<a href="https://cvellle.github.io/Kafemat/" target="_blank"><img class="img3" src="images/p3.gif"/></a>
 		<a href="https://cvellle.github.io/Diwanee/" target="_blank"><img class="img4" src="images/p4.gif"/></a>
 		<a href="https://codepen.io/Cvele/full/MroGKO/" target="_blank"><img class="img5" src="images/p5.png"/></a>
- -->
+
 
 			<!-- <div class="links"> 
             <ul style="left:5px;" class="social inl">

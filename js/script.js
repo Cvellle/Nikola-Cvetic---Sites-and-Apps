@@ -1,41 +1,66 @@
 // FORM 
 
-function alphanumeric(inputtxt)
+function enablebutton(inputtxt)
 { 
-var letters = /^[0-9]+$/;
-	if(inputtxt.value.match(letters))
+var numbers = /[0-9]/;
+var letters = /[A-Za-z]/;
+	if(inputtxt.value.match(numbers))
 	{
 //alert('Your registration number have accepted : you can try another');
 form1.text1.focus();
 submit.disabled=false;
+
 	return true;
 }
-	else
-	{
-//alert('Please input alphanumeric characters only');
-return false;
+	if(inputtxt.value.match(letters))
+	{return false;
+		alert('Please input alphanumeric characters only');
 	}
+
+
 }
 
 
 
 //SUBMIT
 
+submit.addEventListener("click",subm);
+const wd = document.querySelector("#worksdiv");
 
-function subm(e) {
+function subm() {
+	
+	// works.style.display="block";
+	// ifr.style.display="block";
+	wd.style.backgroundColor = "rgb(191, 154, 211)";
+	lock.innerHTML = "Bravo, you unlocked the projects! Click here to see them";
+	// const url="https://www.google.rs/search?q=a+href+new+window+js&rlz=1C1CHBF_enRS770RS770&oq=a+href+new+window+js&aqs=chrome..69i57j35i39j0l4.6282j0j7&sourceid=chrome&ie=UTF-8";
+	// window.open(url, '_blank').focus();
 
-	works.style.display="block";
-	ifr.style.display="block";
-	worksdiv.style.backgroud="red";
-	// lock.innerHTML = "Paragraph changed!";
+	// lock.innerHTML = "changed!";
 	// var screen = Object.assign([`${val}`,2], localStorage);
 	// document.write(screen[0]);
-	this.disabled=true;
+// 	worksdiv.disabled=false;
+worksdiv.disabled=false;
 }
 
 
 
+function show() {
+	
+	works.style.display="block";
+	ifr.style.display="block";
 
+}
+
+function hide() {
+	
+	works.style.display="none";
+	ifr.style.display="none";
+
+}
+
+worksdiv.addEventListener("click",show);
+works.addEventListener("mouseleave",hide);
 // Scroll to work 
 
 $(".proj1").click(function () { 
