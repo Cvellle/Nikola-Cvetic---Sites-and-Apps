@@ -1,10 +1,20 @@
 // FORM 
 
-function enablebutton(inputtxt)
-{ 
 var numbers = /[0-9]/;
 var letters = /[A-Za-z]/;
-	if(inputtxt.value.match(numbers))
+
+function enablebutton(inputtxt)
+{ 
+
+
+if (inputtxt.value.match(letters))
+	{ 
+		
+		alert('Please input only numbers');
+	}
+
+
+	if(inputtxt.value.match(numbers) && !inputtxt.value.match(letters))
 	{
 //alert('Your registration number have accepted : you can try another');
 form1.text1.focus();
@@ -12,11 +22,7 @@ submit.disabled=false;
 
 	return true;
 }
-	if(inputtxt.value.match(letters))
-	{return false;
-		alert('Please input alphanumeric characters only');
-	}
-
+	
 
 }
 
