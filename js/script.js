@@ -33,8 +33,7 @@ function subm() {
 	// ifr.style.display="block";
 	wd.style.backgroundColor = "rgb(191, 154, 211)";
 	lock.innerHTML = "Bravo, you unlocked the projects! Click here to see them";
-	// const url="https://www.google.rs/search?q=a+href+new+window+js&rlz=1C1CHBF_enRS770RS770&oq=a+href+new+window+js&aqs=chrome..69i57j35i39j0l4.6282j0j7&sourceid=chrome&ie=UTF-8";
-	// window.open(url, '_blank').focus();
+
 
 	// lock.innerHTML = "changed!";
 	// var screen = Object.assign([`${val}`,2], localStorage);
@@ -47,8 +46,8 @@ worksdiv.disabled=false;
 
 function show() {
 	
-	works.style.display="block";
-	ifr.style.display="block";
+	const url="https://cvellle.github.io/Works/";
+	window.open(url, '_blank').focus();
 
 }
 
