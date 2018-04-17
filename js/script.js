@@ -3,28 +3,32 @@
 var numbers = /[0-9]/;
 var letters = /[A-Za-z]/;
 
-function enablebutton(inputtxt)
-{ 
 
 
-if (inputtxt.value.match(letters))
-	{ 
-		
-		alert('Please input only numbers');
-	}
 
 
-	if(inputtxt.value.match(numbers) && !inputtxt.value.match(letters))
-	{
-//alert('Your registration number have accepted : you can try another');
-form1.text1.focus();
-submit.disabled=false;
+function enablebutton(inputtxt) {
+ 
+	if (inputtxt.value.match(letters)) { 			
+			alert('Please input only numbers');	
+			return false;
+		}
 
-	return true;
+
+		if(inputtxt.value.match(numbers) && !inputtxt.value.match(letters)) {
+			//alert('Your registration number have accepted : you can try another');
+			form1.text1.focus();
+			submit.disabled=false;
+			return true;
+		}
 }
-	
 
-}
+
+// $('#dis_per').blur(function(){
+//     if($(this).val().length != 1){
+//         $('#dis_rm').prop('disabled', false);
+//     }
+// });
 
 
 
