@@ -40,7 +40,11 @@ h1 {
 	left:5%;
 	height:7%;
 	width:17.1%;
-	background:black;
+	background:transparent;
+}
+
+.svg {
+	background:transparent;
 }
 
 .p1 {
@@ -172,6 +176,7 @@ h1 {
 	position: absolute;
 	left:50%;
 	width:100%;
+	-moz-transform:translatex(-50%);
 	-webkit-transform:translatex(-50%);
 	opacity:1;
 	text-align: center;
@@ -440,6 +445,7 @@ a {
 }
 
 a {
+	-moz-transform: translatex(-37%);
 	-webkit-transform: translatex(-37%);
 	font-size: 100%;
 	left:-2.5em;
@@ -629,6 +635,7 @@ a {
 	/* transform: translateX(-0.55%) translateY(-1%); */
 	cursor: url('../images/ship.png');	
 	filter:brightness(100%);
+	display:none;
 }
 
 .space {
@@ -978,7 +985,8 @@ img:hover {
 	width:3.3rem;
 	border-radius: 50%;
 	z-index: 2;
-	filter:brightness(50%);transform: scale(0.6);
+	filter:brightness(50%);
+	-webkit-transform: scale(0.6);
 	-webkit-animation: starrot1 150s infinite linear;
 }
 
@@ -1092,36 +1100,6 @@ img:hover {
 	font-family: "Century Gothic", "Helvetica", sans-serif;
 }
 
-  @keyframes circle {
-	0% { transform:rotate(0deg); }
-	100% { transform:rotate(360deg); }
-}
-
-/* @keyframes inner-circle {
-	from { transform:rotate(0deg); }
-	to { transform:rotate(-360deg); }
-}   */
-
-
-.move {
-	position: absolute;
-	top:6rem;
-	left:60%;
-	width:6rem;
-	height:6rem;
-	margin: 20px auto 0; 
-	font-size:100px;
-	line-height:5rem;
-	animation: circle 30s linear infinite;
-	transform-origin:50% 200px;
-	display:none;
-} 
-
-/* div > div {
-	animation: inner-circle 20s linear infinite;
-}
- */
-
  .sun {
 	display: block;
 	position:absolute;
@@ -1144,20 +1122,23 @@ img:hover {
 		-moz-filter: blur(0px);
 		-o-filter: blur(5px);
 		-ms-filter: blur(5px);
-		transform:translatey(-50%) translatex(-50%);
+		-moz-transform:translatey(-50%) translatex(-50%);
+		-webkit-transform:translatey(-50%) translatex(-50%);
 	-webkit-animation: circle 120s infinite linear;
 	}
 
 #a {
 	position:absolute;
-	top:15%;
-	left:17%;
+	top:10%;
+	left:15%;
 	  /* width: 1px;
 	  height: 1px; */
 	background:transparent;
 	  /* webkit-animation: rotate 30s cubic-bezier(0.42, 0, 0.58, 1) infinite; */
-	transform: rotateX(75deg);
+	-moz-transform: rotateX(75deg);  
+	-webkit-transform: rotateX(75deg);
 	background:transparent;
+	-moz-animation: zindex 30s linear infinite;
 	-webkit-animation: zindex 30s linear infinite;
   }
 
@@ -1167,10 +1148,11 @@ img:hover {
 		
 		  /* top:0rem;
 		  left:0%; */
-		  background:black;
+		  background:transparent;
 		  /* margin: 20px auto 0;	 */
 		  /* animation: circle 15s linear infinite; */
 		  transform-origin:50% 150px;	
+		  -moz-animation: rotate 30s linear infinite;
 		  -webkit-animation: rotate 30s linear infinite;
 		  /* zindex 30s linear infinite;   */
   }
@@ -1204,25 +1186,25 @@ img:hover {
 }
 
   @-webkit-keyframes rotate {
-		0% { transform:rotate(90deg);}
-		25% {transform:rotate(180deg);} 
-		50% {transform:rotate(270deg);}
-		75% {transform:rotate(360deg);} 
-	  	100% { transform:rotate(450deg); }
+		0% { -webkit-transform:rotate(90deg);}
+		25% {-webkit-transform:rotate(180deg);} 
+		50% {-webkit-transform:rotate(270deg);}
+		75% {-webkit-transform:rotate(360deg);} 
+	  	100% { -webkit-transform:rotate(450deg); }
   }
 
    @-webkit-keyframes scale {
-	0% {transform:scale(1); }
-	25% {transform:scale(1.5);z-index: 2; } 
-	50% {transform:scale(1);z-index: 2;  }
-	75%  {transform:scale(0.5);  } 
-	  100% { transform:scale(1);  }
+	0% {-webkit-transform:scale(1); }
+	25% {-webkit-transform:scale(1.5);z-index: 12; } 
+	50% {-webkit-transform:scale(1);z-index: 12;  }
+	75%  {-webkit-transform:scale(0.5);  } 
+	  100% { -webkit-transform:scale(1);  }
 } 
 
   @-webkit-keyframes zindex {
-	0% {  z-index: 2;}
-	25% { z-index: 2; } 
-	50% { z-index: 0;}
+	0% {  z-index: 15;}
+	25% { z-index: 15; } 
+	50% { z-index: 15;}
 	95% { z-index: 0;} 
 	100% { z-index: 0;}
   }
@@ -1435,7 +1417,8 @@ img:hover {
 		width: 100%;
 		opacity:0.5;
 		z-index: 10;
-		transform: translateX(-0.65%) translateY(-0.5%);
+		-moz-transform: translateX(-0.65%) translateY(-0.5%);
+		-webkit-transform: translateX(-0.65%) translateY(-0.5%);
 		cursor: url('../images/ship.png');
 		display:none;	
 	}
@@ -1688,7 +1671,8 @@ img:hover {
 		  -moz-filter: blur(0px) ;
 		  -o-filter: blur(5px);
 		  -ms-filter: blur(5px);
-		transform:translatey(-50%) translatex(-50%);
+		  -moz-transform:translatey(-50%) translatex(-50%);
+		  -webkit-transform:translatey(-50%) translatex(-50%);
 		-webkit-animation: circle 120s infinite linear;
 		z-index: 1;
 	  }
@@ -1713,7 +1697,7 @@ img:hover {
 			  height: 1px; */
 			background:transparent;
 			  /* webkit-animation: rotate 30s cubic-bezier(0.42, 0, 0.58, 1) infinite; */
-			transform: rotateX(0deg);
+			-webkit-transform: rotateX(0deg);
 			background:transparent;
 			/* -webkit-animation: zindex 30s linear infinite; */
 		  }
@@ -1725,7 +1709,7 @@ img:hover {
 				left:67.5%;
 				  /* top:0rem;
 				  left:0%; */
-				  background:black;
+				  background:transparent;
 				  /* margin: 20px auto 0;	 */
 				  animation: circle 15s linear infinite;
 				  transform-origin:80% 15.5rem;	
