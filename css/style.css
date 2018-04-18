@@ -169,6 +169,7 @@ h1 {
 	display:flex;
 	border:none;
 	outline:none;
+	cursor: pointer;
 }
 
 #lock {
