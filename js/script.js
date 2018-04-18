@@ -38,7 +38,7 @@ const wd = document.querySelector("#worksdiv");
 function subm() {
 	
 	wd.style.backgroundColor = "rgb(191, 154, 211)";
-	lock.innerHTML = "You unlocked the projects! Click here and follow plants";
+	lock.innerHTML = "You unlocked the projects! Click here and follow planets";
 
 	// var screen = Object.assign([`${val}`,2], localStorage);
 
