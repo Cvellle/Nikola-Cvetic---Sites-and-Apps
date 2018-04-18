@@ -4,9 +4,6 @@ var numbers = /[0-9]/;
 var letters = /[A-Za-z]/;
 
 
-
-
-
 function enablebutton(inputtxt) {
  
 	if (inputtxt.value.match(letters)) { 			
@@ -16,7 +13,6 @@ function enablebutton(inputtxt) {
 
 
 		if(inputtxt.value.match(numbers) && !inputtxt.value.match(letters)) {
-			//alert('Your registration number have accepted : you can try another');
 			form1.text1.focus();
 			submit.disabled=false;
 			return true;
@@ -24,11 +20,13 @@ function enablebutton(inputtxt) {
 }
 
 
-// $('#dis_per').blur(function(){
+// $('#').blur(function(){
 //     if($(this).val().length != 1){
 //         $('#dis_rm').prop('disabled', false);
 //     }
 // });
+
+
 
 
 
@@ -39,16 +37,11 @@ const wd = document.querySelector("#worksdiv");
 
 function subm() {
 	
-	// works.style.display="block";
-	// ifr.style.display="block";
 	wd.style.backgroundColor = "rgb(191, 154, 211)";
-	lock.innerHTML = "Bravo, you unlocked the projects! Click here to see them";
+	lock.innerHTML = "You unlocked the projects! Click here and follow plants";
 
-
-	// lock.innerHTML = "changed!";
 	// var screen = Object.assign([`${val}`,2], localStorage);
-	// document.write(screen[0]);
-// 	worksdiv.disabled=false;
+
 worksdiv.disabled=false;
 }
 
@@ -70,72 +63,48 @@ function hide() {
 
 worksdiv.addEventListener("click",show);
 works.addEventListener("mouseleave",hide);
-// Scroll to work 
+
+
+
+
+
+//SCROLL LEFT FUNCTION
+
 
 $(".proj1").click(function () { 
 	var leftPos = $('.works').scrollLeft();
-	console.log(leftPos+2);
-	// $(".works").animate({scrollLeft: leftPos + 100%}, 800);
 	$(".works").animate({ scrollLeft: 1*0.98}, 800);		
   });
 
   $(".proj2").click(function () { 
 	var leftPos = $('.works').scrollLeft();
-	console.log(leftPos+2);
-	// $(".works").animate({scrollLeft: leftPos + 100%}, 800);
 	$(".works").animate({ scrollLeft: $(".works").width()}, 800);		
   });
 
   $(".proj3").click(function () { 
 	var leftPos = $('.works').scrollLeft();
-	console.log(leftPos+2);
-	// $(".works").animate({scrollLeft: leftPos + 100%}, 800);
 	$(".works").animate({ scrollLeft: $(".works").width()*2}, 800);		
   });
 
   $(".proj4").click(function () { 
 	var leftPos = $('.works').scrollLeft();
-	console.log(leftPos+2);
-	// $(".works").animate({scrollLeft: leftPos + 100%}, 800);
 	$(".works").animate({ scrollLeft: $(".works").width()*3}, 800);		
   });
 
   $(".proj5").click(function () { 
 	var leftPos = $('.works').scrollLeft();
-	console.log(leftPos+2);
-	// $(".works").animate({scrollLeft: leftPos + 100%}, 800);
 	$(".works").animate({ scrollLeft: $(".works").width()*4}, 800);		
   });
 
   $(".proj6").click(function () { 
 	var leftPos = $('.works').scrollLeft();
-	console.log(leftPos+2);
-	// $(".works").animate({scrollLeft: leftPos + 100%}, 800);
 	$(".works").animate({ scrollLeft: $(".works").width()*5}, 800);		
   });
 
 
-// Ellipse way - planets
-
-// window.requestAnimationFrame(anim1);
-
-// var a1 = document.getElementById('a1');
-
-// function anim1(t1) {
-
-//     a1.style.left = (50 + Math.cos(t1 / 11150) * 560) + 'px';
-//     a1.style.top = (50 + Math.sin(t1 /11150) * 40) + 'px';
-//     window.requestAnimationFrame(anim1);
-// }
 
 
-
-// 
-
-
-
-
-// ELLIPSE
+// ELLIPSE - LINK THAT FOLLOWS AN ELEMENT THAT IS CIRCULATING
 
   function highlightLink() {
     const linkCoords = b.getBoundingClientRect();
@@ -158,6 +127,15 @@ $(".proj1").click(function () {
   setInterval(function() { highlightLink(); }, int);
 
   
+
+
+
+
+
+
+
+
+
 
 // const highlight = document.getElementById(acv);
 //   highlight.setAttribute('class', 'cv');
@@ -184,15 +162,6 @@ $(".proj1").click(function () {
 //     }
 	
 // }	  
-
-
-
-
-
-
-
-
-
 
 
 
