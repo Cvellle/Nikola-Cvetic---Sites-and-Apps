@@ -105,7 +105,7 @@ h1 {
 	top:20%;
 	left:55%;
 	height:15%;
-	width:45%;
+	width:40%;
 	/* background:rgb(151, 126, 161); */
 	text-align:center;
 	justify:center;
@@ -116,6 +116,7 @@ h1 {
 	position:absolute;
 	top:0%;
 	font-size: 1rem;
+	text-align: left;
 	
 }
 
