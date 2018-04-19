@@ -12,21 +12,12 @@ function enablebutton(inputtxt) {
 		}
 
 
-		if(inputtxt.value.match(numbers) && !inputtxt.value.match(letters)) {
+		if(inputtxt.value.match(numbers)) {
 			form1.text1.focus();
 			submit.disabled=false;
 			return true;
 		}
 }
-
-
-// $('#').blur(function(){
-//     if($(this).val().length != 1){
-//         $('#dis_rm').prop('disabled', false);
-//     }
-// });
-
-
 
 
 
@@ -39,10 +30,7 @@ function subm() {
 	
 	wd.style.backgroundColor = "rgb(191, 154, 211)";
 	lock.innerHTML = "You unlocked the projects! Click here and follow planets";
-
-	// var screen = Object.assign([`${val}`,2], localStorage);
-
-worksdiv.disabled=false;
+	worksdiv.disabled=false;
 }
 
 
@@ -131,7 +119,14 @@ $(".proj1").click(function () {
 
 
 
+// var screen = Object.assign([`${val}`,2], localStorage);
 
+
+// $('#').blur(function(){
+//     if($(this).val().length != 1){
+//         $('#dis_rm').prop('disabled', false);
+//     }
+// });
 
 
 
