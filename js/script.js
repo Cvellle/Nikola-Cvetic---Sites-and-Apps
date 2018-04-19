@@ -31,6 +31,9 @@ function subm() {
 	wd.style.backgroundColor = "rgb(191, 154, 211)";
 	lock.innerHTML = "You unlocked the projects! Click here and follow planets";
 	worksdiv.disabled=false;
+	unlocked.style.display="block";
+	locked.style.display="none";
+
 }
 
 
@@ -42,15 +45,9 @@ function show() {
 
 }
 
-function hide() {
-	
-	works.style.display="none";
-	ifr.style.display="none";
-
-}
 
 worksdiv.addEventListener("click",show);
-works.addEventListener("mouseleave",hide);
+
 
 
 
@@ -115,6 +112,32 @@ $(".proj1").click(function () {
   setInterval(function() { highlightLink(); }, int);
 
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

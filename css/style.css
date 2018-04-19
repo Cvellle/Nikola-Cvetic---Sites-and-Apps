@@ -172,6 +172,52 @@ h1 {
 	cursor: pointer;
 }
 
+.lockedimg {
+	position: absolute;
+	text-align:center;
+	justify:center;
+	align-items: center;
+	width:30%;
+	top:9%;
+	opacity:0.3;
+	left:50%;
+	-webkit-transform: translate(-50%,0%);
+}
+
+.lockedimg:hover {
+	position: absolute;
+	text-align:center;
+	justify:center;
+	align-items: center;
+	width:30%;
+	left:50%;
+	-webkit-transform: translate(-50%,0%);
+}
+
+.unlockedimg {
+	position: absolute;
+	text-align:center;
+	justify:center;
+	align-items: center;
+	width:30%;
+	top:9%;
+	opacity:0.15;
+	left:53%;
+	-webkit-transform: translate(-50%,0%);
+	display:none;
+}
+
+.unlockedimg:hover {
+	position: absolute;
+	text-align:center;
+	justify:center;
+	align-items: center;
+	width:30%;
+	left:53%;
+	-webkit-transform: translate(-50%,0%);
+	display:none;
+}
+
 #lock {
 	color:black;
 	position: absolute;
