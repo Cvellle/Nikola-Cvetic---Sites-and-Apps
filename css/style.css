@@ -53,19 +53,13 @@ h1 {
 	left:5%;
 	font-size: 3.1rem;
 	font-weight: bold;
-	/* font-family: Snell Roundhand, cursive; */
-	/* font-family: Brush Script MT,cursive;  */
 	opacity: 1;
 	color:purple;
-	border-bottom: 0.20rem solid rgba(68, 0, 194, 0.4);
 	font-weight: 500;
+	/* border-bottom: 0.20rem solid rgba(68, 0, 194, 0.4); */
+		/* font-family: Snell Roundhand, cursive; */
+	/* font-family: Brush Script MT,cursive;  */
 }
-/* .p1:nth-letter(2n) {
-	position:absolute;
-	top:9.6rem;
-	left:5%;
-	color:rgba(42, 8, 105, 0.3);
-} */
 
 .p2,.p3,.p4,.p5 {
 	opacity: 0.9;
@@ -176,7 +170,6 @@ h1 {
 .lockedimg {
 	position: absolute;
 	text-align:center;
-	justify:center;
 	align-items: center;
 	width:30%;
 	top:9%;
