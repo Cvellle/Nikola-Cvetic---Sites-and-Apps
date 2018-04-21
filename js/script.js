@@ -4,20 +4,19 @@ var numbers = /[0-9]/;
 var letters = /[A-Za-z]/;
 
 
-function enablebutton(inputtxt) {
- 
-	if (inputtxt.value.match(letters)) { 			
-			alert('Please input only numbers');	
-			return false;
-		}
+$('#text1').keydown(function(e){
 
+	if(e.which<=57) {
+    	if($(this).val().length > 0) {
+			$('#submit').prop('disabled', false);
+	}}
 
-		if(inputtxt.value.match(numbers)) {
-			form1.text1.focus();
-			submit.disabled=false;
-			return true;
-		}
-}
+	if(e.which>57) {
+		return false;
+	}
+
+	
+});
 
 
 
@@ -33,7 +32,8 @@ function subm() {
 	worksdiv.disabled=false;
 	unlocked.style.display="block";
 	locked.style.display="none";
-
+	return false;
+	
 }
 
 
@@ -280,3 +280,37 @@ $(".proj1").click(function () {
 	// }
 	
 	
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+	// function enablebutton(inputtxt,e) {
+ 
+// 	if (e.which<=57 && inputtxt.value.match(letters)) { 		
+
+// 			alert('Please input only numbers');	
+// 			return;
+
+// 		}
+
+
+// 	if (inputtxt.value.match(numbers)) {
+
+// 			submit.disabled=false;
+// 			form1.text1.focus();
+// 			return true;
+
+// 		}
+// }
