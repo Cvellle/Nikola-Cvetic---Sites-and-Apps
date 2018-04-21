@@ -1,23 +1,23 @@
 // FORM 
 
-var numbers = /[0-9]/;
-var letters = /[A-Za-z]/;
+text1.onkeydown = function(e) {
+    
+    if (e.keyCode > 57 || e.keyCode<48) {
 
-
-$('#text1').keydown(function(e){
-
-	if(e.which<=57) {
-    	if($(this).val().length > 0) {
-			$('#submit').prop('disabled', false);
-	}}
-
-	if(e.which>57) {
+		alert('Please input only numbers');	
 		return false;
+
 	}
 
-	
-});
+	if (e.keyCode<=57 && text1.value.length>0) {
 
+		submit.disabled=false;
+		form1.text1.focus();
+		return true;
+
+	}
+
+}
 
 
 //SUBMIT
@@ -292,6 +292,21 @@ $(".proj1").click(function () {
 
 
 	
+
+
+
+// $('#text1').keydown(function(e){
+
+// 	if(e.which<=57 && e.which!=32) {
+//     	if($(this).val().length > 0) {
+// 			$('#submit').prop('disabled', false);
+// 	}}
+
+// 	if(e.which>57) {
+// 		return false;
+// 	}
+	
+// });
 
 
 
