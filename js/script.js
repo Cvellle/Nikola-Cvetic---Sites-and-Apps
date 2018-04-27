@@ -27,7 +27,7 @@ const wd = document.querySelector("#worksdiv");
 
 function subm() {
 	
-	wd.style.backgroundColor = "rgb(191, 154, 211)";
+	wd.style.backgroundColor = "rgb(191, 154, 211, 0.45)";
 	lock.innerHTML = "You unlocked the projects! Click here and follow planets";
 	worksdiv.disabled=false;
 	unlocked.style.display="block";
