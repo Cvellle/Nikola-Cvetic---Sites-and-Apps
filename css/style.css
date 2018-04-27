@@ -8,7 +8,7 @@ body {
 	overflow:hidden;
 	width:55%;
 	margin:10% -1.7%;
-	z-index: -3;
+	z-index: -30;
 	opacity: 0.08;
   }
 
@@ -790,7 +790,7 @@ a {
 	height:100%;
 	width: 100%;
 	opacity:0.5;
-	z-index: -3;
+	z-index: -10;
 	/* transform: translateX(-0.55%) translateY(-1%); */
 	cursor: url('../images/ship.png');	
 	filter:brightness(100%);
@@ -806,7 +806,7 @@ a {
 	z-index: 9;
 	filter:brightness(100%);
 	background-image:url("../images/sp.jpg");
-	z-index: -1;;
+	z-index: 10;
 	/* cursor:none; */
 }
 
@@ -1024,7 +1024,7 @@ a {
 	font-family: "Century Gothic", "Helvetica", sans-serif;
 	font-weight: 500;
 	color:white;
-	opacity: 1;
+	opacity: 0.1;
 }
 
 .paddition {
