@@ -805,7 +805,7 @@ a {
 	z-index: 9;
 	filter:brightness(100%);
 	background-image:url("../images/sp.jpg");
-	z-index: 10;
+	z-index: 3;
 	/* cursor:none; */
 }
 
