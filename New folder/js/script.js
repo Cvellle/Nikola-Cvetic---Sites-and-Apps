@@ -26,15 +26,13 @@ submit.addEventListener("click",subm);
 const wd = document.querySelector("#worksdiv");
 
 function subm() {
-	document.querySelector(".space").style.zIndex="-33";
-	document.querySelector(".highlight").style.cursor="pointer";
 	
-	// wd.style.backgroundColor = "rgb(191, 154, 211, 0.45)";
-	// lock.innerHTML = "You unlocked the projects! Click here and follow planets";
-	// worksdiv.disabled=false;
-	// unlocked.style.display="block";
-	// locked.style.display="none";
-	// return false;
+	wd.style.backgroundColor = "rgb(191, 154, 211, 0.45)";
+	lock.innerHTML = "You unlocked the projects! Click here and follow planets";
+	worksdiv.disabled=false;
+	unlocked.style.display="block";
+	locked.style.display="none";
+	return false;
 	
 }
 
