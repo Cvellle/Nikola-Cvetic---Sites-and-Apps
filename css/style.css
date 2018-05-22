@@ -1041,11 +1041,15 @@ p {
 
 .w9 {
 	position:absolute;
-	top:80%;
+	top:70%;
 	left:30%;
 }
 
-
+.w10 {
+	position:absolute;
+	top:80%;
+	left:30%;
+}
 
 
 .img1 {
@@ -1136,11 +1140,13 @@ p {
 
 .img9 {
 	position:absolute;
-	top:85%;
-	left:60%;
-	width:4rem;
+	top:70%;
+	left:45%;
+	width:3.2rem;
 	border-radius: 50%;
 	z-index: 2;
+	filter:brightness(95%);
+	-webkit-animation: starrot1 65s infinite linear;
 }
 
 .img10 {
@@ -1182,11 +1188,11 @@ p {
 }
 
 img:hover {
-	-webkit-transform: scale(1.1);
+	/* -webkit-transform: scale(1.1); */
 	-webkit-transition: 0.5s;
-	-moz-transform: scale(1.1);
+	/* -moz-transform: scale(1.1); */
 	-moz-transition: 0.5s;
-	filter:brightness(110%);
+	filter:brightness(140%);
 }
 
 img {
