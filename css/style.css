@@ -262,10 +262,11 @@ h1 {
 }
 
 .form1 {
+	display:flex;
 	position:absolute;
-	top:70%;
+	top:75%;
 	left:65%;
-	height:15%;
+	height:2rem;
 	width:30%;
 	background:rgba(244, 187, 255, 0.23);
 	font-family:"Century Gothic", "Helvetica", sans-serif;
@@ -273,6 +274,10 @@ h1 {
 
 .form1>ul {
 	list-style-type:none; 
+}
+
+#instr {
+	margin-top:10%;
 }
 
 #submit:disabled {
@@ -1104,6 +1109,7 @@ p {
 	width:3.2rem;
 	border-radius:50%;
 	filter:brightness(45%);
+	-webkit-animation: starrot1 45s infinite linear;
 }
 
 .img7 {
@@ -1113,6 +1119,7 @@ p {
 	width:3.2rem;
 	border-radius: 50%;
 	z-index: 2;
+	-webkit-animation: starrot1 45s infinite linear;
 }
 
 .img8 {
@@ -1122,6 +1129,7 @@ p {
 	width:3.2rem;
 	border-radius: 50%;
 	z-index: 2;
+	-webkit-animation: starrot1 45s infinite linear;
 }
 
 .img9 {
@@ -1177,6 +1185,11 @@ img:hover {
 	-moz-transform: scale(1.1);
 	-moz-transition: 0.5s;
 	filter:brightness(110%);
+}
+
+img {
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
 }
 
 .img1,.img2,.img3,.img4,.img5 {
@@ -1280,11 +1293,12 @@ img:hover {
 	border-radius:50%;
 	/* box-shadow: 0 0 10px rgba(0,0,0,0.2); */
 	position: absolute;
-	height:3rem;
-	width:3rem;
+	height:3.5rem;
+	width:3.5rem;
 	background: url("../images/cv.jpg");
 	background-size: cover;
 	-webkit-animation: zindex 30s linear infinite;
+	cursor: not-allowed;
 	/* -webkit-animation: rotate 30s linear infinite, scale 30s linear infinite; */
   }
 

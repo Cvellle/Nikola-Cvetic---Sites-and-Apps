@@ -28,7 +28,9 @@ const wd = document.querySelector("#worksdiv");
 function subm() {
 	document.querySelector(".space").style.zIndex="-33";
 	document.querySelector(".highlight").style.cursor="pointer";
-	
+	document.querySelector(".form1").style.background="blue";
+	instr.innerHTML = "Sucess! Now click on the Sattelite";
+
 	// wd.style.backgroundColor = "rgb(191, 154, 211, 0.45)";
 	// lock.innerHTML = "You unlocked the projects! Click here and follow planets";
 	// worksdiv.disabled=false;
