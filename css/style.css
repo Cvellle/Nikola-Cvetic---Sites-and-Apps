@@ -1064,7 +1064,7 @@ p {
 	position:absolute;
 	top:50%;
 	left:20%;
-	width:3.9rem;
+	width:3.7rem;
 	z-index: 2;
 	border-radius: 50%;
 	-webkit-animation: starrot1 50s infinite linear;
@@ -1074,8 +1074,8 @@ p {
 .img3 {
 	position:absolute;
 	top:60%;
-	left:20%;
-	width:3.2rem;
+	left:20.05%;
+	width:3.3rem;
 	border-radius: 50%;
 	z-index: 140;
 	filter:brightness(70%);
@@ -1096,9 +1096,9 @@ p {
 .img5 {
 	position:absolute;
 	top:80%;
-	left:20%;
+	left:20.05%;
 	z-index: 14;
-	width:3.2rem;
+	width:3.4rem;
 	border-radius:50%;
 	filter:brightness(45%);
 	-webkit-animation: starrot1 45s infinite linear;
@@ -1287,9 +1287,8 @@ img {
 	background: url("../images/cv.jpg");
 	background-size: cover;
 	-webkit-animation: zindex 30s linear infinite;
-	cursor: pointer;
 	filter:brightness(0.5);
-	/* pointer-events: none; */
+	pointer-events: none;
 	/* -webkit-animation: rotate 30s linear infinite, scale 30s linear infinite; */
   }
 
