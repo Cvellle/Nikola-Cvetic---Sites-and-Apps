@@ -1,7 +1,7 @@
 body {
 	background: rgb(11, 2, 15);
 	overflow-x: hidden;
-	overflow-y: hidden;
+	overflow-y: scroll;
 }
 
 #categories{
@@ -1492,29 +1492,29 @@ img {
 @media only screen and (min-width: 415px) and (max-width: 1024px) {
 
 	
-	html {
+	/* html {
 		/* position:absolute;
 		top:0%;
 		left:0%;
 		/* height:100%;
 		width:100%; */
-		/* background-repeat: no-repeat; */ 
-	}
+		/* background-repeat: no-repeat;*/
 
-	.body {
-		/* position:absolute;
-		top:0%;
-		left:0%;
-		height:100%; */
-	}
+
+	body {
+		background: rgb(11, 2, 15);
+		overflow-x: hidden;
+		overflow-y: scroll;
+
+	} 
 
 	.perosnal {
-	width:70%;
-}
+		width:70%;
+	}
 
-.form1 {
-	display:none;
-}
+	.form1 {
+		display:none;
+	}
 
 	.space {
 		display:block;
@@ -1647,14 +1647,28 @@ img {
 		top:110%;
 		left:5%;
 		display:none;
+		display:flex;
 	}
 
 
 	.w9 {
 		position:absolute;
-		top:110%;
+		top:120%;
 		left:5%;
 		display:none;
+		display:flex;
+		font-size: 2.3rem;
+		/* width:5.5rem; */
+	}
+
+	.w10 {
+		position:absolute;
+		top:130%;
+		left:5%;
+		display:none;
+		display:flex;
+		font-size: 2.3rem;
+		visibility:hidden;
 	}
 
 	.w2,.w3,.w4,.w5,.w6,.w7,.w8 {
@@ -1685,7 +1699,7 @@ img {
 	.img1 {
 		position:absolute;
 		top:40%;
-		left:50%;
+		left:60%;
 		width:5.5rem;
 		border-radius: 50%;
 	}
@@ -1693,7 +1707,7 @@ img {
 	.img2 {
 		position:absolute;
 		top:50%;
-		left:50%;
+		left:60%;
 		width:5.5rem;
 		border-radius: 50%;
 	}
@@ -1701,7 +1715,7 @@ img {
 	.img3 {
 		position:absolute;
 		top:60%;
-		left:52%;
+		left:60%;
 		width:5.5rem;
 		border-radius: 50%;
 	}
@@ -1709,7 +1723,7 @@ img {
 	.img4 {
 		position:absolute;
 		top:70%;
-		left:55%;
+		left:60%;
 		width:5.5rem;
 		border-radius: 50%;
 	}
@@ -1717,7 +1731,7 @@ img {
 	.img5 {
 		position:absolute;
 		top:80%;
-		left:58%;
+		left:60%;
 		width:5.5rem;
 		border-radius:50%;
 		z-index: 2;
@@ -1726,7 +1740,7 @@ img {
 	.img6 {
 		position:absolute;
 		top:90%;
-		left:63.5%;
+		left:60%;
 		border-radius: 50%;
 		filter:brightness(90%);
 	}
@@ -1734,7 +1748,7 @@ img {
 	.img7 {
 		position:absolute;
 		top:100%;
-		left:69%;
+		left:60%;
 		width:5.5rem;
 		border-radius:50%;
 		z-index: 2;
@@ -1743,10 +1757,28 @@ img {
 	.img8 {
 		position:absolute;
 		top:110%;
-		left:0%;
+		left:60%;
 		border-radius: 50%;
 		filter:brightness(90%);
 	}
+
+
+	.img9 {
+		position:absolute;
+		top:120%;
+		left:60%;
+		width:5.5rem;
+		border-radius:50%;
+		z-index: 2;
+	}
+	
+	/* .img8 {
+		position:absolute;
+		top:130%;
+		left:0%;
+		border-radius: 50%;
+		filter:brightness(90%);
+	} */
 
 	/* .star8 {
 		position:absolute;
