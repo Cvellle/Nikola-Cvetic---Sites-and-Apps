@@ -1285,8 +1285,9 @@ img {
 	background: url("../images/cv.jpg");
 	background-size: cover;
 	-webkit-animation: zindex 30s linear infinite;
-	cursor: not-allowed;
-	filter:brightness(0.7);
+	cursor: pointer;
+	filter:brightness(0.5);
+	/* pointer-events: none; */
 	/* -webkit-animation: rotate 30s linear infinite, scale 30s linear infinite; */
   }
 
