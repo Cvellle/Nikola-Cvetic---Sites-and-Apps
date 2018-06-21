@@ -1156,11 +1156,13 @@ p {
 
 .img10 {
 	position:absolute;
-	top:85%;
-	left:50%;
-	width:4rem;
+	top:80%;
+	left:45%;
+	width:3.2rem;
 	border-radius: 50%;
 	z-index: 2;
+	-webkit-animation: starrot1 45s infinite linear;
+	filter:brightness(55%);
 }
 
 .w1,.w2,.w3,.w4,.w5{
