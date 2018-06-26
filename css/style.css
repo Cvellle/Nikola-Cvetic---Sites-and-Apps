@@ -1073,10 +1073,11 @@ p {
 	position:absolute;
 	top:50%;
 	left:20%;
-	width:3.7rem;
+	width:3.5rem;
 	z-index: 2;
 	border-radius: 50%;
-	-webkit-animation: starrot1 50s infinite linear;
+	filter:brightness(40%);
+	-webkit-animation: starrot1 100s infinite linear;
 	
 }
 
