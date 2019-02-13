@@ -532,10 +532,6 @@ h1 {
 	border-radius:0.7rem;
 }
 
-.works>a {
-	width:6%;
-}
-
 a {
 	text-decoration: none;
 	background:black;	
@@ -648,7 +644,6 @@ a {
 	background-size:100% 100%;
 	color:white;
 	text-align: center;
-	cursor:pointer;
 }
 
 .proj2 {
@@ -662,7 +657,6 @@ a {
 	background:url("../images/p2.png");
 	background-size:100% 100%;
 	color:white;
-	cursor:pointer;
 	
 }
 
@@ -677,7 +671,6 @@ a {
 	background:url("../images/p3.gif");
 	background-size:100% 100%;
 	color:white;
-	cursor:pointer;
 	
 }
 
@@ -692,7 +685,6 @@ a {
 	background:url("../images/p4.gif");
 	background-size:100% 100%;
 	color:white;
-	cursor:pointer;
 	
 }
 
@@ -707,7 +699,6 @@ a {
 	background:url("../images/p5.png");
 	background-size:100% 100%;
 	color:white;
-	cursor:pointer;
 	
 }
 
@@ -722,7 +713,6 @@ a {
 	background:url("../images/cv.jpg");
 	background-size:100% 100%;
 	color:white;
-	cursor:pointer;
 	
 }
 
