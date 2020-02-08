@@ -940,55 +940,68 @@ p {
 
 .w10 {
 	position:absolute;
-	top:40%;
-	left:30%;
+	top:130%;
+	left:5%;
 }
 
 .w11 {
 	position:absolute;
-	top:50%;
+	top:40%;
 	left:30%;
 }
 
 .w12 {
 	position:absolute;
-	top:60%;
+	top:50%;
 	left:30%;
 }
 
 .w13 {
 	position:absolute;
-	top:70%;
+	top:60%;
 	left:30%;
 }
 
 .w14 {
 	position:absolute;
-	top:80%;
+	top:70%;
 	left:30%;
 }
 
 .w15 {
 	position:absolute;
-	top:90%;
+	top:80%;
 	left:30%;
 }
 
 .w16 {
 	position:absolute;
-	top:100%;
+	top:90%;
 	left:30%;
 }
 
 .w17 {
 	position:absolute;
-	top:110%;
+	top:100%;
 	left:30%;
 }
 
 .w18 {
 	position:absolute;
+	top:110%;
+	left:30%;
+}
+
+
+.w19 {
+	position:absolute;
 	top:120%;
+	left:30%;
+}
+
+.w20 {
+	position:absolute;
+	top:130%;
 	left:30%;
 }
 
@@ -1094,8 +1107,8 @@ p {
 
 .img10 {
 	position:absolute;
-	top:40%;
-	left:45%;
+	top:130%;
+	left:20.05%;
 	width:3.2rem;
 	border-radius: 50%;
 	z-index: 2;
@@ -1105,7 +1118,7 @@ p {
 
 .img11 {
 	position:absolute;
-	top:50%;
+	top:40%;
 	left:45%;
 	width:3.2rem;
 	border-radius: 50%;
@@ -1116,7 +1129,7 @@ p {
 
 .img12 {
 	position:absolute;
-	top:60%;
+	top:50%;
 	left:45%;
 	width:3.2rem;
 	border-radius: 50%;
@@ -1127,7 +1140,7 @@ p {
 
 .img13 {
 	position:absolute;
-	top:70%;
+	top:60%;
 	left:45%;
 	width:3.2rem;
 	border-radius: 50%;
@@ -1138,7 +1151,7 @@ p {
 
 .img14 {
 	position:absolute;
-	top:80%;
+	top:70%;
 	left:45%;
 	width:3.2rem;
 	border-radius: 50%;
@@ -1149,7 +1162,7 @@ p {
 
 .img15 {
 	position:absolute;
-	top:90%;
+	top:80%;
 	left:45%;
 	width:3.2rem;
 	border-radius: 50%;
@@ -1160,7 +1173,7 @@ p {
 
 .img16 {
 	position:absolute;
-	top:100%;
+	top:90%;
 	left:45%;
 	width:3.2rem;
 	border-radius: 50%;
@@ -1171,7 +1184,7 @@ p {
 
 .img17 {
 	position:absolute;
-	top:110%;
+	top:100%;
 	left:45%;
 	width:3.2rem;
 	border-radius: 50%;
@@ -1182,7 +1195,29 @@ p {
 
 .img18 {
 	position:absolute;
+	top:110%;
+	left:45%;
+	width:3.2rem;
+	border-radius: 50%;
+	z-index: 2;
+	-webkit-animation: starrot1 45s infinite linear;
+	filter:brightness(55%);
+}
+
+.img19 {
+	position:absolute;
 	top:120%;
+	left:45%;
+	width:3.2rem;
+	border-radius: 50%;
+	z-index: 2;
+	-webkit-animation: starrot1 45s infinite linear;
+	filter:brightness(55%);
+}
+
+.img20 {
+	position:absolute;
+	top:130%;
 	left:45%;
 	width:3.2rem;
 	border-radius: 50%;
