@@ -1813,6 +1813,15 @@ img {
 		font-size: 2.3rem;
 	}
 
+	.w19 {
+		position:absolute;
+		top:220%;
+		left:5%;
+		display:none;
+		display:flex;
+		font-size: 2.3rem;
+	}
+
 
 
 
@@ -2007,6 +2016,17 @@ img {
 	.img18 {
 		position:absolute;
 		top:210%;
+		left:60%;
+		width:5.5rem;
+		border-radius: 50%;
+		z-index: 2;
+		-webkit-animation: starrot1 45s infinite linear;
+		filter:brightness(55%);
+	}
+
+	.img19 {
+		position:absolute;
+		top:220%;
 		left:60%;
 		width:5.5rem;
 		border-radius: 50%;
