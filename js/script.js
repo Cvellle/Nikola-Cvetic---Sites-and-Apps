@@ -37,13 +37,21 @@ function subm() {
 
 
 
-function show() {
-	
-	const url="https://cvellle.github.io/Works/";
-	window.open(url, '_blank').focus();
+// SHOW PROJECTS
 
+document.querySelectorAll(".work").forEach(w => w.addEventListener("mouseover", showProject));
+document.querySelectorAll(".work").forEach(w => w.addEventListener("mouseleave", hideProject));
+
+function showProject(e) {
+	e.preventDefault();
+	const preview = document.querySelector(".preview");
+	let routea = "./images/projects/avologic.jpg";
+	preview.style.background = `url(${this.dataset.route})`;
+	
 }
 
-
-worksdiv.addEventListener("click",show);
+function hideProject() {
+	const preview = document.querySelector(".preview");
+	preview.style.background = `transparent`;
+}
 

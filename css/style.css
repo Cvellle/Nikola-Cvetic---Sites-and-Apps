@@ -6,7 +6,7 @@ body {
 }
 
 .name {
-	position: relative;;
+	position: relative;
 	top:5%;
 	left:5%;
 	height:7%;
@@ -34,12 +34,21 @@ h1 {
 	padding: 0.3vw;
 	position: relative;
 	top:5%;
-	left:5%;
+	left:5.2%;
 	width:20%;
 	background:rgba(233, 176, 253, 0.3);
 	opacity: 0.9;
 	z-index: 1;
 	filter:brightness(1.5);
+}
+
+.personal p {
+	position: relative;
+	opacity: 0.9;
+	font-size: 1.1vw;
+	color:black;
+	line-height: 1vw;
+	margin-left:5%;
 }
 
 .hide {
@@ -50,16 +59,6 @@ h1 {
 	border-style: solid;
 	border-width: 1.5vw;
 	z-index: 0;
-}
-
-.personal p {
-	position: relative;
-	opacity: 0.9;
-	font-size: 1.1vw;
-	color:black;
-	margin-left:0.1vw;
-	line-height: 1vw;
-	margin-left:5%;
 }
 
 .intrdiv {
@@ -83,6 +82,14 @@ h1 {
 	font-size: 1rem;
 	text-align: left;
 	max-width: 80%;
+}
+
+.intrdiv span:nth-child(even) {
+	display: none;
+}
+
+.intrdiv span:nth-child(odd) {
+	display: inline;
 }
 
 .form1 {
@@ -324,6 +331,10 @@ h1 {
 	filter:brightness(55%);
 }
 
+.work img {
+	transition: all 1s;
+}
+
 img:hover {
 	filter:brightness(140%);
 }
@@ -373,25 +384,26 @@ img:hover {
   }
 
 .works {
+	padding-left: 3vw;
 	position: relative;
 	top: 20vh;
-	width: 60%;
+	width: 50%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 }
 
-.works>div {
+.works .work {
 	position: relative;
-	width: 	17vw;
+	width: 	15vw;
 	height: 5vw;
 	margin-bottom: 5vw;
 }
 
 .works a {
+	text-decoration: none;
 	text-align: center !important;	
 }
-
 
 .works .title {
 	display: block;
@@ -400,7 +412,7 @@ img:hover {
 	opacity: 0.7 !important;
 }
 
-.works img {
+.work img {
 	width: 25%;
 	height: auto;
 	display: block;
@@ -408,6 +420,17 @@ img:hover {
 	margin-right: auto;
 }
 
+.preview {
+	position: fixed;
+	margin-left: 55%;
+	display: inline-block;
+	top:15vw;
+	right: 5vw;
+	width:45%;
+	height: 30vw;
+	background: red;
+	background-size: 100% 100% !important;
+}
 
 
 
@@ -444,7 +467,7 @@ img:hover {
 		width: 95vw;
 		margin-left: 5%;
 		position: relative;
-		top: 100vw;
+		top: 60vw;
 		left: initial;
 		font-size: 13vw !important;
 	}
@@ -455,8 +478,12 @@ img:hover {
 		max-width: 100vw;
 	}
 
-	.intrdiv span {
+	.intrdiv span:nth-child(odd) {
 		display: none;
+	}
+
+	.intrdiv span:nth-child(even) {
+		display: inline;
 	}
 
 	.personal {
@@ -473,7 +500,6 @@ img:hover {
 		margin-left: 3vw;
 	}
 
-
 	.hide {
 		position:absolute;
 		top:0%;
@@ -485,7 +511,7 @@ img:hover {
 	}
 
 	.works {
-		top:150vw;
+		top:120vw;
 		width:100vw;
 		display: block;
 		padding: 0 !important;
@@ -503,6 +529,7 @@ img:hover {
 	}
 
 	.form1 {
+		display: none;
 		position: relative;
 		top:50vw;
 		width: 95vw;
@@ -549,14 +576,13 @@ img:hover {
 		left:0%;
 		z-index:14;
 		border-radius:50%;
-		position: absolute;
 		height:15vw;
 		width:15vw;
 		background: url("../images/cv.jpg");
 		background-size: cover;
 		-webkit-animation: zindex 30s linear infinite;
 		filter:brightness(0.5);
-		pointer-events: none;
+		pointer-events: fill;
 	  }
 }
 	
