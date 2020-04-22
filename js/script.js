@@ -1,3 +1,4 @@
+
 // FORM 
 
 text1.onkeydown = function(e) {
@@ -36,22 +37,4 @@ function subm() {
 }
 
 
-
-// SHOW PROJECTS
-
-document.querySelectorAll(".work").forEach(w => w.addEventListener("mouseover", showProject));
-document.querySelectorAll(".work").forEach(w => w.addEventListener("mouseleave", hideProject));
-
-function showProject(e) {
-	e.preventDefault();
-	const preview = document.querySelector(".preview");
-	let routea = "./images/projects/avologic.jpg";
-	preview.style.background = `url(${this.dataset.route})`;
-	
-}
-
-function hideProject() {
-	const preview = document.querySelector(".preview");
-	preview.style.background = `transparent`;
-}
 
