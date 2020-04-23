@@ -1,7 +1,29 @@
+* {
+  box-sizing: c-box;
+  font-family: Open, sans-serif;
+}
+
+button {
+  border: 0;
+  outline: 0;
+}
+button:active {
+  border: 0;
+  outline: 0;
+}
+button:focus {
+  border: 0;
+  outline: 0;
+}
+
 body {
   background: #0b020f;
   overflow-y: scroll;
-  font-family: "Century Gothic", "Helvetica", sans-serif;
+  font-family: Century Gothic, sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 .db {
@@ -49,7 +71,7 @@ body {
   top: 5%;
   left: 5%;
   height: 7%;
-  width: 50vw;
+  width: 60vw;
   font-size: 4vw;
   font-weight: bold;
   opacity: 1;
@@ -65,7 +87,6 @@ h1 {
   font-size: 5vw;
   z-index: 2;
   opacity: 0.9;
-  font-family: "Century Gothic", "Helvetica", sans-serif;
   color: purple;
   font-weight: 500;
 }
@@ -75,30 +96,58 @@ h1 {
   position: relative;
   top: 5%;
   left: 5.2%;
-  width: 20%;
-  background: rgba(233, 176, 253, 0.3);
-  opacity: 0.9;
+  width: 22%;
+  background: rgba(255, 138, 245, 0.404);
   z-index: 1;
-  filter: brightness(1.5);
+}
+@media (max-width: 1000px) {
+  .personal {
+    width: 80vw;
+    margin-left: 0;
+  }
 }
 
 .personal p {
   position: relative;
-  opacity: 0.9;
-  font-size: 1.1vw;
-  color: black;
+  font-size: 1.2vw;
+  color: rgba(0, 0, 0, 0.9);
   line-height: 1vw;
   margin-left: 5%;
+}
+.personal p > a {
+  color: rgba(0, 0, 0, 0.9);
+  pointer-events: none;
+}
+@media (max-width: 1000px) {
+  .personal p > a {
+    pointer-events: auto;
+  }
+}
+@media (max-width: 1000px) {
+  .personal p {
+    font-size: 4.12vw !important;
+    font-weight: 600;
+    width: initial;
+    line-height: 4vw;
+    margin-left: 3vw;
+  }
 }
 
 .hide {
   position: absolute;
   top: 0%;
   right: 0%;
-  border-color: #0b020f #0b020f transparent transparent;
-  border-style: solid;
-  border-width: 1.5vw;
-  z-index: 0;
+  width: 4vw;
+  height: 4vw;
+  background-color: #0b020f;
+  clip-path: polygon(0% 0, 100% 0%, 100% 100%);
+  transform: translate(0.2vw, -0.2vw);
+  border: 0;
+}
+@media (max-width: 1000px) {
+  .hide {
+    transform: translate(1vw, -1vw);
+  }
 }
 
 .intrdiv {
@@ -151,8 +200,6 @@ h1 {
   height: 4%;
   width: 30%;
   background: rgba(244, 187, 255, 0.23);
-  font-family: "Century Gothic", "Helvetica", sans-serif;
-  filter: brightness(1.3);
   z-index: 6;
 }
 @media (max-width: 1000px) {
@@ -427,6 +474,27 @@ h1 {
   justify-content: space-between;
   z-index: 6;
 }
+.works h3 {
+  font-size: 1.5vw;
+  color: rgba(255, 255, 255, 0.541);
+  margin: 3vw 0;
+}
+@media (max-width: 1000px) {
+  .works h3 {
+    margin-top: 0;
+    padding-top: 10vw;
+    margin-bottom: 14vw;
+    font-size: 5vw;
+  }
+}
+@media (max-width: 1000px) {
+  .works {
+    top: 100vw;
+    width: 100vw;
+    display: block;
+    padding: 0 !important;
+  }
+}
 .works .work {
   position: relative;
   width: 100%;
@@ -443,6 +511,7 @@ h1 {
 .works .work a {
   text-decoration: none;
   text-align: center;
+  color: white;
 }
 .works .work a div {
   display: flex;
@@ -466,7 +535,7 @@ h1 {
 }
 @media (max-width: 1000px) {
   .works .work a div .title {
-    flex: 0 1 45%;
+    flex: 0 1 48%;
     font-size: 4vw;
   }
 }
@@ -494,12 +563,19 @@ h1 {
   }
 }
 .works .work a div .tech .postcss {
-  transform: scale(0.8);
+  transform: scale(1);
   opacity: 0.35;
+}
+.works .work a div .tech .bem {
+  opacity: 0.5;
+  transform: scale(0.85);
+}
+.works .work a div .tech .es6 {
+  transform: scale(0.9);
 }
 .works .work a div .tech .js {
   transform: scale(0.9);
-  opacity: 0.5;
+  opacity: 0.7;
 }
 .works .work a div .tech .thunk {
   border-radius: 0.7vw;
@@ -530,9 +606,6 @@ h1 {
   height: auto;
   z-index: 5;
   filter: brightness(0.9);
-}
-.imgDiv .preview .previewOn {
-  z-index: 5;
 }
 @-webkit-keyframes showPrev {
   0% {
@@ -602,20 +675,6 @@ h1 {
     display: inline;
   }
 
-  .personal {
-    position: static;
-    display: block;
-    margin-left: 5%;
-    width: 80vw;
-  }
-
-  .personal p {
-    font-size: 4.12vw !important;
-    width: initial;
-    line-height: 4vw;
-    margin-left: 3vw;
-  }
-
   .hide {
     position: absolute;
     top: 0%;
@@ -624,13 +683,6 @@ h1 {
     border-style: solid;
     border-width: 5vw;
     z-index: 0;
-  }
-
-  .works {
-    top: 90vw;
-    width: 100vw;
-    display: block;
-    padding: 0 !important;
   }
 
   .works .work {

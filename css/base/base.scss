@@ -1,0 +1,19 @@
+* {
+	box-sizing: c-box;
+	font-family: Open, sans-serif;
+}
+
+button {
+	border: 0;
+    outline: 0;
+    
+	&:active {
+		border: 0;
+		outline: 0;
+    }
+    
+	&:focus {
+		border: 0;
+		outline: 0;
+	}
+}

@@ -1,9 +1,15 @@
 @use "./base/mixins.scss"  as *;
+@use "./base/variables.scss"  as *;
+@use "./base/base.scss"  as *;
 
 body {
   background: rgb(11, 2, 15);
   overflow-y: scroll;
-  font-family: "Century Gothic", "Helvetica", sans-serif;
+  font-family: $centuryGothic;
+}
+
+a {
+  text-decoration: none;
 }
 
 .db {
@@ -51,7 +57,7 @@ body {
   top: 5%;
   left: 5%;
   height: 7%;
-  width:50vw;
+  width:60vw;
   font-size: 4vw;
   font-weight: bold;
   opacity: 1;
@@ -67,7 +73,6 @@ h1 {
   font-size: 5vw;
   z-index: 2;
   opacity: 0.9;
-  font-family: "Century Gothic", "Helvetica", sans-serif;
   color: purple;
   font-weight: 500;
 }
@@ -77,30 +82,56 @@ h1 {
   position: relative;
   top: 5%;
   left: 5.2%;
-  width: 20%;
-  background: rgba(233, 176, 253, 0.3);
-  opacity: 0.9;
+  width: 22%;
+  background: rgba(255, 138, 245, 0.404);
   z-index: 1;
-  filter: brightness(1.5);
+
+  @include mobile {
+    width: 80vw;
+    margin-left: 0;
+  }
 }
 
 .personal p {
   position: relative;
-  opacity: 0.9;
-  font-size: 1.1vw;
-  color: black;
+  font-size: 1.2vw;
+  color: rgba(0, 0, 0, 0.9);
   line-height: 1vw;
   margin-left: 5%;
+
+  & > a {
+    color: rgba(0, 0, 0, 0.9);
+    pointer-events: none;
+
+    @include mobile {
+      pointer-events: auto;
+    }
+  }
+  
+
+  @include mobile {
+    font-size: 4.12vw !important;
+    font-weight: 600;
+    width: initial;
+    line-height: 4vw;
+    margin-left: 3vw;
+  }
 }
 
 .hide {
   position: absolute;
   top: 0%;
   right: 0%;
-  border-color: rgb(11, 2, 15) rgb(11, 2, 15) transparent transparent;
-  border-style: solid;
-  border-width: 1.5vw;
-  z-index: 0;
+  width:4vw;
+  height: 4vw;
+  background-color: rgb(11, 2, 15);
+  clip-path: polygon(0% 0, 100% 0%, 100% 100%);
+  transform: translate(0.2vw,-0.2vw);
+  border: 0;
+
+  @include mobile {
+    transform: translate(1vw,-1vw);
+  }
 }
 
 .intrdiv {
@@ -151,8 +182,6 @@ h1 {
   height: 4%;
   width: 30%;
   background: rgba(244, 187, 255, 0.23);
-  font-family: "Century Gothic", "Helvetica", sans-serif;
-  filter: brightness(1.3);
   z-index: 6;
 
   @include mobile {
@@ -426,6 +455,26 @@ h1 {
   justify-content: space-between;
   z-index: 6;
 
+  h3 {
+    font-size: 1.5vw;
+    color: rgba(255, 255, 255, 0.541);
+    margin: 3vw 0;
+
+    @include mobile {
+      margin-top: 0;
+      padding-top: 10vw;
+      margin-bottom: 14vw;
+      font-size: 5vw;
+    }
+  }
+
+  @include mobile {
+    top: 100vw;
+    width: 100vw;
+    display: block;
+    padding: 0 !important;
+  }
+
   .work {
     position: relative;
     width: 100%;
@@ -441,6 +490,7 @@ h1 {
     a {
       text-decoration: none;
       text-align: center;
+      color: white;
 
       div {
         display: flex;
@@ -462,7 +512,7 @@ h1 {
           justify-content: flex-start;
 
           @include mobile {
-            flex:0 1 45%;
+            flex:0 1 48%;
             font-size: 4vw;
           }
         }
@@ -491,13 +541,22 @@ h1 {
           }
 
           .postcss {
-            transform: scale(0.8);
+            transform: scale(1);
             opacity: 0.35;
           }  
 
+          .bem {
+            opacity: 0.5;
+            transform: scale(0.85);
+          }
+
+          .es6 {
+            transform: scale(0.9);
+          }
+
           .js {
             transform: scale(0.9);
-            opacity: 0.5;
+            opacity: 0.7;
           }
 
           .thunk {
@@ -534,17 +593,6 @@ h1 {
     height: auto;
     z-index: 5;
     filter: brightness(0.9);
-
-    .previewOn {
-      // -moz-animation: showPrev 0s forwards;
-      // -webkit-animation: showPrev 0s forwards;
-      z-index: 5;
-    }
-
-    .previewOff {
-      // -moz-animation: showPrev 3s forwards;
-      // -webkit-animation: showPrev 3s forwards;
-    }
   }
 
   @-webkit-keyframes showPrev {
@@ -567,13 +615,6 @@ h1 {
     }
   }
 }
-
-
-
-
-
-
-
 
 
 
@@ -627,20 +668,6 @@ h1 {
     display: inline;
   }
 
-  .personal {
-    position: static;
-    display: block;
-    margin-left: 5%;
-    width: 80vw;
-  }
-
-  .personal p {
-    font-size: 4.12vw !important;
-    width: initial;
-    line-height: 4vw;
-    margin-left: 3vw;
-  }
-
   .hide {
     position: absolute;
     top: 0%;
@@ -649,13 +676,6 @@ h1 {
     border-style: solid;
     border-width: 5vw;
     z-index: 0;
-  }
-
-  .works {
-    top: 90vw;
-    width: 100vw;
-    display: block;
-    padding: 0 !important;
   }
 
   .works .work {
