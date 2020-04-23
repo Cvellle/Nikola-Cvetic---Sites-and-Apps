@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  font-family: Open, sans-serif;
 }
 
 button {
@@ -19,7 +18,7 @@ button:focus {
 body {
   background: #0b020f;
   overflow-y: scroll;
-  font-family: Century Gothic, sans-serif;
+  font-family: century-gothic, sans-serif;
   margin: 0;
 }
 @media (max-width: 1024px) {
@@ -157,6 +156,7 @@ h1 {
 @media (max-width: 1024px) {
   .personal p > a {
     pointer-events: auto;
+    font-size: 3.9vw !important;
   }
 }
 
@@ -209,7 +209,7 @@ h1 {
 @media (max-width: 1024px) {
   .intrdiv p {
     padding: 2.5vw;
-    font-size: 4.5vw;
+    font-size: 4.2vw;
     line-height: 6vw;
   }
 }
@@ -597,7 +597,7 @@ h1 {
 @media (max-width: 1024px) {
   .works .work a div .title {
     flex: 0 1 48%;
-    font-size: 4.4vw;
+    font-size: 4vw;
   }
 }
 .works .work a div .tech {
