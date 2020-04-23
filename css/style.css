@@ -22,7 +22,7 @@ body {
   font-family: Century Gothic, sans-serif;
   margin: 0;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   body {
     padding: 0 5vw;
   }
@@ -84,7 +84,7 @@ a {
   color: purple;
   font-weight: 500;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .name {
     position: relative;
     top: 2.3%;
@@ -109,7 +109,7 @@ h1 {
   color: purple;
   font-weight: 500;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   h1 {
     top: 0;
     right: 2.5vw;
@@ -127,7 +127,7 @@ h1 {
   background: rgba(255, 138, 245, 0.404);
   z-index: 1;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .personal {
     width: 100%;
     left: 0;
@@ -141,7 +141,7 @@ h1 {
   line-height: 1vw;
   margin-left: 5%;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .personal p {
     font-size: 4.2vw !important;
     font-weight: 500;
@@ -154,7 +154,7 @@ h1 {
   color: rgba(0, 0, 0, 0.9);
   pointer-events: none;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .personal p > a {
     pointer-events: auto;
   }
@@ -171,7 +171,7 @@ h1 {
   transform: translate(0.2vw, -0.2vw);
   border: 0;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .hide {
     width: 14vw;
     height: 14vw;
@@ -191,7 +191,7 @@ h1 {
   color: white;
   opacity: 0.9;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .intrdiv {
     padding: 0vw;
   }
@@ -206,7 +206,7 @@ h1 {
   text-align: left;
   max-width: 100%;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .intrdiv p {
     padding: 2.5vw;
     font-size: 4.5vw;
@@ -232,7 +232,7 @@ h1 {
   background: rgba(244, 187, 255, 0.23);
   z-index: 6;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .form1 {
     display: none;
   }
@@ -423,7 +423,7 @@ h1 {
   left: 80%;
   background: transparent;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   #cvDiv {
     position: absolute;
     top: 40vh;
@@ -440,7 +440,7 @@ h1 {
   -moz-animation: rotate 30s linear infinite;
   -webkit-animation: rotate 30s linear infinite;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   #circlingLink {
     position: absolute;
     background: transparent;
@@ -465,7 +465,7 @@ h1 {
   -moz-animation: planetRotate 80s linear infinite;
   -webkit-animation: planetRotate 80s linear infinite;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .highlight {
     transition: all 0.2s;
     position: absolute;
@@ -507,7 +507,7 @@ h1 {
   padding: 0 5vw 0;
   top: 15vh;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .works-wrapper {
     top: 0;
     padding: 0;
@@ -520,7 +520,7 @@ h1 {
   line-height: 2vw;
   font-size: 1.3vw;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .worksInstr {
     display: none;
   }
@@ -540,7 +540,7 @@ h1 {
   color: rgba(255, 255, 255, 0.541);
   margin: 3vw 0;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .works h3 {
     margin-top: 0;
     padding-top: 10vw;
@@ -548,7 +548,7 @@ h1 {
     font-size: 5vw;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .works {
     top: 100vw;
     width: 100vw;
@@ -562,7 +562,7 @@ h1 {
   height: 3vw;
   margin-bottom: 3vw;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .works .work {
     flex: 0 1 45%;
     font-size: 4vw;
@@ -579,7 +579,7 @@ h1 {
   align-items: center;
   justify-content: space-between;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .works .work a div {
     flex: 1 1 100%;
   }
@@ -594,7 +594,7 @@ h1 {
   display: flex;
   justify-content: flex-start;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .works .work a div .title {
     flex: 0 1 48%;
     font-size: 4.4vw;
@@ -605,7 +605,7 @@ h1 {
   display: flex;
   justify-content: flex-start;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .works .work a div .tech {
     flex: 0 1 30%;
     font-size: 4vw;
@@ -618,7 +618,7 @@ h1 {
   margin-left: 2vw;
   opacity: 0.5;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .works .work a div .tech img {
     width: 9vw;
   }
@@ -648,7 +648,7 @@ h1 {
   order: 3;
   margin-left: auto;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .works .work a div > img {
     width: 10vw;
   }
@@ -737,7 +737,7 @@ h1 {
     z-index: 16;
   }
 }
-@media only screen and (max-width: 1024px) and (max-width: 1000px) {
+@media only screen and (max-width: 1024px) and (max-width: 1024px) {
   .form1 {
     display: none;
   }
