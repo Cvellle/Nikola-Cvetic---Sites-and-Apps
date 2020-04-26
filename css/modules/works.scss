@@ -1,0 +1,210 @@
+@use "../base/mixins.scss" as *;
+
+.works-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 5vw 0;
+  top: 15vh;
+
+  @include mobile {
+    top: 0;
+    padding: 0;
+  }
+}
+
+.worksInstr {
+  flex: 1 1 100%;
+  color: rgba(255, 255, 255, 0.4);
+  line-height: 2vw;
+  font-size: 1.3vw;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.works {
+  flex: 0 1 40vw;
+  position: relative;
+  top: 4vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 6;
+
+  h3 {
+    font-size: 1.5vw;
+    color: rgba(255, 255, 255, 0.541);
+    margin: 3vw 0;
+
+    @include mobile {
+      margin-top: 0;
+      padding-top: 10vw;
+      margin-bottom: 14vw;
+      font-size: 5vw;
+    }
+  }
+
+  @include mobile {
+    top: 100vw;
+    width: 100vw;
+    display: block;
+    padding: 0 !important;
+  }
+
+  .work {
+    position: relative;
+    width: 100%;
+    height: 3vw;
+    margin-bottom: 3vw;
+
+    @include mobile {
+      flex: 0 1 45%;
+      font-size: 4vw;
+      margin-bottom: 0vw;
+    }
+
+    a {
+      text-decoration: none;
+      text-align: center;
+      color: white;
+
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include mobile {
+          flex: 1 1 100%;
+        }
+
+        .title {
+          flex: 0 1 35%;
+          margin-top: 0%;
+          color: white;
+          opacity: 0.7;
+          order: 1;
+          font-size: 1.2vw;
+          display: flex;
+          justify-content: flex-start;
+
+          @include mobile {
+            flex: 0 1 48%;
+            font-size: 4vw;
+          }
+        }
+
+        .tech {
+          order: 2;
+          display: flex;
+          justify-content: flex-start;
+
+          @include mobile {
+            flex: 0 1 30%;
+            font-size: 4vw;
+          }
+
+          img {
+            width: 3.5vw;
+            height: auto;
+            margin-right: auto;
+            margin-left: 2vw;
+            opacity: 0.5;
+            transition: all 1s;
+
+            &:hover {
+              filter: brightness(140%);
+            }
+
+            @include mobile {
+              width: 9vw;
+            }
+          }
+
+          .postcss {
+            transform: scale(1);
+            opacity: 0.35;
+          }
+
+          .bem {
+            opacity: 0.5;
+            transform: scale(0.85);
+          }
+
+          .es6 {
+            transform: scale(0.9);
+          }
+
+          .js {
+            transform: scale(0.9);
+            opacity: 0.7;
+          }
+
+          .thunk {
+            border-radius: 0.7vw;
+            opacity: 0.3;
+          }
+        }
+
+        & > img {
+          width: 4vw;
+          height: auto;
+          order: 3;
+          margin-left: auto;
+          transition: all 1s;
+
+          &:hover {
+            filter: brightness(140%);
+            transition: all 1s;
+          }
+
+          @include mobile {
+            width: 10vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+.imgDiv {
+  margin-top: 15vh;
+  flex: 0 1 45%;
+
+  @include mobile {
+    display: none;
+  }
+
+  .preview {
+    display: flex;
+    position: sticky;
+    top: 5vw;
+    right: 5vw;
+    width: 100%;
+    height: auto;
+    z-index: 5;
+    filter: brightness(0.9);
+  }
+
+  @-webkit-keyframes showPrev {
+    0% {
+      border: 5vw solid transparent;
+      visibility: hidden;
+      opacity: 0;
+    }
+    50% {
+      visibility: hidden;
+      opacity: 1;
+    }
+    60% {
+      visibility: visible;
+      opacity: 1;
+    }
+    100% {
+      border: 5vw solid rgb(11, 2, 15);
+      background: white;
+    }
+  }
+}
