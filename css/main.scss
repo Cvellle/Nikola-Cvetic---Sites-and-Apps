@@ -76,6 +76,9 @@ h1 {
 }
 
 .personal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   padding: 0.3vw;
   position: absolute;
   left: 6.2%;
@@ -90,8 +93,9 @@ h1 {
   z-index: 1;
 
   @include mobile {
+    display: block;
     position: relative;
-    top: -6%;
+    top: -7%;
     left: 0;
     height: unset;
     width: 100%;
@@ -102,10 +106,12 @@ h1 {
     font-size: 1.2vw;
     color: rgba(0, 0, 0, 0.9);
     line-height: 1vw;
+    margin: 0;
     margin-left: 5%;
     z-index: 2;
 
     @include mobile {
+      margin: 4vw;
       font-size: 4.2vw !important;
       font-weight: 500;
       width: initial;
@@ -129,8 +135,8 @@ h1 {
   position: absolute;
   content: "";
   z-index: -1;
-  top: 24.5%;
-  left: 5vw;
+  top: 24%;
+  left: 5.2vw;
   background: rgba(128, 0, 128, 0.06);
   width: 22%;
   height: 21%;
