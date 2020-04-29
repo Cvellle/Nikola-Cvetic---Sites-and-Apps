@@ -19,21 +19,28 @@ body {
   position: relative;
   top: 5%;
   left: 5%;
-  height: 7%;
+  height: 10%;
   width: 60vw;
   font-size: 4vw;
   font-weight: bold !important;
   opacity: 1;
   color: purple;
+  background: linear-gradient(
+    to bottom right,
+    rgba(128, 0, 128, 0.288),
+    purple
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: 500 !important;
   font-style: normal;
   font-variant: normal;
 
   @include mobile {
     position: relative;
-    top: 2.3%;
+    top: 4%;
     left: 0%;
-    height: 7%;
+    height: 18%;
     font-size: 8vw !important;
     font-weight: bold;
     opacity: 1;
@@ -48,9 +55,16 @@ h1 {
   right: 5%;
   width: 30vw;
   font-size: 5vw;
+  color: purple;
+  background: linear-gradient(
+    to bottom right,
+    rgba(128, 0, 128, 0.288),
+    purple
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   z-index: 2;
   opacity: 0.9;
-  color: purple;
   font-weight: 500;
 
   @include mobile {
@@ -63,42 +77,66 @@ h1 {
 
 .personal {
   padding: 0.3vw;
-  position: relative;
-  left: 5.2%;
-  top: 5%;
+  position: absolute;
+  left: 6.2%;
+  top: 22%;
+  height: 21%;
   width: 22%;
-  background: rgba(255, 138, 245, 0.404);
+  background: linear-gradient(
+    to bottom right,
+    rgba(128, 0, 128, 0.39),
+    rgba(128, 0, 128, 0.815)
+  );
   z-index: 1;
 
   @include mobile {
-    width: 100%;
+    position: relative;
+    top: -6%;
     left: 0;
+    height: unset;
+    width: 100%;
+  }
+
+  p {
+    position: relative;
+    font-size: 1.2vw;
+    color: rgba(0, 0, 0, 0.9);
+    line-height: 1vw;
+    margin-left: 5%;
+    z-index: 2;
+
+    @include mobile {
+      font-size: 4.2vw !important;
+      font-weight: 500;
+      width: initial;
+      line-height: 4vw;
+      margin-left: 3vw;
+    }
+
+    & > a {
+      color: rgba(0, 0, 0, 0.9);
+      pointer-events: none;
+
+      @include mobile {
+        pointer-events: auto;
+        font-size: 3.9vw !important;
+      }
+    }
   }
 }
 
-.personal p {
-  position: relative;
-  font-size: 1.2vw;
-  color: rgba(0, 0, 0, 0.9);
-  line-height: 1vw;
-  margin-left: 5%;
+.personal-fade {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  top: 24.5%;
+  left: 5vw;
+  background: rgba(128, 0, 128, 0.06);
+  width: 22%;
+  height: 21%;
 
   @include mobile {
-    font-size: 4.2vw !important;
-    font-weight: 500;
-    width: initial;
-    line-height: 4vw;
-    margin-left: 3vw;
-  }
-
-  & > a {
-    color: rgba(0, 0, 0, 0.9);
-    pointer-events: none;
-
-    @include mobile {
-      pointer-events: auto;
-      font-size: 3.9vw !important;
-    }
+    display: none;
   }
 }
 
@@ -117,6 +155,9 @@ h1 {
     width: 14vw;
     height: 14vw;
     transform: translate(1vw, -1vw);
+  }
+  &--fade {
+    background-color: rgb(11, 2, 15);
   }
 }
 
@@ -164,7 +205,7 @@ h1 {
 .form1 {
   display: flex;
   position: relative;
-  top: 38.5vh;
+  top: 58.5vh;
   left: 65%;
   height: 4%;
   width: 30%;

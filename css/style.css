@@ -65,7 +65,7 @@ a {
   justify-content: space-between;
   position: relative;
   padding: 0 5vw 0;
-  top: 15vh;
+  top: 38vh;
 }
 @media (max-width: 1024px) {
   .works-wrapper {
@@ -99,6 +99,9 @@ a {
   font-size: 1.5vw;
   color: rgba(255, 255, 255, 0.541);
   margin: 3vw 0;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @media (max-width: 1024px) {
   .works h3 {
@@ -188,6 +191,9 @@ a {
     width: 9vw;
   }
 }
+.works .work a div .tech .react {
+  transform: scaley(1.1);
+}
 .works .work a div .tech .postcss {
   transform: scale(1);
   opacity: 0.35;
@@ -204,7 +210,7 @@ a {
   opacity: 0.7;
 }
 .works .work a div .tech .jq {
-  transform: scale(0.9);
+  transform: scale(0.85);
 }
 .works .work a div .tech .thunk {
   border-radius: 0.7vw;
@@ -224,6 +230,7 @@ a {
 }
 @media (max-width: 1024px) {
   .works .work a div > img {
+    max-height: 10vw;
     width: 10vw;
   }
 }
@@ -243,6 +250,8 @@ a {
   top: 5vw;
   right: 5vw;
   width: 100%;
+  min-height: 19vw;
+  max-height: 19vw;
   height: auto;
   z-index: 5;
   filter: brightness(0.9);
@@ -422,12 +431,15 @@ body {
   position: relative;
   top: 5%;
   left: 5%;
-  height: 7%;
+  height: 10%;
   width: 60vw;
   font-size: 4vw;
   font-weight: bold !important;
   opacity: 1;
   color: purple;
+  background: linear-gradient(to bottom right, rgba(128, 0, 128, 0.288), purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: 500 !important;
   font-style: normal;
   font-variant: normal;
@@ -435,9 +447,9 @@ body {
 @media (max-width: 1024px) {
   .name {
     position: relative;
-    top: 2.3%;
+    top: 4%;
     left: 0%;
-    height: 7%;
+    height: 18%;
     font-size: 8vw !important;
     font-weight: bold;
     opacity: 1;
@@ -452,9 +464,12 @@ h1 {
   right: 5%;
   width: 30vw;
   font-size: 5vw;
+  color: purple;
+  background: linear-gradient(to bottom right, rgba(128, 0, 128, 0.288), purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   z-index: 2;
   opacity: 0.9;
-  color: purple;
   font-weight: 500;
 }
 @media (max-width: 1024px) {
@@ -468,26 +483,30 @@ h1 {
 
 .personal {
   padding: 0.3vw;
-  position: relative;
-  left: 5.2%;
-  top: 5%;
+  position: absolute;
+  left: 6.2%;
+  top: 22%;
+  height: 21%;
   width: 22%;
-  background: rgba(255, 138, 245, 0.404);
+  background: linear-gradient(to bottom right, rgba(128, 0, 128, 0.39), rgba(128, 0, 128, 0.815));
   z-index: 1;
 }
 @media (max-width: 1024px) {
   .personal {
-    width: 100%;
+    position: relative;
+    top: -6%;
     left: 0;
+    height: unset;
+    width: 100%;
   }
 }
-
 .personal p {
   position: relative;
   font-size: 1.2vw;
   color: rgba(0, 0, 0, 0.9);
   line-height: 1vw;
   margin-left: 5%;
+  z-index: 2;
 }
 @media (max-width: 1024px) {
   .personal p {
@@ -509,6 +528,22 @@ h1 {
   }
 }
 
+.personal-fade {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  top: 24.5%;
+  left: 5vw;
+  background: rgba(128, 0, 128, 0.06);
+  width: 22%;
+  height: 21%;
+}
+@media (max-width: 1024px) {
+  .personal-fade {
+    display: none;
+  }
+}
+
 .hide {
   position: absolute;
   top: 0%;
@@ -526,6 +561,9 @@ h1 {
     height: 14vw;
     transform: translate(1vw, -1vw);
   }
+}
+.hide--fade {
+  background-color: #0b020f;
 }
 
 .intrdiv {
@@ -574,7 +612,7 @@ h1 {
 .form1 {
   display: flex;
   position: relative;
-  top: 38.5vh;
+  top: 58.5vh;
   left: 65%;
   height: 4%;
   width: 30%;

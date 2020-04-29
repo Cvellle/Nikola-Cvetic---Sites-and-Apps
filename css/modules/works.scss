@@ -6,7 +6,7 @@
   justify-content: space-between;
   position: relative;
   padding: 0 5vw 0;
-  top: 15vh;
+  top: 38vh;
 
   @include mobile {
     top: 0;
@@ -38,6 +38,9 @@
     font-size: 1.5vw;
     color: rgba(255, 255, 255, 0.541);
     margin: 3vw 0;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 
     @include mobile {
       margin-top: 0;
@@ -124,6 +127,9 @@
             }
           }
 
+          .react {
+            transform: scaley(1.1);
+          }
           .postcss {
             transform: scale(1);
             opacity: 0.35;
@@ -144,7 +150,7 @@
           }
 
           .jq {
-            transform: scale(0.9);
+            transform: scale(0.85);
           }
 
           .thunk {
@@ -167,6 +173,7 @@
           }
 
           @include mobile {
+            max-height: 10vw;
             width: 10vw;
           }
         }
@@ -189,6 +196,8 @@
     top: 5vw;
     right: 5vw;
     width: 100%;
+    min-height: 19vw;
+    max-height: 19vw;
     height: auto;
     z-index: 5;
     filter: brightness(0.9);
