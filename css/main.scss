@@ -76,11 +76,11 @@ h1 {
 }
 
 .personal {
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   padding: 0.3vw;
-  position: absolute;
   left: 6.2%;
   top: 22%;
   height: 21%;
@@ -91,13 +91,13 @@ h1 {
     rgba(128, 0, 128, 0.815)
   );
   z-index: 1;
+  clip-path: polygon(0% 0, 0% 100%, 100% 100%, 100% 10%);
 
   @include mobile {
-    display: block;
     position: relative;
     top: -7%;
     left: 0;
-    height: unset;
+    height: 40vw;
     width: 100%;
   }
 
@@ -111,7 +111,6 @@ h1 {
     z-index: 2;
 
     @include mobile {
-      margin: 4vw;
       font-size: 4.2vw !important;
       font-weight: 500;
       width: initial;
@@ -133,16 +132,19 @@ h1 {
 
 .personal-fade {
   position: absolute;
-  content: "";
   z-index: -1;
-  top: 24%;
-  left: 5.2vw;
+  top: 20%;
+  left: 7.2vw;
   background: rgba(128, 0, 128, 0.06);
   width: 22%;
   height: 21%;
+  clip-path: polygon(0% 0, 0% 100%, 100% 100%, 100% 10%);
 
   @include mobile {
-    display: none;
+    top: 24vw;
+    left: 8vw;
+    height: 40vw;
+    width: 90%;
   }
 }
 
@@ -153,6 +155,7 @@ h1 {
   width: 4vw;
   height: 4vw;
   background-color: rgb(11, 2, 15);
+  background-color: transparent;
   clip-path: polygon(0% 0, 100% 0%, 100% 100%);
   transform: translate(0.2vw, -0.2vw);
   border: 0;
@@ -259,7 +262,7 @@ h1 {
 
   @include mobile {
     position: absolute;
-    top: 40vh;
+    top: 50vh;
     left: 50%;
     background: transparent;
     z-index: 115;
