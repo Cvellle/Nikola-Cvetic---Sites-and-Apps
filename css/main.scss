@@ -259,6 +259,7 @@ h1 {
   top: 30%;
   left: 80%;
   background: transparent;
+  z-index: 5;
 
   @include mobile {
     position: absolute;

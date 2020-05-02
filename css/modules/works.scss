@@ -11,6 +11,7 @@
   @include mobile {
     top: 0;
     padding: 0;
+    z-index: 1;
   }
 }
 
@@ -32,7 +33,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  z-index: 6;
+  z-index: 2;
 
   h3 {
     font-size: 1.5vw;
