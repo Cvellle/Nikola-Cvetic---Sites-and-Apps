@@ -19,10 +19,9 @@ function showProjects() {
 
     function hideProject() {
         imagePrew.classList.remove("op1");
-        // imagePrew.classList.remove("tr03");
     }
 
-} 
+}
 
 showProjects();
 

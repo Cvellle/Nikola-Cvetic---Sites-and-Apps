@@ -2,6 +2,21 @@
   box-sizing: border-box;
 }
 
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-block-start: 0;
+  padding-block-end: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+}
+
 button {
   border: 0;
   outline: 0;
@@ -64,14 +79,30 @@ a {
   flex-flow: row wrap;
   justify-content: space-between;
   position: relative;
-  padding: 0 5vw 0;
-  top: 38vh;
+  padding: 0 5vw 5vw;
+  top: 45vh;
 }
 @media (max-width: 1024px) {
   .works-wrapper {
-    top: 0;
     padding: 0;
     z-index: 1;
+    padding: 0 0vw 5vw 0vw;
+  }
+}
+.works-wrapper h3 {
+  font-size: 1.5vw;
+  color: rgba(255, 255, 255, 0.541);
+  margin: 3vw 0;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: 1024px) {
+  .works-wrapper h3 {
+    margin-top: 0;
+    padding-top: 4vw;
+    margin-bottom: 4vw;
+    font-size: 5vw;
   }
 }
 
@@ -96,6 +127,13 @@ a {
   justify-content: space-between;
   z-index: 2;
 }
+@media (max-width: 1024px) {
+  .works {
+    width: 100vw;
+    display: block;
+    padding: 0;
+  }
+}
 .works h3 {
   font-size: 1.5vw;
   color: rgba(255, 255, 255, 0.541);
@@ -110,14 +148,6 @@ a {
     padding-top: 10vw;
     margin-bottom: 14vw;
     font-size: 5vw;
-  }
-}
-@media (max-width: 1024px) {
-  .works {
-    top: 100vw;
-    width: 100vw;
-    display: block;
-    padding: 0 !important;
   }
 }
 .works .work {
@@ -185,15 +215,18 @@ a {
   transition: all 1s;
 }
 .works .work a div .tech img:hover {
-  filter: brightness(140%);
+  opacity: 0.7;
+  transform: scale(1.2) translate3d(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
 }
 @media (max-width: 1024px) {
   .works .work a div .tech img {
     width: 9vw;
   }
 }
-.works .work a div .tech .react {
-  transform: scaley(1.1);
+.works .work a div .tech .postcss {
+  transform: scale(0.8);
 }
 .works .work a div .tech .postcss {
   transform: scale(1);
@@ -215,7 +248,7 @@ a {
 }
 .works .work a div .tech .thunk {
   border-radius: 0.7vw;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 .works .work a div > img {
   width: 4vw;
@@ -237,12 +270,13 @@ a {
 }
 
 .imgDiv {
-  margin-top: 15vh;
+  margin-top: 6.5vh;
   flex: 0 1 45%;
 }
 @media (max-width: 1024px) {
   .imgDiv {
-    display: none;
+    margin-top: 0vh;
+    flex: 0 1 100%;
   }
 }
 .imgDiv .preview {
@@ -256,6 +290,17 @@ a {
   height: auto;
   z-index: 5;
   filter: brightness(0.9);
+}
+@media (max-width: 1024px) {
+  .imgDiv .preview {
+    position: fixed;
+    top: unset;
+    bottom: 5vw;
+    right: 5%;
+    width: 90%;
+    min-height: 45vw;
+    max-height: 45vw;
+  }
 }
 @-webkit-keyframes showPrev {
   0% {
@@ -277,6 +322,11 @@ a {
   }
 }
 
+/*
+
+sass --watch css/main.scss css/style.css
+
+*/
 .img1 {
   border-radius: 50%;
   z-index: 2;
@@ -430,7 +480,7 @@ body {
 
 .name {
   position: relative;
-  top: 5%;
+  margin-top: 2.5%;
   left: 5%;
   height: 10%;
   width: 60vw;
@@ -448,7 +498,7 @@ body {
 @media (max-width: 1024px) {
   .name {
     position: relative;
-    top: 4%;
+    margin-top: 7%;
     left: 0%;
     height: 18%;
     font-size: 8vw !important;
@@ -461,7 +511,8 @@ body {
 
 h1 {
   position: absolute;
-  top: -3%;
+  top: 0%;
+  margin-top: 2%;
   right: 5%;
   width: 30vw;
   font-size: 5vw;
@@ -475,8 +526,10 @@ h1 {
 }
 @media (max-width: 1024px) {
   h1 {
-    top: 0;
-    right: 2.5vw;
+    margin-top: 5%;
+    right: 5vw;
+    width: auto;
+    font-size: 6vw;
     opacity: 1;
     font-weight: 600;
   }
@@ -499,7 +552,7 @@ h1 {
 @media (max-width: 1024px) {
   .personal {
     position: relative;
-    top: -7%;
+    margin-top: 10%;
     left: 0;
     height: 40vw;
     width: 100%;
@@ -576,9 +629,9 @@ h1 {
   background-color: #0b020f;
 }
 
-.intrdiv {
+.introduction {
   position: absolute;
-  top: 20%;
+  top: 23%;
   right: 5%;
   height: 15%;
   width: 30%;
@@ -589,12 +642,12 @@ h1 {
   opacity: 0.9;
 }
 @media (max-width: 1024px) {
-  .intrdiv {
+  .introduction {
     padding: 0vw;
   }
 }
 
-.intrdiv p {
+.introduction p {
   color: white;
   opacity: 0.9;
   position: absolute;
@@ -604,27 +657,27 @@ h1 {
   max-width: 100%;
 }
 @media (max-width: 1024px) {
-  .intrdiv p {
+  .introduction p {
     padding: 2.5vw;
     font-size: 4.2vw;
     line-height: 6vw;
   }
 }
 
-.intrdiv span:nth-child(even) {
+.introduction span:nth-child(even) {
   display: none;
 }
 
-.intrdiv span:nth-child(odd) {
+.introduction span:nth-child(odd) {
   display: inline;
 }
 
 .form1 {
   display: flex;
-  position: relative;
-  top: 58.5vh;
+  position: absolute;
+  margin-top: 62vh;
   left: 65%;
-  height: 4%;
+  height: 1.8vw;
   width: 30%;
   background: rgba(244, 187, 255, 0.23);
   z-index: 6;
@@ -642,7 +695,7 @@ h1 {
   font-size: 1.3vw;
   color: white;
   opacity: 0.7;
-  margin-top: 10%;
+  margin-top: 5vh;
 }
 
 #submit:disabled {
@@ -752,7 +805,7 @@ h1 {
     overflow-y: scroll;
   }
 
-  .intrdiv {
+  .introduction {
     width: 95vw;
     margin-left: 2.5%;
     position: relative;
@@ -761,16 +814,16 @@ h1 {
     font-size: 13vw !important;
   }
 
-  .intrdiv p {
+  .introduction p {
     position: relative;
     max-width: 100vw;
   }
 
-  .intrdiv span:nth-child(odd) {
+  .introduction span:nth-child(odd) {
     display: none;
   }
 
-  .intrdiv span:nth-child(even) {
+  .introduction span:nth-child(even) {
     display: inline;
   }
 
