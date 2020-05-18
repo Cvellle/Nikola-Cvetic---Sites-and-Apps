@@ -224,6 +224,7 @@
     filter: brightness(0.9);
 
     @include mobile {
+      display: none;
       position: fixed;
       top: unset;
       bottom: 5vw;

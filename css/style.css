@@ -293,6 +293,7 @@ a {
 }
 @media (max-width: 1024px) {
   .imgDiv .preview {
+    display: none;
     position: fixed;
     top: unset;
     bottom: 5vw;
