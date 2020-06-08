@@ -285,8 +285,9 @@ a {
   top: 5vw;
   right: 5vw;
   width: 100%;
-  min-height: 19vw;
-  max-height: 19vw;
+  height: 21vw;
+  min-height: 21vw;
+  max-height: 21vw;
   height: auto;
   z-index: 5;
   filter: brightness(0.9);
