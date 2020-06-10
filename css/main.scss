@@ -1,8 +1,15 @@
-@use "./base/mixins.scss" as *;
-@use "./base/variables.scss" as *;
-@use "./base/base.scss" as *;
-@use "./modules/works.scss";
-@use "./modules/planets.scss";
+/*
+
+sass --watch css/main.scss css/style.css
+sass --watch css/main.scss:css/style.css
+
+*/
+
+@import "./base/mixins.scss";
+@import "./base/variables.scss";
+@import "./base/base.scss";
+@import "./modules/works.scss";
+@import "./modules/planets.scss";
 
 body {
   background: rgb(11, 2, 15);
@@ -28,7 +35,7 @@ body {
   background: linear-gradient(
     to bottom right,
     rgba(128, 0, 128, 0.288),
-    lighten(purple, 10%)
+    lighten(rgb(138, 67, 138), 10%)
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -60,7 +67,7 @@ h1 {
   background: linear-gradient(
     to bottom right,
     rgba(39, 1, 39, 0.699),
-    lighten(purple, 10%)
+    lighten(rgb(138, 67, 138), 10%)
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -90,8 +97,8 @@ h1 {
   width: 22%;
   background: linear-gradient(
     to bottom right,
-    lighten(rgba(128, 0, 128, 0.39), 8%),
-    lighten(rgba(128, 0, 128, 0.815), 8%)
+    lighten(rgba(161, 74, 161, 0.39), 4%),
+    lighten(rgba(177, 91, 177, 0.39), 12%)
   );
   z-index: 1;
   clip-path: polygon(0% 0, 0% 100%, 100% 100%, 100% 10%);
@@ -230,8 +237,9 @@ h1 {
   top: 0vh;
   left: 0%;
   position: absolute;
-  font-size: 1.3vw;
-  color: rgba(255, 255, 255, 0.755);
+  font-size: 1.2vw;
+  color: rgb(255, 255, 255);
+  opacity: 0.85;
   margin-top: 5vh;
 }
 
@@ -255,7 +263,7 @@ h1 {
 
 #cvDiv {
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 80%;
   background: transparent;
   z-index: 5;
@@ -272,7 +280,7 @@ h1 {
 #circlingLink {
   position: absolute;
   background: transparent;
-  transform-origin: 50% 10vw;
+  transform-origin: 50% 8vw;
   -moz-animation: rotate 30s linear infinite;
   -webkit-animation: rotate 30s linear infinite;
 
@@ -407,5 +415,6 @@ h1 {
 /*
 
 sass --watch css/main.scss css/style.css
+sass --watch css/main.scss:css/style.css
 
 */
