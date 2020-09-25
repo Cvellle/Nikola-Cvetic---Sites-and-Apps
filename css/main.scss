@@ -1,6 +1,5 @@
 /*
 
-sass --watch css/main.scss css/style.css
 sass --watch css/main.scss:css/style.css
 
 */
@@ -10,411 +9,370 @@ sass --watch css/main.scss:css/style.css
 @import "./base/base.scss";
 @import "./modules/works.scss";
 @import "./modules/planets.scss";
-
 body {
-  background: rgb(11, 2, 15);
-  overflow-y: scroll;
-  font-family: $centuryGothic;
-  margin: 0;
-
-  @include mobile {
-    padding: 0 5vw;
-  }
+    background: rgb(11, 2, 15);
+    overflow-y: scroll;
+    font-family: $centuryGothic;
+    margin: 0;
+    @include mobile {
+        padding: 0 5vw;
+    }
 }
 
 .name {
-  position: relative;
-  margin-top: 2.5%;
-  left: 5%;
-  height: 10%;
-  width: 60vw;
-  font-size: 4vw;
-  font-weight: bold !important;
-  opacity: 1;
-  color: purple;
-  background: linear-gradient(
-    to bottom right,
-    rgba(128, 0, 128, 0.288),
-    lighten(rgb(138, 67, 138), 10%)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 500 !important;
-  font-style: normal;
-  font-variant: normal;
-
-  @include mobile {
     position: relative;
-    margin-top: 7%;
-    left: 0%;
-    height: 18%;
-    font-size: 8vw !important;
-    font-weight: bold;
+    margin-top: 2.5%;
+    left: 5%;
+    height: 10%;
+    width: 60vw;
+    font-size: 4vw;
+    font-weight: bold !important;
     opacity: 1;
     color: purple;
-    font-weight: 500;
-  }
+    background: linear-gradient( to bottom right, rgba(128, 0, 128, 0.288), lighten(rgb(138, 67, 138), 10%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500 !important;
+    font-style: normal;
+    font-variant: normal;
+    @include mobile {
+        position: relative;
+        margin-top: 7%;
+        left: 0%;
+        height: 18%;
+        font-size: 8vw !important;
+        font-weight: bold;
+        opacity: 1;
+        color: purple;
+        font-weight: 500;
+    }
 }
 
 h1 {
-  position: absolute;
-  top: 0%;
-  margin-top: 2%;
-  right: 5%;
-  width: 30vw;
-  font-size: 5vw;
-  color: purple;
-  background: linear-gradient(
-    to bottom right,
-    rgba(39, 1, 39, 0.699),
-    lighten(rgb(138, 67, 138), 10%)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  z-index: 2;
-  opacity: 0.9;
-  font-weight: 500;
-
-  @include mobile {
-    margin-top: 5%;
-    right: 5vw;
-    width: auto;
-    font-size: 6vw;
-    opacity: 1;
-    font-weight: 600;
-  }
+    position: absolute;
+    top: 0%;
+    margin-top: 2%;
+    right: 5%;
+    width: 30vw;
+    font-size: 5vw;
+    color: purple;
+    background: linear-gradient( to bottom right, rgba(39, 1, 39, 0.699), lighten(rgb(138, 67, 138), 10%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 2;
+    opacity: 0.9;
+    font-weight: 500;
+    @include mobile {
+        margin-top: 5%;
+        right: 5vw;
+        width: auto;
+        font-size: 6vw;
+        opacity: 1;
+        font-weight: 600;
+    }
 }
 
 .personal {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  padding: 0.3vw;
-  left: 6.2%;
-  top: 22%;
-  height: 21%;
-  width: 22%;
-  background: linear-gradient(
-    to bottom right,
-    lighten(rgba(161, 74, 161, 0.39), 4%),
-    lighten(rgba(177, 91, 177, 0.39), 12%)
-  );
-  z-index: 1;
-  clip-path: polygon(0% 0, 0% 100%, 100% 100%, 100% 10%);
-
-  @include mobile {
-    position: relative;
-    margin-top: 10%;
-    left: 0;
-    height: 40vw;
-    width: 100%;
-  }
-
-  p {
-    position: relative;
-    font-size: 1.2vw;
-    color: rgba(0, 0, 0, 0.9);
-    line-height: 1vw;
-    margin: 0;
-    margin-left: 5%;
-    z-index: 2;
-
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0.3vw;
+    left: 6.2%;
+    top: 22%;
+    height: 21%;
+    width: 22%;
+    background: linear-gradient( to bottom right, lighten(rgba(161, 74, 161, 0.39), 4%), lighten(rgba(177, 91, 177, 0.39), 12%));
+    z-index: 1;
+    clip-path: polygon(0% 0, 0% 100%, 100% 100%, 100% 10%);
     @include mobile {
-      font-size: 4.2vw !important;
-      font-weight: 500;
-      width: initial;
-      line-height: 4vw;
-      margin-left: 3vw;
+        position: relative;
+        margin-top: 10%;
+        left: 0;
+        height: 40vw;
+        width: 100%;
     }
-
-    & > a {
-      color: rgba(0, 0, 0, 0.9);
-      pointer-events: none;
-
-      @include mobile {
-        pointer-events: auto;
-        font-size: 3.9vw !important;
-      }
+    p {
+        position: relative;
+        font-size: 1.2vw;
+        color: rgba(0, 0, 0, 0.9);
+        line-height: 1vw;
+        margin: 0;
+        margin-left: 5%;
+        z-index: 2;
+        @include mobile {
+            font-size: 4.2vw !important;
+            font-weight: 500;
+            width: initial;
+            line-height: 4vw;
+            margin-left: 3vw;
+        }
+        &>a {
+            color: rgba(0, 0, 0, 0.9);
+            pointer-events: none;
+            @include mobile {
+                pointer-events: auto;
+                font-size: 3.9vw !important;
+            }
+        }
     }
-  }
 }
 
 .personal-fade {
-  position: absolute;
-  z-index: -1;
-  top: 20%;
-  left: 7.2vw;
-  background: rgba(128, 0, 128, 0.08);
-  width: 22%;
-  height: 21%;
-  clip-path: polygon(0% 0, 0% 100%, 100% 100%, 100% 10%);
-
-  @include mobile {
-    top: 24vw;
-    left: 8vw;
-    height: 40vw;
-    width: 90%;
-    background: rgba(128, 0, 128, 0.15);
-  }
+    position: absolute;
+    z-index: -1;
+    top: 20%;
+    left: 7.2vw;
+    background: rgba(128, 0, 128, 0.08);
+    width: 22%;
+    height: 21%;
+    clip-path: polygon(0% 0, 0% 100%, 100% 100%, 100% 10%);
+    @include mobile {
+        top: 24vw;
+        left: 8vw;
+        height: 40vw;
+        width: 90%;
+        background: rgba(128, 0, 128, 0.15);
+    }
 }
 
 .hide {
-  position: absolute;
-  top: 0%;
-  right: 0%;
-  width: 4vw;
-  height: 4vw;
-  background-color: rgb(11, 2, 15);
-  clip-path: polygon(0% 0, 100% 0%, 100% 100%);
-  transform: translate(0.2vw, -0.2vw);
-  border: 0;
-
-  @include mobile {
-    width: 14vw;
-    height: 14vw;
-    transform: translate(1vw, -1vw);
-  }
-  &--fade {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 4vw;
+    height: 4vw;
     background-color: rgb(11, 2, 15);
-  }
+    clip-path: polygon(0% 0, 100% 0%, 100% 100%);
+    transform: translate(0.2vw, -0.2vw);
+    border: 0;
+    @include mobile {
+        width: 14vw;
+        height: 14vw;
+        transform: translate(1vw, -1vw);
+    }
+    &--fade {
+        background-color: rgb(11, 2, 15);
+    }
 }
 
 .introduction {
-  position: absolute;
-  top: 23%;
-  right: 5%;
-  height: 15%;
-  width: 30%;
-  text-align: center;
-  justify: center;
-  align-items: center;
-
-  @include mobile {
-    padding: 0vw;
-  }
+    position: absolute;
+    top: 23%;
+    right: 5%;
+    height: 15%;
+    width: 30%;
+    text-align: center;
+    justify: center;
+    align-items: center;
+    @include mobile {
+        padding: 0vw;
+    }
 }
 
 .introduction p {
-  color: rgba(255, 255, 255, 0.755);
-  position: absolute;
-  top: 0%;
-  font-size: 1.2vw;
-  text-align: left;
-  max-width: 100%;
-
-  @include mobile {
-    padding: 2.5vw;
-    font-size: 4.2vw;
-    line-height: 6vw;
-  }
+    color: rgba(255, 255, 255, 0.755);
+    position: absolute;
+    top: 0%;
+    font-size: 1.2vw;
+    text-align: left;
+    max-width: 100%;
+    @include mobile {
+        padding: 2.5vw;
+        font-size: 4.2vw;
+        line-height: 6vw;
+    }
 }
 
 .introduction span:nth-child(even) {
-  display: none;
+    display: none;
 }
 
 .introduction span:nth-child(odd) {
-  display: inline;
+    display: inline;
 }
 
 .form1 {
-  display: flex;
-  position: absolute;
-  margin-top: 62vh;
-  left: 65%;
-  height: 1.8vw;
-  width: 30%;
-  background: rgba(244, 187, 255, 0.23);
-  z-index: 6;
-
-  @include mobile {
-    display: none;
-  }
+    display: flex;
+    position: absolute;
+    margin-top: 62vh;
+    left: 65%;
+    height: 1.8vw;
+    width: 30%;
+    background: rgba(244, 187, 255, 0.23);
+    z-index: 6;
+    @include mobile {
+        display: none;
+    }
 }
 
 .form1 #instr {
-  top: 0vh;
-  left: 0%;
-  position: absolute;
-  font-size: 1.2vw;
-  color: rgb(255, 255, 255);
-  opacity: 0.85;
-  margin-top: 5vh;
+    top: 0vh;
+    left: 0%;
+    position: absolute;
+    font-size: 1.2vw;
+    color: rgb(255, 255, 255);
+    opacity: 0.85;
+    margin-top: 5vh;
 }
 
 #submit:disabled {
-  filter: brightness(0.4);
-  cursor: not-allowed;
+    filter: brightness(0.4);
+    cursor: not-allowed;
 }
 
 #submit {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 @-webkit-keyframes planetRotate {
-  from {
-    -webkit-transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(359deg);
-  }
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+    }
 }
 
 #cvDiv {
-  position: absolute;
-  top: 40%;
-  left: 80%;
-  background: transparent;
-  z-index: 5;
-
-  @include mobile {
     position: absolute;
-    top: 50vh;
-    left: 50%;
+    top: 40%;
+    left: 80%;
     background: transparent;
-    z-index: 115;
-  }
+    z-index: 5;
+    @include mobile {
+        position: absolute;
+        top: 50vh;
+        left: 50%;
+        background: transparent;
+        z-index: 115;
+    }
 }
 
 #circlingLink {
-  position: absolute;
-  background: transparent;
-  transform-origin: 50% 8vw;
-  -moz-animation: rotate 30s linear infinite;
-  -webkit-animation: rotate 30s linear infinite;
-
-  @include mobile {
     position: absolute;
     background: transparent;
-    transform-origin: 50% 25vw;
-  }
+    transform-origin: 50% 8vw;
+    -moz-animation: rotate 30s linear infinite;
+    -webkit-animation: rotate 30s linear infinite;
+    @include mobile {
+        position: absolute;
+        background: transparent;
+        transform-origin: 50% 25vw;
+    }
 }
 
 .highlight {
-  transition: all 0.2s;
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  z-index: 14;
-  border-radius: 50%;
-  position: absolute;
-  height: 3.5vw;
-  width: 3.5vw;
-  background: url("../images/cv.jpg");
-  background-size: cover;
-  filter: brightness(0.5);
-  pointer-events: none;
-  -moz-animation: planetRotate 80s linear infinite;
-  -webkit-animation: planetRotate 80s linear infinite;
-
-  @include mobile {
     transition: all 0.2s;
     position: absolute;
     top: 0%;
     left: 0%;
     z-index: 14;
     border-radius: 50%;
-    height: 15vw;
-    width: 15vw;
+    position: absolute;
+    height: 3.5vw;
+    width: 3.5vw;
     background: url("../images/cv.jpg");
     background-size: cover;
     filter: brightness(0.5);
-    pointer-events: fill;
-  }
+    pointer-events: none;
+    -moz-animation: planetRotate 80s linear infinite;
+    -webkit-animation: planetRotate 80s linear infinite;
+    @include mobile {
+        transition: all 0.2s;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        z-index: 14;
+        border-radius: 50%;
+        height: 15vw;
+        width: 15vw;
+        background: url("../images/cv.jpg");
+        background-size: cover;
+        filter: brightness(0.5);
+        pointer-events: fill;
+    }
 }
 
 @-webkit-keyframes rotate {
-  0% {
-    -webkit-transform: rotate(90deg);
-  }
-  25% {
-    -webkit-transform: rotate(180deg);
-  }
-  50% {
-    -webkit-transform: rotate(270deg);
-  }
-  75% {
-    -webkit-transform: rotate(360deg);
-  }
-  100% {
-    -webkit-transform: rotate(450deg);
-  }
+    0% {
+        -webkit-transform: rotate(90deg);
+    }
+    25% {
+        -webkit-transform: rotate(180deg);
+    }
+    50% {
+        -webkit-transform: rotate(270deg);
+    }
+    75% {
+        -webkit-transform: rotate(360deg);
+    }
+    100% {
+        -webkit-transform: rotate(450deg);
+    }
 }
 
 // MOBILE
-
 @media only screen and (max-width: 1024px) {
-  body {
-    background: rgb(11, 2, 15);
-    overflow-x: hidden;
-    overflow-y: scroll;
-  }
-
-  .introduction {
-    width: 95vw;
-    margin-left: 2.5%;
-    position: relative;
-    top: 60vw;
-    left: initial;
-    font-size: 13vw !important;
-  }
-
-  .introduction p {
-    position: relative;
-    max-width: 100vw;
-  }
-
-  .introduction span:nth-child(odd) {
-    display: none;
-  }
-
-  .introduction span:nth-child(even) {
-    display: inline;
-  }
-
-  .works .work {
-    margin-left: auto;
-    margin-right: auto;
-    width: 90vw !important;
-    margin-bottom: 15vw !important;
-  }
-
-  .works a {
-    font-size: 5.5vw;
-  }
-
-  .form1 {
-    position: relative;
-    top: 50vw;
-    left: 5%;
-    width: 95vw;
-    height: 5%;
-    z-index: 16;
-
-    @include mobile {
-      display: none;
+    body {
+        background: rgb(11, 2, 15);
+        overflow-x: hidden;
+        overflow-y: scroll;
     }
-  }
-
-  .form1 #text1 {
-    width: 25vw;
-  }
-
-  .form1 #submit {
-    width: 15vw;
-    font-size: 3vw !important;
-  }
-
-  .form1 #instr {
-    color: white;
-    font-size: 4vw !important;
-  }
+    .introduction {
+        width: 95vw;
+        margin-left: 2.5%;
+        position: relative;
+        top: 60vw;
+        left: initial;
+        font-size: 13vw !important;
+    }
+    .introduction p {
+        position: relative;
+        max-width: 100vw;
+    }
+    .introduction span:nth-child(odd) {
+        display: none;
+    }
+    .introduction span:nth-child(even) {
+        display: inline;
+    }
+    .works .work {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90vw !important;
+        margin-bottom: 15vw !important;
+    }
+    .works a {
+        font-size: 5.5vw;
+    }
+    .form1 {
+        position: relative;
+        top: 50vw;
+        left: 5%;
+        width: 95vw;
+        height: 5%;
+        z-index: 16;
+        @include mobile {
+            display: none;
+        }
+    }
+    .form1 #text1 {
+        width: 25vw;
+    }
+    .form1 #submit {
+        width: 15vw;
+        font-size: 3vw !important;
+    }
+    .form1 #instr {
+        color: white;
+        font-size: 4vw !important;
+    }
 }
+
 
 /*
 
 sass --watch css/main.scss css/style.css
-sass --watch css/main.scss:css/style.css
 
 */
