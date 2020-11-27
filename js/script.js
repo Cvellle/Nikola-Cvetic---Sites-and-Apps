@@ -1,3 +1,9 @@
+const highlight = document.querySelector(".highlight");
+const formToUnlock = document.querySelector(".form1");
+const instruction = document.querySelector("#instr");
+const cvLink = document.querySelector("#circlingLink");
+const introduction = document.querySelector(".introduction > p");
+
 // FORM
 text1.onkeydown = function (e) {
   if (e.keyCode > 57 || (e.keyCode < 48 && e.keyCode != 8)) {
@@ -12,27 +18,22 @@ text1.onkeydown = function (e) {
 };
 
 //UNLOCK
-submit.addEventListener("click", subm);
-const wd = document.querySelector("#worksdiv");
+submit.addEventListener("click", unlockCv);
 
-function subm() {
-  document.querySelector(".highlight").style.cursor = "pointer";
-  document
-    .querySelector(".highlight")
-    .setAttribute("style", "pointer-events:fill");
-  document.querySelector(".highlight").style.webkitFilter = "brightness(1.2)";
-  document.querySelector(".form1").style.background = "blue";
-  instr.innerHTML = "Sucess! Now click on the Sattelite";
+function unlockCv() {
+  highlight.style.cursor = "pointer";
+  highlight.setAttribute("style", "pointer-events:fill");
+  highlight.style.webkitFilter = "brightness(1.2)";
+  formToUnlock.style.background = "blue";
+  instruction.innerHTML =
+    instruction.innerHTML !== " " ? "Sucess! Now click on the Sattelite" : " ";
 }
 
 //CLICK ON THE CV
-const cvLink = document.querySelector("#circlingLink");
-const introduction = document.querySelector(".introduction > p");
-
 cvLink.addEventListener("click", changeTextAfterCvClick);
 
 function changeTextAfterCvClick() {
-  instr.innerHTML = " ";
+  instruction.innerHTML = " ";
   const unlockSpan =
     introduction.firstChild.nextElementSibling.nextElementSibling
       .nextElementSibling;

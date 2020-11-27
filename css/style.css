@@ -708,12 +708,12 @@ h1 {
   margin-top: 5vh;
 }
 
-#submit:disabled {
+#submitButton:disabled {
   filter: brightness(0.4);
   cursor: not-allowed;
 }
 
-#submit {
+#submitButton {
   cursor: pointer;
 }
 
@@ -863,12 +863,12 @@ h1 {
   }
 }
 @media only screen and (max-width: 1024px) {
-  .form1 #text1 {
+  .form1 #submitText {
     width: 25vw;
   }
 }
 @media only screen and (max-width: 1024px) {
-  .form1 #submit {
+  .form1 #submitButton {
     width: 15vw;
     font-size: 3vw !important;
   }
