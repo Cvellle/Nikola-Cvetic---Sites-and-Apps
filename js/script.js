@@ -1,24 +1,26 @@
-const highlight = document.querySelector(".highlight");
-const formToUnlock = document.querySelector(".form1");
-const instruction = document.querySelector("#instr");
 const cvLink = document.querySelector("#circlingLink");
+const formToUnlock = document.querySelector(".form1");
+const highlight = document.querySelector(".highlight");
+const instruction = document.querySelector("#instr");
 const introduction = document.querySelector(".introduction > p");
+const submitInput = document.querySelector("#submitInput");
+const submitButton = document.querySelector("#submit");
 
 // FORM
-text1.onkeydown = function (e) {
+submitInput.onkeydown = function (e) {
   if (e.keyCode > 57 || (e.keyCode < 48 && e.keyCode != 8)) {
     alert("Please input only numbers");
     return false;
   }
-  if (e.keyCode <= 57 && text1.value.length > 0 && e.keyCode != 8) {
-    submit.disabled = false;
-    form1.text1.focus();
+  if (e.keyCode <= 57 && submitInput.value.length > 0 && e.keyCode != 8) {
+    submitButton.disabled = false;
+    form1.submitInput.focus();
     return true;
   }
 };
 
 //UNLOCK
-submit.addEventListener("click", unlockCv);
+submitButton.addEventListener("click", unlockCv);
 
 function unlockCv() {
   highlight.style.cursor = "pointer";
