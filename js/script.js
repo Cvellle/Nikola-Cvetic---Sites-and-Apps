@@ -41,4 +41,8 @@ function changeTextAfterCvClick() {
       .nextElementSibling;
   unlockSpan.style.display = "none";
   unlockSpan.nextElementSibling.style.display = "inline";
+  unlockSpan.nextElementSibling.nextElementSibling.nextElementSibling.style.display =
+    "none";
+  unlockSpan.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.style.display =
+    "inline";
 }

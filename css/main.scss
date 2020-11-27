@@ -196,12 +196,13 @@ h1 {
   }
 }
 
-.introduction span:nth-child(even) {
-  display: none;
-}
-
 .introduction span:nth-child(odd) {
   display: inline;
+}
+
+.introduction span:nth-child(4),
+.introduction span:nth-child(7) {
+  display: none;
 }
 
 .form1 {
@@ -343,12 +344,17 @@ h1 {
     position: relative;
     max-width: 100vw;
   }
-  .introduction span:nth-child(odd) {
-    display: none;
-  }
-  .introduction span:nth-child(even) {
+
+  .introduction span:nth-child(4),
+  .introduction span:nth-child(7) {
     display: inline;
   }
+
+  .introduction span:nth-child(3),
+  .introduction span:nth-child(6) {
+    display: none;
+  }
+
   .works .work {
     margin-left: auto;
     margin-right: auto;
