@@ -29,13 +29,7 @@ function unlockCv() {
   formToUnlock.style.background = "blue";
   instruction.innerHTML =
     instruction.innerHTML !== " " ? "Sucess! Now click on the Sattelite" : " ";
-}
 
-//CLICK ON THE CV
-cvLink.addEventListener("click", changeTextAfterCvClick);
-
-function changeTextAfterCvClick() {
-  instruction.innerHTML = " ";
   const unlockSpan =
     introduction.firstChild.nextElementSibling.nextElementSibling
       .nextElementSibling;
@@ -45,4 +39,11 @@ function changeTextAfterCvClick() {
     "none";
   unlockSpan.nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling.style.display =
     "inline";
+}
+
+//CLICK ON THE CV
+cvLink.addEventListener("click", changeTextAfterCvClick);
+
+function changeTextAfterCvClick() {
+  instruction.innerHTML = " ";
 }
