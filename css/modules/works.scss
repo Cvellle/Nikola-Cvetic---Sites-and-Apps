@@ -1,234 +1,241 @@
 @import "../base/mixins.scss";
 .works-wrapper {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    position: relative;
-    padding: 0 5vw 5vw;
-    top: 45vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 5vw 5vw;
+  top: 45vh;
+  @include mobile {
+    padding: 0;
+    z-index: 1;
+    padding: 0 0vw 5vw 0vw;
+  }
+  h3 {
+    font-size: 1.5vw;
+    color: rgba(255, 255, 255, 0.541);
+    margin: 3vw 0;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     @include mobile {
-        padding: 0;
-        z-index: 1;
-        padding: 0 0vw 5vw 0vw;
+      margin-top: 0;
+      padding-top: 4vw;
+      margin-bottom: 4vw;
+      font-size: 5vw;
     }
-    h3 {
-        font-size: 1.5vw;
-        color: rgba(255, 255, 255, 0.541);
-        margin: 3vw 0;
-        background: -webkit-linear-gradient(#eee, #333);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        @include mobile {
-            margin-top: 0;
-            padding-top: 4vw;
-            margin-bottom: 4vw;
-            font-size: 5vw;
-        }
-    }
+  }
 }
 
 .worksInstr {
-    flex: 1 1 100%;
-    color: rgba(255, 255, 255, 0.755);
-    line-height: 2vw;
-    font-size: 1.2vw;
-    @include mobile {
-        display: none;
-    }
+  flex: 1 1 100%;
+  color: rgba(255, 255, 255, 0.755);
+  line-height: 2vw;
+  font-size: 1.2vw;
+  @include mobile {
+    display: none;
+  }
 }
 
 .works {
-    flex: 0 1 40vw;
-    position: relative;
-    top: 4vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    z-index: 2;
+  flex: 0 1 40vw;
+  position: relative;
+  top: 4vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 2;
+  @include mobile {
+    width: 100vw;
+    display: block;
+    padding: 0;
+  }
+  h3 {
+    font-size: 1.5vw;
+    color: rgba(255, 255, 255, 0.74);
+    margin: 3vw 0;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     @include mobile {
-        width: 100vw;
-        display: block;
-        padding: 0;
+      margin-top: 0;
+      padding-top: 10vw;
+      margin-bottom: 14vw;
+      font-size: 5vw;
     }
-    h3 {
-        font-size: 1.5vw;
-        color: rgba(255, 255, 255, 0.541);
-        margin: 3vw 0;
-        background: -webkit-linear-gradient(#eee, #333);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+  }
+  .work {
+    position: relative;
+    width: 100%;
+    height: 3vw;
+    margin-bottom: 3vw;
+    padding: 1vw 0;
+    @include mobile {
+      flex: 0 1 45%;
+      font-size: 4vw;
+      margin-bottom: 0vw;
+    }
+    & a {
+      text-decoration: none;
+      text-align: center;
+      color: white;
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         @include mobile {
-            margin-top: 0;
-            padding-top: 10vw;
-            margin-bottom: 14vw;
-            font-size: 5vw;
+          flex: 1 1 100%;
         }
-    }
-    .work {
-        position: relative;
-        width: 100%;
-        height: 3vw;
-        margin-bottom: 3vw;
-        padding: 1vw 0;
-        @include mobile {
-            flex: 0 1 45%;
+        .title {
+          flex: 0 1 35%;
+          margin-top: 0%;
+          color: white;
+          opacity: 0.7;
+          order: 1;
+          font-size: 1.2vw;
+          display: flex;
+          justify-content: flex-start;
+          @include mobile {
+            flex: 0 1 48%;
             font-size: 4vw;
-            margin-bottom: 0vw;
+          }
         }
-        & a {
-            text-decoration: none;
-            text-align: center;
-            color: white;
-            div {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                @include mobile {
-                    flex: 1 1 100%;
-                }
-                .title {
-                    flex: 0 1 35%;
-                    margin-top: 0%;
-                    color: white;
-                    opacity: 0.7;
-                    order: 1;
-                    font-size: 1.2vw;
-                    display: flex;
-                    justify-content: flex-start;
-                    @include mobile {
-                        flex: 0 1 48%;
-                        font-size: 4vw;
-                    }
-                }
-                .tech {
-                    order: 2;
-                    display: flex;
-                    justify-content: flex-start;
-                    @include mobile {
-                        flex: 0 1 30%;
-                        font-size: 4vw;
-                    }
-                    img {
-                        width: 3.5vw;
-                        max-height: 4.2vw;
-                        height: auto;
-                        margin-right: auto;
-                        margin-left: 2vw;
-                        opacity: 0.5;
-                        transition: all 1s;
-                        &:hover {
-                            opacity: 0.7;
-                            transform: scale(1.2) translate3d(0, 0, 0);
-                            -webkit-transform-style: preserve-3d;
-                            -webkit-backface-visibility: hidden;
-                        }
-                        @include mobile {
-                            width: 9vw;
-                            max-height: 11vw;
-                        }
-                    }
-                    .postcss {
-                        transform: scale(0.8);
-                    }
-                    .postcss {
-                        transform: scale(1);
-                        opacity: 0.35;
-                    }
-                    .bem {
-                        opacity: 0.5;
-                        transform: scale(0.85);
-                    }
-                    .es6 {
-                        transform: scale(0.9);
-                    }
-                    .js {
-                        transform: scale(0.9);
-                        opacity: 0.7;
-                    }
-                    .jq {
-                        transform: scale(0.85);
-                    }
-                    .thunk {
-                        border-radius: 0.7vw;
-                        opacity: 0.5;
-                    }
-                    .canvas {
-                        opacity: 0.7;
-                        border-radius: 0.3vw;
-                    }
-                }
-            }
-        }
-        & .linkInnerDiv>img {
-            width: 3.3vw;
+        .tech {
+          order: 2;
+          display: flex;
+          justify-content: flex-start;
+          @include mobile {
+            flex: 0 1 30%;
+            font-size: 4vw;
+          }
+          img {
+            width: 3.5vw;
+            max-height: 4.2vw;
             height: auto;
-            max-height: 3.3vw;
-            order: 3;
-            margin-left: auto;
+            margin-right: auto;
+            margin-left: 2vw;
+            opacity: 0.5;
             transition: all 1s;
             &:hover {
-                filter: brightness(140%);
-                transition: all 1s;
+              opacity: 0.7;
+              transform: scale(1.2) translate3d(0, 0, 0);
+              -webkit-transform-style: preserve-3d;
+              -webkit-backface-visibility: hidden;
             }
             @include mobile {
-                max-height: 10vw;
-                width: 10vw;
+              width: 9vw;
+              max-height: 11vw;
             }
+          }
+          .postcss {
+            transform: scale(0.8);
+          }
+          .postcss {
+            transform: scale(1);
+            opacity: 0.35;
+          }
+          .bem {
+            opacity: 0.5;
+            transform: scale(0.85);
+          }
+          .es6 {
+            transform: scale(0.9);
+          }
+          .js {
+            transform: scale(0.9);
+            opacity: 0.7;
+          }
+          .jq {
+            transform: scale(0.85);
+          }
+          .thunk {
+            border-radius: 0.7vw;
+            opacity: 0.5;
+          }
+          .canvas {
+            opacity: 0.7;
+            border-radius: 0.3vw;
+          }
         }
+      }
     }
+    & .linkInnerDiv > img {
+      width: 3.3vw;
+      height: auto;
+      max-height: 3.3vw;
+      order: 3;
+      margin-left: auto;
+      transition: all 1s;
+      &:hover {
+        filter: brightness(140%);
+        transition: all 1s;
+      }
+      @include mobile {
+        max-height: 10vw;
+        width: 10vw;
+      }
+    }
+  }
 }
 
 .imgDiv {
-    margin-top: 6.5vh;
-    flex: 0 1 45%;
+  margin-top: 6.5vh;
+  flex: 0 1 45%;
+  @include mobile {
+    margin-top: 0vh;
+    flex: 0 1 100%;
+  }
+  .preview {
+    display: flex;
+    position: sticky;
+    top: 5vw;
+    right: 5vw;
+    width: 100%;
+    height: 21vw;
+    min-height: 21vw;
+    max-height: 21vw;
+    height: auto;
+    z-index: 5;
+    filter: brightness(0.9);
     @include mobile {
-        margin-top: 0vh;
-        flex: 0 1 100%;
+      display: none;
+      position: fixed;
+      top: unset;
+      bottom: 5vw;
+      right: 5%;
+      width: 90%;
+      min-height: 45vw;
+      max-height: 45vw;
     }
-    .preview {
-        display: flex;
-        position: sticky;
-        top: 5vw;
-        right: 5vw;
-        width: 100%;
-        height: 21vw;
-        min-height: 21vw;
-        max-height: 21vw;
-        height: auto;
-        z-index: 5;
-        filter: brightness(0.9);
-        @include mobile {
-            display: none;
-            position: fixed;
-            top: unset;
-            bottom: 5vw;
-            right: 5%;
-            width: 90%;
-            min-height: 45vw;
-            max-height: 45vw;
-        }
-    }
-    @-webkit-keyframes showPrev {
-        0% {
-            border: 5vw solid transparent;
-            visibility: hidden;
-            opacity: 0;
-        }
-        50% {
-            visibility: hidden;
-            opacity: 1;
-        }
-        60% {
-            visibility: visible;
-            opacity: 1;
-        }
-        100% {
-            border: 5vw solid rgb(11, 2, 15);
-            background: white;
-        }
-    }
-}
+  }
 
+  & > p {
+    display: flex;
+    position: sticky;
+    top: 27vw;
+    color: rgba(255, 255, 255, 0.774);
+  }
+
+  @-webkit-keyframes showPrev {
+    0% {
+      border: 5vw solid transparent;
+      visibility: hidden;
+      opacity: 0;
+    }
+    50% {
+      visibility: hidden;
+      opacity: 1;
+    }
+    60% {
+      visibility: visible;
+      opacity: 1;
+    }
+    100% {
+      border: 5vw solid rgb(11, 2, 15);
+      background: white;
+    }
+  }
+}
 
 /*
 

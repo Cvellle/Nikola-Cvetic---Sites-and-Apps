@@ -141,7 +141,7 @@ a {
 }
 .works h3 {
   font-size: 1.5vw;
-  color: rgba(255, 255, 255, 0.541);
+  color: rgba(255, 255, 255, 0.74);
   margin: 3vw 0;
   background: -webkit-linear-gradient(#eee, #333);
   -webkit-background-clip: text;
@@ -314,6 +314,12 @@ a {
     min-height: 45vw;
     max-height: 45vw;
   }
+}
+.imgDiv > p {
+  display: flex;
+  position: sticky;
+  top: 27vw;
+  color: rgba(255, 255, 255, 0.774);
 }
 @-webkit-keyframes showPrev {
   0% {
