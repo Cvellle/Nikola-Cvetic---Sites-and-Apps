@@ -6,6 +6,8 @@
   position: relative;
   padding: 0 5vw 5vw;
   top: 45vh;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
   @include mobile {
     padding: 0;
     z-index: 1;
@@ -29,7 +31,6 @@
 
 .worksInstr {
   flex: 1 1 100%;
-  color: rgba(255, 255, 255, 0.755);
   line-height: 2vw;
   font-size: 1.2vw;
   @include mobile {
@@ -78,7 +79,8 @@
     & a {
       text-decoration: none;
       text-align: center;
-      color: white;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.85);
       div {
         display: flex;
         align-items: center;
@@ -89,8 +91,6 @@
         .title {
           flex: 0 1 35%;
           margin-top: 0%;
-          color: white;
-          opacity: 0.7;
           order: 1;
           font-size: 1.2vw;
           display: flex;

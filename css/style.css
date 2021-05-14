@@ -86,6 +86,8 @@ a {
   position: relative;
   padding: 0 5vw 5vw;
   top: 45vh;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
 }
 @media (max-width: 1024px) {
   .works-wrapper {
@@ -113,7 +115,6 @@ a {
 
 .worksInstr {
   flex: 1 1 100%;
-  color: rgba(255, 255, 255, 0.755);
   line-height: 2vw;
   font-size: 1.2vw;
 }
@@ -172,7 +173,8 @@ a {
 .works .work a {
   text-decoration: none;
   text-align: center;
-  color: white;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
 }
 .works .work a div {
   display: flex;
@@ -187,8 +189,6 @@ a {
 .works .work a div .title {
   flex: 0 1 35%;
   margin-top: 0%;
-  color: white;
-  opacity: 0.7;
   order: 1;
   font-size: 1.2vw;
   display: flex;
@@ -564,7 +564,7 @@ h1 {
   top: 22%;
   height: 21%;
   width: 22%;
-  background: linear-gradient(to bottom right, rgba(175, 81, 175, 0.39), rgba(197, 132, 197, 0.39));
+  background: linear-gradient(to bottom right, rgba(161, 74, 161, 0.39), rgba(210, 160, 210, 0.39));
   z-index: 1;
   clip-path: polygon(0% 0, 0% 100%, 100% 100%, 100% 10%);
 }
@@ -580,11 +580,12 @@ h1 {
 .personal p {
   position: relative;
   font-size: 1.2vw;
-  color: rgba(0, 0, 0, 0.9);
+  color: #0d020e;
   line-height: 1vw;
   margin: 0;
   margin-left: 5%;
   z-index: 2;
+  font-weight: 600;
 }
 @media (max-width: 1024px) {
   .personal p {
@@ -596,7 +597,7 @@ h1 {
   }
 }
 .personal p > a {
-  color: rgba(0, 0, 0, 0.9);
+  color: #0d020e;
   pointer-events: none;
 }
 @media (max-width: 1024px) {
@@ -611,7 +612,7 @@ h1 {
   z-index: -1;
   top: 20%;
   left: 7.2vw;
-  background: rgba(128, 0, 128, 0.08);
+  background: rgba(128, 0, 128, 0.178);
   width: 22%;
   height: 21%;
   clip-path: polygon(0% 0, 0% 100%, 100% 100%, 100% 10%);
@@ -665,12 +666,13 @@ h1 {
 }
 
 .introduction p {
-  color: rgba(255, 255, 255, 0.755);
+  color: rgba(255, 255, 255, 0.85);
   position: absolute;
   top: 0%;
   font-size: 1.2vw;
   text-align: left;
   max-width: 100%;
+  font-weight: 600;
 }
 @media (max-width: 1024px) {
   .introduction p {
@@ -704,13 +706,20 @@ h1 {
     display: none;
   }
 }
+.form1 input:focus {
+  outline: none;
+}
+.form1 input[type=button] {
+  cursor: pointer;
+}
 
 .form1 #instr {
   top: 0vh;
   left: 0%;
   position: absolute;
   font-size: 1.2vw;
-  color: white;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
   opacity: 0.85;
   margin-top: 5vh;
 }
