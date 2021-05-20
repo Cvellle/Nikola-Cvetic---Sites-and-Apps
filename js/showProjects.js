@@ -20,6 +20,7 @@ function showProjects() {
 
   function hideProject() {
     imagePrew.classList.remove("op1");
+    description.innerHTML = "";
   }
 }
 
