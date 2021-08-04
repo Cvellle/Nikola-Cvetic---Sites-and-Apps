@@ -116,7 +116,7 @@ a {
 .worksInstr {
   flex: 1 1 100%;
   line-height: 2vw;
-  font-size: 1.2vw;
+  font-size: 1rem;
 }
 @media (max-width: 1024px) {
   .worksInstr {
@@ -190,7 +190,7 @@ a {
   flex: 0 1 35%;
   margin-top: 0%;
   order: 1;
-  font-size: 1.2vw;
+  font-size: 1rem;
   display: flex;
   justify-content: flex-start;
 }
@@ -669,7 +669,7 @@ h1 {
   color: rgba(255, 255, 255, 0.85);
   position: absolute;
   top: 0%;
-  font-size: 1.2vw;
+  font-size: 1rem;
   text-align: left;
   max-width: 100%;
   font-weight: 600;
@@ -717,7 +717,7 @@ h1 {
   top: 0vh;
   left: 0%;
   position: absolute;
-  font-size: 1.2vw;
+  font-size: 1rem;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.85);
   opacity: 0.85;
