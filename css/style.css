@@ -610,7 +610,7 @@ h1 {
     margin-left: 3vw;
   }
 }
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
   .personal p {
     font-size: 16px;
   }
