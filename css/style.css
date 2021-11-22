@@ -593,7 +593,7 @@ h1 {
 }
 .personal p {
   position: relative;
-  font-size: 1.2vw;
+  font-size: 1.1vw;
   color: #0d020e;
   line-height: 1vw;
   margin: 0;
@@ -610,7 +610,7 @@ h1 {
     margin-left: 3vw;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1500px) {
   .personal p {
     font-size: 16px;
   }
