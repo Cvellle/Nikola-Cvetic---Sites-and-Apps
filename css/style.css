@@ -610,6 +610,11 @@ h1 {
     margin-left: 3vw;
   }
 }
+@media (max-width: 1024px) {
+  .personal p {
+    font-size: 16px;
+  }
+}
 .personal p > a {
   color: #0d020e;
   pointer-events: none;
