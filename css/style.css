@@ -217,7 +217,7 @@ a {
   height: auto;
   margin-right: auto;
   margin-left: 2vw;
-  opacity: 0.65;
+  opacity: 1;
   transition: all 1s;
 }
 .works .work a div .tech img:hover {
