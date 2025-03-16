@@ -12,10 +12,12 @@ submitInput.onkeydown = function (e) {
     alert("Please input only numbers");
     return false;
   }
-  if (e.keyCode <= 57 && submitInput.value.length > 0 && e.keyCode != 8) {
+  if (e.keyCode <= 57 && submitInput.value.length >=1 && e.keyCode != 8) {
     submitButton.disabled = false;
     form1.submitInput.focus();
     return true;
+  } else {
+    submitButton.disabled = true;
   }
 };
 
